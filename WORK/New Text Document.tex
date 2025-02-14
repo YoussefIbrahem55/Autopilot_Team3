@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphicx, booktabs}
+
+\begin{document}
+
+\section{Flight Mechanics Review}
+
+\subsection{General Rigid Body Dynamics Equations in 3D (12 Equations)}
+
+A rigid body in 3D is fully described by 12 equations, split equally into 6 kinetic (dynamics) and 6 kinematic (geometric) equations.
+
+\subsubsection{Kinetic Equations (Dynamics)}
+
+These equations govern the forces and moments acting on the body.
+
+\paragraph{Translational Dynamics (Newton’s Second Law)}
+\begin{align}
+    m \dot{u} &= F_x \\
+    m \dot{v} &= F_y \\
+    m \dot{w} &= F_z
+\end{align}
+
+Where:
+- \( u, v, w \) are velocity components along the body x-, y-, and z-axes.
+- \( F_x, F_y, F_z \) are external force components along the body axes.
+- \( m \) is the mass of the body.
+
+\paragraph{Rotational Dynamics (Euler’s Equations)}
+\begin{align}
+    I_x \dot{p} - I_{xz} \dot{r} &= M_x \\
+    I_y \dot{q} &= M_y \\
+    I_z \dot{r} - I_{xz} \dot{p} &= M_z
+\end{align}
+
+Where:
+- \( I_x, I_y, I_z \) are moments of inertia about the body axes.
+- \( M_x, M_y, M_z \) are external moment components about the body axes.
+
+\subsubsection{Kinematic Equations (Geometry)}
+
+These equations relate the velocities and angular rates to the changes in position and orientation.
+
+\paragraph{Translational Kinematics (Position Updates)}
+\begin{align}
+    \dot{x} &= u \cos\theta \cos\psi + v (\sin\phi \sin\theta \cos\psi - \cos\phi \sin\psi) + w (\cos\phi \sin\theta \cos\psi + \sin\phi \sin\psi) \\
+    \dot{y} &= u \cos\theta \sin\psi + v (\sin\phi \sin\theta \sin\psi + \cos\phi \cos\psi) + w (\cos\phi \sin\theta \sin\psi - \sin\phi \cos\psi) \\
+    \dot{z} &= - u \sin\theta + v \sin\phi \cos\theta + w \cos\phi \cos\theta
+\end{align}
+
+Where:
+- \( x, y, z \) are inertial (earth-fixed) coordinates.
+- \( \phi, \theta, \psi \) are Euler angles (roll, pitch, yaw).
+
+\paragraph{Rotational Kinematics (Euler Angle Rates)}
+\begin{align}
+    \dot{\phi} &= p + q \sin\phi \tan\theta + r \cos\phi \tan\theta \\
+    \dot{\theta} &= q \cos\phi - r \sin\phi \\
+    \dot{\psi} &= q \sin\phi / \cos\theta + r \cos\phi / \cos\theta
+\end{align}
+
+\subsection{Classification into Kinetics and Kinematics}
+
+\subsubsection{Kinetic Equations (6 total)}
+- (1) – (3): Translational dynamics
+- (4) – (6): Rotational dynamics
+
+\subsubsection{Kinematic Equations (6 total)}
+- (7) – (9): Relate body velocities (expressed in body frame) to inertial position changes
+- (10) – (12): Relate body angular rates to Euler angle rates
+
+\subsection{Additional Equations for Fixed-Wing Airplane Equations of Motion (EOM)}
+
+To specialize the general rigid body equations for a fixed-wing airplane, the following are added:
+
+\begin{itemize}
+    \item \textbf{Aerodynamic Force and Moment Models}: Expressed as functions of dynamic pressure, wing area, and non-dimensional coefficients.
+    \item \textbf{Gravitational Force Projection}: The weight is resolved along the body axes.
+    \item \textbf{Velocity-to-Angle Relationships}: Relating airspeed, angle of attack (\(\alpha\)), and sideslip angle (\(\beta\)).
+    \item \textbf{Control Input Effects}: How control surface deflections affect aerodynamic forces and moments.
+\end{itemize}
+
+\subsection{Assumptions in Deriving Airplane Equations of Motion}
+
+\begin{itemize}
+    \item Rigid Body Approximation (No deformation)
+    \item Constant Mass and Inertia (Neglect fuel burn effects)
+    \item Quasi-Steady Aerodynamics (Instantaneous force response)
+    \item Small Perturbations (Linearization around trim)
+    \item Neglection of High-Order Effects (Compressibility, viscous effects)
+    \item Uniform Atmospheric Conditions (Steady and uniform air properties)
+\end{itemize}
+
+\subsection{Mathematical Classification of the Airplane EOM}
+
+\begin{itemize}
+    \item \textbf{Order}: First-order differential equations in state-space form.
+    \item \textbf{Type}: Ordinary Differential Equations (ODEs) with time as the independent variable.
+    \item \textbf{Linearity}: Nonlinear, but often linearized near steady flight.
+    \item \textbf{Coupling}: Generally coupled; under certain assumptions, dynamics can be decoupled.
+\end{itemize}
+
+\subsection{Body Axes vs. Earth (Inertial) Axes}
+
+\subsubsection{Body Axes}
+- Fixed to the airplane.
+- Defined as:
+  - \( x_b \): Along the fuselage (forward).
+  - \( y_b \): Towards the right wing.
+  - \( z_b \): Downward.
+
+\subsubsection{Earth (Inertial) Axes}
+- Fixed or quasi-fixed relative to the Earth.
+- Often defined as North-East-Down (NED).
+
+\subsection{Pitch Angle (\(\theta\)) vs. Angle of Attack (\(\alpha\)) and Sideslip Angle (\(\beta\)) vs. Heading Angle (\(\psi\))}
+
+\subsubsection{Pitch Angle vs. Angle of Attack}
+- \(\theta\): Orientation relative to the horizon.
+- \(\alpha\): Angle between the chord line and the airflow.
+
+\subsubsection{Sideslip Angle vs. Heading Angle}
+- \(\beta\): Angle between the aircraft’s longitudinal axis and the wind.
+- \(\psi\): Navigational direction relative to a fixed reference.
+
+\subsection{Attitude Representations: Advantages and Disadvantages}
+
+\subsubsection{Euler Angles}
+- \textbf{Advantages}: Intuitive (roll, pitch, yaw).
+- \textbf{Disadvantages}: Suffer from gimbal lock.
+
+\subsubsection{Direction Cosine Matrix (DCM)}
+- \textbf{Advantages}: No singularities.
+- \textbf{Disadvantages}: 9 elements with orthogonality constraints.
+
+\subsubsection{Quaternions}
+- \textbf{Advantages}: Compact, computationally efficient, no singularities.
+- \textbf{Disadvantages}: Less intuitive, double-cover issue (\(q\) and \(-q\) represent the same orientation).
+
+\subsubsection{Axis-Angle Representation}
+- \textbf{Advantages}: Clear geometric interpretation.
+- \textbf{Disadvantages}: Less practical for sequential rotations.
+
+\end{document}

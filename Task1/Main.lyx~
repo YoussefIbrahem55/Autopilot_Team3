@@ -1,0 +1,4873 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\usepackage{multicol}
+\usepackage{lscape}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[ddmmyyyy]{datetime}
+\end_preamble
+\use_default_options true
+\begin_modules
+eqs-within-sections
+figs-within-sections
+tcolorbox
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "default"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=magenta, urlcolor=marineblue, citecolor=blue, pdfstartview={FitH}, hyperfootnotes=false, unicode=true"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 1in
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\listings_params "breaklines=true,commentstyle={\color[rgb]{0,0.5,0}},keywordstyle={\color{blue}},stringstyle={\color{magenta}},tabsize=4,basicstyle={\ttfamily},columns=fullflexible"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Design of control systems for 
+\begin_inset Newline newline
+\end_inset
+
+Aeronautical and Space Vehicles
+\begin_inset Newline newline
+\end_inset
+
+AER4420
+\series bold
+\size huge
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+
+\series bold
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sec/BN#
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Sherif Essam Esmail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Abdelrahman Essam
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Abdelrahman Muhamed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Muhamed Reffat
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2/13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Youssef Ibrahem Ead
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2/42
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Task1
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[L,C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[L]{
+\backslash
+leftmark}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[R]{
+\backslash
+textbf{AER4420}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[L]{TEAM3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[r]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[c]{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0.4pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+footrulewidth}{1pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+AUTOPILOT LITERATURE REVIEW
+\end_layout
+
+\begin_layout Section
+Research questions 
+\end_layout
+
+\begin_layout Subsection
+Definition of Autopilot
+\end_layout
+
+\begin_layout Standard
+An 
+\series bold
+autopilot
+\series default
+ is a control system designed to operate a vehicle, such as an 
+\shape italic
+aircraft, missile, or spacecraft
+\shape default
+, with minimal human intervention by automatically regulating its trajectory
+ and stability 
+\end_layout
+
+\begin_layout Subsection
+Main Objective
+\end_layout
+
+\begin_layout Standard
+The primary objectives of an autopilot system are as follows: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Trajectory Maintenance:
+\series default
+ Ensuring that the vehicle follows a predefined flight path by continuously
+ adjusting control surfaces 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Stability Augmentation:
+\series default
+ Enhancing vehicle stability by compensating for disturbances such as turbulence
+ or atmospheric variations 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Workload Reduction:
+\series default
+ Minimizing pilot intervention by automating routine control tasks, allowing
+ operators to focus on higher-level decision-making 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Operational Efficiency:
+\series default
+ Improving fuel consumption and accuracy in navigation, which contributes
+ to safety and effectiveness 
+\end_layout
+
+\begin_layout Subsection
+Applications
+\end_layout
+
+\begin_layout Standard
+Autopilot systems are widely utilized in various domains, including: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Aircraft:
+\series default
+ Used for maintaining altitude, heading, and speed, reducing pilot fatigue
+ during long flights 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Missiles:
+\series default
+ Integrated with guidance and navigation systems to enhance targeting accuracy
+ and maneuverability 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Spacecraft:
+\series default
+ Employed for attitude and trajectory control during different mission phases
+ 
+\end_layout
+
+\begin_layout Subsection
+Early Autopilot Development 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Blakelock1991"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Wright Brothers' Innovation (1903):
+\end_layout
+
+\begin_layout Itemize
+Designed an unstable but controllable aircraft, improving maneuverability
+ and reducing susceptibility to atmospheric gusts.
+\end_layout
+
+\begin_layout Itemize
+Early pioneers (Lilienthal, Pilcher, Chanute, Langley) favored inherent
+ stability, making piloting easier but reducing maneuverability.
+\end_layout
+
+\begin_layout Itemize
+The Wright brothers' approach made flying more demanding, pushing the need
+ for automatic pilots (autopilots).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Early Autopilot Development: 
+\end_layout
+
+\begin_layout Itemize
+"Spiral divergence": A common issue in aircraft where small disturbances
+ cause increasing instability.
+\end_layout
+
+\begin_layout Itemize
+Early autopilots aimed to correct deviations and restore the aircraft's
+ flight attitude.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+1912: First autopilot tested in 
+\emph on
+a Curtiss flying boat,
+\emph default
+ using gyroscopes and servo motors.
+\end_layout
+
+\begin_layout Itemize
+Sperry Aeroplane Stabilizer (1914): Developed by Sperry Gyroscope Company,
+ led by Dr.
+ E.
+ A.
+ Sperry.
+\end_layout
+
+\begin_layout Itemize
+Won a 50,000-franc safety prize from the Aero Club of France, demonstrated
+ by Lawrence Sperry.
+\end_layout
+
+\begin_layout Itemize
+1933: Wiley Post & Gyropilot: First pneumatic-hydraulic Gyropilot installed
+ in his plane, Winnie May, Allowed autonomous flight, enabling Post to briefly
+ sleep during an around-the-world flight in 8 days.
+\end_layout
+
+\begin_layout Itemize
+1947: Fully Automatic Flight: US Air Force C-54 equipped with Sperry A-12
+ autopilot & Bendix throttle control completed a transatlantic flight without
+ manual control, Program stored on punched cards controlled the flight.
+\end_layout
+
+\begin_layout Itemize
+Challenges in Modern Jets: Early autopilots focused on
+\emph on
+ maintaining attitude & heading, 
+\emph default
+Jet aircraft introduced new dynamic stability issues, like 
+\emph on
+short-period oscillations & Dutch roll
+\emph default
+, Human pilots cannot correct rapid oscillations, requiring automatic damping
+ systems, First successful automatic Dutch roll suppression appeared in
+ YB-49 jet bomber.
+ 
+\end_layout
+
+\begin_layout Subsection
+Inputs and Outputs of an Autopilot System
+\end_layout
+
+\begin_layout Subsubsection
+Inputs (Desired/Commanded States)
+\end_layout
+
+\begin_layout Standard
+The autopilot system relies on inputs that define the desired flight parameters.
+ These inputs are typically set by the pilot or a flight management system
+ (FMS).
+ Common inputs include: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Altitude
+\series default
+: The target altitude to maintain (e.g., 35,000 feet).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Heading
+\series default
+: The desired compass direction (e.g., 270Â° for west).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Airspeed
+\series default
+: The target speed through the air (e.g., 250 knots).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vertical Speed
+\series default
+: The desired rate of climb or descent (e.g., 1,000 feet per minute).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Pitch and Roll Angles
+\series default
+: The desired aircraft attitude for stability and maneuvering.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Navigation Data
+\series default
+: Commands from the FMS or GPS, such as waypoints or flight paths.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Outputs (Actuator Commands)
+\end_layout
+
+\begin_layout Standard
+The autopilot generates commands to control the aircraft's actuators, which
+ adjust the control surfaces or engines to achieve the desired states.
+ The primary outputs include: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Ailerons
+\series default
+: Control roll by moving up or down to bank the aircraft left or right.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Elevators
+\series default
+: Control pitch by moving up or down to raise or lower the nose.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Rudder
+\series default
+: Control yaw by moving left or right to adjust the aircraft's heading.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Throttle/Thrust
+\series default
+: Adjust engine power to maintain or change airspeed.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Spoilers
+\series default
+: Assist in roll control or speed reduction (in some systems).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Flaps/Slats
+\series default
+: Adjust lift and drag during specific phases of flight (e.g., landing).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Control Loop Process
+\end_layout
+
+\begin_layout Standard
+The autopilot operates as a closed-loop control system, continuously monitoring
+ and adjusting the aircraft's state.
+ The process involves: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Sensing
+\series default
+: The autopilot receives real-time data from sensors (e.g., gyroscopes, accelerome
+ters, GPS, altimeters, airspeed sensors).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Comparison
+\series default
+: The autopilot compares the current state (e.g., actual altitude) with the
+ desired state (e.g., target altitude).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Error Calculation
+\series default
+: The difference (error) between the desired and actual state is calculated.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Control Algorithm
+\series default
+: The autopilot uses control algorithms (e.g., PID controllers) to determine
+ the necessary actuator commands to minimize the error.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Actuation
+\series default
+: The autopilot sends commands to the actuators to adjust the control surfaces
+ or engines, bringing the aircraft closer to the desired state.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Input
+\series default
+: Desired altitude = 35,000 feet, current altitude = 34,500 feet.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Output
+\series default
+: Autopilot commands the elevators to pitch the nose up slightly and adjusts
+ the throttle to increase thrust, causing the aircraft to climb to 35,000
+ feet.
+ 
+\end_layout
+
+\begin_layout Subsection
+Human vs Autopilot
+\end_layout
+
+\begin_layout Standard
+While autopilot reduces pilot workload by automating routine tasks, pilots
+ remain essential for:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}     
+\backslash
+item Flight Planning and Pre-Flight Checks     
+\backslash
+item Takeoff and Initial Climb     
+\backslash
+item Monitoring the Autopilot System     
+\backslash
+item Handling Emergencies and Malfunctions     
+\backslash
+item Adjusting Flight Parameters     
+\backslash
+item Approach and Landing     
+\backslash
+item Post-Landing and Taxiing 
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stability Augmentation and Control Augmentation Systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stevens2015"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Such control systems are known as stability augmentation systems (SASs).
+ If the augmentation system is intended to control the mode and to provide
+ the pilot with a particular type of response to the control inputs, it
+ is known as a control augmentation system(CAS).
+ An example of this is a normal acceleration CAS, in which the pilot’s inputs
+ are intended to control the acceleration generated along the negative z-axis.
+ The slow modes (phugoid and spiral) are controllable by a pilot.
+ But since it is undesirable for a pilot to have to pay continuous attention
+ to controlling these modes, an automatic control system is needed to provide
+ “pilot relief.” An autopilot is an automatic control system that provides
+ both pilot relief functions and special functions such as automatic landing.
+ The common types of SAS, CAS, and autopilot functions can be listed as
+ follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of SAS, CAS, and Autopilot Functions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+SAS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+CAS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Autopilots
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Roll damper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Roll rate control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pitch-attitude hold
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pitch damper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pitch rate control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Altitude hold
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yaw damper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal acceleration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Speed/Mach hold
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lateral/directional control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Automatic landing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Heading hold/VOR hold
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turn coordination, Roll angle hold
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:control_functions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Onboard Sensors
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Sensor
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Quantities Measured
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Typical Sampling Rates
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Sensor Example
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+GPS 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Position (latitude, longitude, altitude), Velocity 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+1-10 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+u-blox NEO-M8N 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Gyroscope 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Angular velocity (roll, pitch, yaw rates) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+100-1000 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+InvenSense MPU-6050 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Accelerometer 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Linear acceleration (x, y, z axes) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+100-1000 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+STMicroelectronics LSM6DS3 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Magnetometer 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Magnetic field (heading or yaw) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+10-200 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Honeywell HMC5883L 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Barometer 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Altitude (pressure-based) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+10-50 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Bosch BMP280 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+IMU 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Combined motion data 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+100-2000 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Analog Devices ADIS16470 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Airspeed Sensor 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Airspeed (velocity relative to air) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+100-1000 Hz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Honeywell AMS 5812 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Nonmesurable States
+\end_layout
+
+\begin_layout Standard
+the 
+\emph on
+nonmesurable states
+\emph default
+ can be estimated from the other states only if the system is
+\emph on
+ observable 
+\end_layout
+
+\begin_layout Subsubsection
+Observability
+\end_layout
+
+\begin_layout Standard
+A system is 
+\series bold
+observable
+\series default
+ if its state can be reconstructed from output measurements over time.
+ This property ensures that unmeasured states can be inferred using a mathematic
+al model.
+\end_layout
+
+\begin_layout Subsubsection
+Observability Condition for Linear Systems
+\end_layout
+
+\begin_layout Standard
+Consider a linear time-invariant (LTI) system: 
+\begin_inset Formula 
+\begin{align}
+\dot{x} & =Ax+Bu,\\
+y & =Cx+Du,
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $x$
+\end_inset
+
+ is the state vector, 
+\begin_inset Formula $u$
+\end_inset
+
+ is the input, and 
+\begin_inset Formula $y$
+\end_inset
+
+ is the measured output.
+\end_layout
+
+\begin_layout Standard
+The system is 
+\series bold
+observable
+\series default
+ if the 
+\shape italic
+observability matrix
+\shape default
+ has full rank: 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{O}=\begin{bmatrix}C\\
+CA\\
+CA^{2}\\
+\vdots\\
+CA^{n-1}
+\end{bmatrix}
+\end{equation}
+
+\end_inset
+
+If 
+\begin_inset Formula $\text{rank}(\mathcal{O})=n$
+\end_inset
+
+ (where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of states), then all states can be estimated.
+\end_layout
+
+\begin_layout Subsubsection
+Observability for Nonlinear Systems
+\end_layout
+
+\begin_layout Standard
+For nonlinear systems, observability is analyzed using the 
+\shape italic
+Observability Gramian
+\shape default
+ or by applying Lie derivatives.
+ The system dynamics are given by: 
+\begin_inset Formula 
+\begin{align}
+\dot{x} & =f(x,u),\\
+y & =h(x,u).
+\end{align}
+
+\end_inset
+
+The nonlinear observability rank condition requires computing the Lie derivative
+s of 
+\begin_inset Formula $h(x,u)$
+\end_inset
+
+ along 
+\begin_inset Formula $f(x,u)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Observer Design
+\end_layout
+
+\begin_layout Standard
+If a system is observable, an 
+\shape italic
+observer
+\shape default
+ (state estimator) can be designed to reconstruct non-measured states.
+\end_layout
+
+\begin_layout Subsubsection
+Luenberger Observer (Linear Systems)
+\end_layout
+
+\begin_layout Standard
+For an observable LTI system, a Luenberger observer estimates the state:
+ 
+\begin_inset Formula 
+\begin{equation}
+\dot{\hat{x}}=A\hat{x}+Bu+L(y-C\hat{x}),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ is the estimated state, and 
+\begin_inset Formula $L$
+\end_inset
+
+ is the observer gain.
+ The gain 
+\begin_inset Formula $L$
+\end_inset
+
+ is designed such that the eigenvalues of 
+\begin_inset Formula $(A-LC)$
+\end_inset
+
+ are stable (negative real parts).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Pics/Block-diagram-of-Luenberger-observer.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Observer Design Block Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fly-By-Wire (FBW) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sadraey2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fly-By-Wire (FBW) is a modern flight control system that replaces traditional
+ mechanical linkages with electronic signal transmission
+\series default
+.
+ In FBW systems, pilot commands are interpreted by flight control computers,
+ which then adjust the control surfaces accordingly.
+\end_layout
+
+\begin_layout Subsubsection
+Architecture of Fly-By-Wire Systems
+\end_layout
+
+\begin_layout Standard
+An FBW system consists of the following key components:
+\end_layout
+
+\begin_layout Subsubsection
+Flight Control Computers (FCCs)
+\end_layout
+
+\begin_layout Standard
+The FCCs process pilot commands, sensor inputs, and flight control laws
+ to determine the required actuator movements.
+ Modern FBW systems use redundant digital computers to enhance reliability.
+\end_layout
+
+\begin_layout Subsubsection
+Sensors and Feedback Systems
+\end_layout
+
+\begin_layout Standard
+FBW systems incorporate gyroscopes, accelerometers, and other sensors to
+ monitor aircraft motion and stability.
+ These inputs are used to adjust control surface deflections dynamically.
+\end_layout
+
+\begin_layout Subsubsection
+Actuators
+\end_layout
+
+\begin_layout Standard
+Electronic signals from the FCCs drive electro-mechanical or electro-hydrostatic
+ actuators, which move the control surfaces such as ailerons, elevators,
+ and rudders.
+\end_layout
+
+\begin_layout Subsubsection
+Advantages of Fly-By-Wire Systems
+\end_layout
+
+\begin_layout Standard
+FBW systems offer several advantages over traditional mechanical and hydraulic
+ control systems: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Weight Reduction:
+\series default
+ Eliminates heavy mechanical linkages, reducing overall aircraft weight.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Improved Reliability:
+\series default
+ Redundant digital computers enhance fault tolerance and system robustness.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Enhanced Maneuverability:
+\series default
+ FBW allows for real-time adjustments based on sensor feedback, improving
+ stability and responsiveness.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Maintenance Reduction:
+\series default
+ Unlike hydraulic systems, FBW does not require extensive fluid checks,
+ leak management, or pressure adjustments.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Safety Features:
+\series default
+ Digital flight control laws can prevent dangerous maneuvers, such as stalls
+ or excessive structural loads.
+\end_layout
+
+\begin_layout Subsection
+Autopilot Software VS Hardware 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sadraey2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Software and Hardware Autopilot Systems
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:autopilot_comparison"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\arraystretch}{1.3}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Category
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Software Autopilot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hardware Autopilot
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Definition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flight control algorithms and programs running on an autopilot system.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The physical computing unit executing autopilot software.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manages UAV stabilization, navigation, control, and autonomous operations.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Provides processing power, sensor data acquisition, and control execution.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Components
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Source code (C/C++, Python), control algorithms, mission planning tools.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Microcontroller/processor, IMU (gyroscope, accelerometer, magnetometer),
+ barometer, GPS, communication modules.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Customization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Can be modified, updated, and adapted for different vehicles.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Limited by hardware specifications but can support different software.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Examples
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+ArduPilot
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Runs on various hardware)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+PX4
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Open-source, used in different autopilot boards)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+MicroPilot Horizon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Ground control software)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="2.5cm">
+<column alignment="center" valignment="middle" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+PX4 Pixhawk
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Hardware running PX4 software)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+ArduPilot Mega (APM)
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Hardware for ArduPilot)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+MicroPilot MP2x28xp
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Commercial UAV autopilot)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+DJI WooKong-M
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Proprietary autopilot hardware)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Availability
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Open-source (ArduPilot, PX4) or proprietary (MicroPilot Horizon).
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Open-hardware (PX4 Pixhawk) or proprietary (DJI WooKong, MicroPilot MP2x28xp).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Development
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Continuously updated with new features and improvements.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hardware remains the same but can support firmware updates.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Flight Mechanics Review
+\end_layout
+
+\begin_layout Subsection
+a) General Rigid Body Dynamics Equations in 3D (12 Equations)
+\end_layout
+
+\begin_layout Standard
+A rigid body in 3D is fully described by 12 equations, split equally into
+ 6 kinetic (dynamics) and 6 kinematic (geometric) equations.
+\end_layout
+
+\begin_layout Subsubsection*
+Kinetic Equations (Dynamics)
+\end_layout
+
+\begin_layout Standard
+These equations govern the forces and moments acting on the body.
+\end_layout
+
+\begin_layout Subsubsection
+Translational Dynamics (Newton's Second Law)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{u}=\left(F_{\mathrm{x}}/m\right)+r\cdot v-q\cdot w
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{v}=\left(F_{y}/m\right)+p\cdot w-r\cdot u
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{w}=(Fz/m)+q\cdot u-p\cdot v
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u,v,w=$
+\end_inset
+
+ Velocity components along the body 
+\begin_inset Formula $x-,y-$
+\end_inset
+
+, and 
+\begin_inset Formula $z$
+\end_inset
+
+-axes 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{\mathrm{x}},F_{y},Fz=$
+\end_inset
+
+ External force components along the body axes 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m=$
+\end_inset
+
+ Mass of the body 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p,q,r=$
+\end_inset
+
+ Angular velocity components about the body x -, y -, and z -axes 
+\end_layout
+
+\begin_layout Subsubsection
+Rotational Dynamics (Euler's Equations)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{p}=\left(1/I_{\mathrm{x}}\right)\cdot\left[M_{\mathrm{x}}+\left(I_{y}-Iz\right)\cdot q\cdot r\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{q}=\left(1/I_{\text{y}}\right)\cdot\left[M_{y}+\left(Iz-I_{\mathrm{x}}\right)\cdot r\cdot p\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{r}=(1/Iz)\cdot\left[Mz+\left(I_{\mathrm{x}}-I_{y}\right)\cdot p\cdot q\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I_{\mathrm{x}},I_{y},Iz=$
+\end_inset
+
+ Moments of inertia about the body axes 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M_{\mathrm{x}},M_{y},Mz=$
+\end_inset
+
+ External moment components about the body axes 
+\end_layout
+
+\begin_layout Subsubsection*
+Kinematic Equations (Geometry)
+\end_layout
+
+\begin_layout Standard
+These equations relate the velocities and angular rates to the changes in
+ position and orientation.
+\end_layout
+
+\begin_layout Subsubsection
+Translational Kinematics (Position Updates)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\mathrm{x}}=u\cdot\cos\theta\cdot\cos\psi+v\cdot(\sin\varphi\cdot\sin\theta\cdot\cos\psi-\cos\varphi\cdot\sin\psi)+w\cdot(\cos\varphi\cdot\sin\theta\cdot\cos\psi+\sin\varphi\cdot\sin\psi)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\mathrm{y}}=u\cdot\cos\theta\cdot\sin\psi+v\cdot(\sin\varphi\cdot\sin\theta\cdot\sin\psi+\cos\varphi\cdot\cos\psi)+w\cdot(\cos\varphi\cdot\sin\theta\cdot\sin\psi-\sin\varphi\cdot\cos\psi)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\mathrm{z}}=-u\cdot\sin\theta+v\cdot\sin\varphi\cdot\cos\theta+w\cdot\cos\varphi\cdot\cos\theta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x,y,z=$
+\end_inset
+
+ Inertial (earth-fixed) coordinates 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varphi,\theta,\psi=$
+\end_inset
+
+ Euler angles (roll, pitch, yaw)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Pics/2025_02_14_6d0761894995bbdc62abg-2.jpg
+	width 30page%
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Euler Angles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Rotational Kinematics (Euler Angle Rates)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\varphi}=p+q\cdot\sin\varphi\cdot\tan\theta+r\cdot\cos\varphi\cdot\tan\theta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\theta=q\cdot\cos\varphi-r\cdot\sin\varphi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\psi=(q\cdot\sin\varphi+r\cdot\cos\varphi)/\cos\theta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These 12 equations together comprehensively describe the motion of a rigid
+ body in 3D space.
+\end_layout
+
+\begin_layout Subsection
+b) Classification into Kinetics and Kinematics 
+\begin_inset Newline newline
+\end_inset
+
+ Kinetic Equations (6 in total):
+\end_layout
+
+\begin_layout Itemize
+Equations (1) - (3): Translational dynamics 
+\end_layout
+
+\begin_layout Itemize
+Equations (4) - (6): Rotational dynamics 
+\end_layout
+
+\begin_layout Standard
+Kinematic Equations (6 in total):
+\end_layout
+
+\begin_layout Itemize
+Equations (7) - (9): Relate body velocities (expressed in body frame) to
+ inertial position changes 
+\end_layout
+
+\begin_layout Itemize
+Equations (10) - (12): Relate body angular rates to Euler angle rates 
+\end_layout
+
+\begin_layout Subsection
+c) Additional Equations for Fixed-Wing Airplane Equations of Motion (EOM)
+\end_layout
+
+\begin_layout Standard
+To specialize the general RBD equations for a fixed-wing airplane, the following
+ are added: •
+\end_layout
+
+\begin_layout Subsubsection
+Aerodynamic Force and Moment Models:
+\end_layout
+
+\begin_layout Standard
+Aerodynamic forces are expressed as functions of dynamic pressure, wing
+ area, and non-dimensional coefficients (e.g., 
+\begin_inset Formula $Cx,Cy,Cz$
+\end_inset
+
+ ).
+ Similarly, aerodynamic moments (roll 
+\begin_inset Formula $L$
+\end_inset
+
+, pitch 
+\begin_inset Formula $M$
+\end_inset
+
+, yaw 
+\begin_inset Formula $N$
+\end_inset
+
+ ) are modeled using coefficients that depend on angle of attack, sideslip,
+ and control surface deflections.
+\end_layout
+
+\begin_layout Subsubsection
+- Gravitational Force Projection:
+\end_layout
+
+\begin_layout Standard
+The weight of the airplane is resolved along the body axes via the transformatio
+n from the inertial (or earthfixed) frame.
+\end_layout
+
+\begin_layout Subsubsection
+Velocity-to-Angle Relationships:
+\end_layout
+
+\begin_layout Standard
+Equations that relate the components of velocity in the body frame to the
+ airspeed, angle of attack ( 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ), and sideslip angle ( 
+\begin_inset Formula $\beta$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout Itemize
+Control Input Effects: 
+\end_layout
+
+\begin_layout Standard
+Additional relations that quantify how control surface deflections affect
+ the aerodynamic forces and moments.
+\end_layout
+
+\begin_layout Subsection
+d) Assumptions in Deriving Airplane Equations of Motion.
+\end_layout
+
+\begin_layout Standard
+Common assumptions include:
+\end_layout
+
+\begin_layout Itemize
+Rigid Body Approximation: The aircraft is assumed not to deform.
+ 
+\end_layout
+
+\begin_layout Itemize
+Constant Mass and Inertia: Effects of fuel burn or payload shifts are neglected.
+ 
+\end_layout
+
+\begin_layout Itemize
+Quasi-Steady Aerodynamics: Aerodynamic forces and moments are assumed to
+ respond instantaneously to changes in flight conditions.
+ 
+\end_layout
+
+\begin_layout Itemize
+Small Perturbations: Linearization is often performed around a trim condition.
+ 
+\end_layout
+
+\begin_layout Itemize
+Neglection of High-Order Effects: Compressibility, viscous effects, and
+ higher-order nonlinearities are typically ignored in preliminary analyses.
+ 
+\end_layout
+
+\begin_layout Itemize
+Uniform Atmospheric Conditions: The air is assumed to have steady and uniform
+ properties.
+ 
+\end_layout
+
+\begin_layout Subsection
+e) Mathematical Classification of the Airplane EOM.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Classification of the Airplane EOM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The equations are represented as first-order differential equations in state-spa
+ce form.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+They are Ordinary Differential Equations (ODEs), with time being the independent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+variable.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linearity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The full equations are nonlinear, although linearization is common near
+ steady flight
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+conditions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coupling
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The equations are generally coupled, as translational and rotational dynamics
+ interact.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Under certain assumptions (such as decoupling of longitudinal and lateral-direct
+ional
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dynamics), the equations can be simplified to an uncoupled form.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+f) Difference Between Body Axes and Earth (Inertial) Axes.
+\end_layout
+
+\begin_layout Subsubsection
+- Body Axes:
+\end_layout
+
+\begin_layout Standard
+A coordinate system fixed to the airplane, typically defined as:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x$
+\end_inset
+
+ - axis: along the fuselage (forward), 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y$
+\end_inset
+
+ - axis: towards the right wing, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $z$
+\end_inset
+
+-axis: downward.
+ 
+\end_layout
+
+\begin_layout Standard
+The body axes rotate with the aircraft.
+\end_layout
+
+\begin_layout Subsubsection
+Earth (Inertial) Axes: 
+\end_layout
+
+\begin_layout Standard
+A fixed or quasi-fixed coordinate system relative to the Earth, often defined
+ as North-East-Down (NED) or a similar scheme, serving as an absolute reference
+ frame.
+\end_layout
+
+\begin_layout Subsection
+g) Difference Between Pitch Angle ( 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ) vs.
+ Angle of Attack 
+\begin_inset Formula $(\alpha)$
+\end_inset
+
+ and Sideslip Angle ( 
+\begin_inset Formula $\beta$
+\end_inset
+
+ ) vs.
+ Heading Angle ( 
+\begin_inset Formula $\psi$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout Subsubsection
+Pitch Angle ( 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ) vs.
+ Angle of Attack ( 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ):
+\end_layout
+
+\begin_layout Standard
+The pitch angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the orientation of the aircraft's longitudinal axis relative to the
+ horizon, while the angle of attack 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the angle between the chord line (or x-axis) and the oncoming airflow.
+ In steady, coordinated flight these angles are related, but during maneuvers
+ or in the presence of wind, they can differ significantly.
+\end_layout
+
+\begin_layout Subsubsection
+Sideslip Angle ( 
+\begin_inset Formula $\beta$
+\end_inset
+
+ ) vs.
+ Heading Angle ( 
+\begin_inset Formula $\psi$
+\end_inset
+
+ ):
+\end_layout
+
+\begin_layout Standard
+The sideslip angle 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is the angle between the aircraft's longitudinal axis and the relative
+ wind, whereas the heading angle 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is the navigational direction of the aircraft relative to a fixed reference
+ (such as geographic North).
+\end_layout
+
+\begin_layout Subsection
+h) Attitude Representations: Advantages and Disadvantages
+\end_layout
+
+\begin_layout Subsubsection
+- Euler Angles:
+\end_layout
+
+\begin_layout Itemize
+Advantages: Intuitive (roll, pitch, yaw) and straightforward.
+ 
+\end_layout
+
+\begin_layout Itemize
+Disadvantages: Suffer from singularities (gimbal lock) when, for example,
+ the pitch angle approaches 
+\begin_inset Formula $\pm90$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+- Direction Cosine Matrix (DCM):
+\end_layout
+
+\begin_layout Itemize
+Advantages: No singularity issues and provides a full transformation matrix.
+ 
+\end_layout
+
+\begin_layout Itemize
+Disadvantages: Requires 9 elements along with orthogonality constraints,
+ which can complicate numerical implementation.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+- Quaternions:
+\end_layout
+
+\begin_layout Itemize
+Advantages: Compact (4 parameters), computationally efficient, and free
+ from singularities.
+ 
+\end_layout
+
+\begin_layout Itemize
+Disadvantages: Less intuitive and involve a double-cover issue (i.e., 
+\begin_inset Formula $q$
+\end_inset
+
+ and -q represent the same orientation).
+ 
+\end_layout
+
+\begin_layout Itemize
+Axis-Angle Representation: 
+\end_layout
+
+\begin_layout Itemize
+Advantages: Provides a clear geometric interpretation (rotation by a specific
+ angle about a fixed axis).
+ 
+\end_layout
+
+\begin_layout Itemize
+Disadvantages: Less practical for sequential rotations or for numerical
+ integration when rotations are small.
+ 
+\end_layout
+
+\begin_layout Section
+Numerical solution of ODEs 
+\end_layout
+
+\begin_layout Subsection
+Some of the numerical solving algorithms for ODEs
+\end_layout
+
+\begin_layout Standard
+Numerical solutions are approximate solutions to the differential equation
+ where the analytical solution is hard to get or even not available as the
+ case in airplane equations.
+ The variation of the algorithms is due to the need for different approaches
+ for solving the equations like: Accuracy requirements, stability considerations
+, computational efficiency, step size adaptability, and system constraints.
+\end_layout
+
+\begin_layout Standard
+Reason for the Variation of Numerical Algorithms.
+ The wide variety of numerical algorithms for solving Ordinary Differential
+ Equations (ODEs) exists because different problems have unique characteristics
+ that require specialized approaches.
+ The main factors influencing algorithm selection include:
+\end_layout
+
+\begin_layout Enumerate
+Accuracy Requirements - Some applications demand high precision (e.g., spacecraft
+ navigation), while others prioritize speed (e.g., real-time control systems).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Stability Considerations - Certain ODEs, especially stiff systems (e.g., chemical
+ reactions, flight dynamics at high speeds), require implicit methods for
+ stable solutions.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Computational Efficiency - Simpler methods (e.g., Euler's) require fewer calculati
+ons but may need smaller time steps, while higher-order methods (e.g., Runge-Kutta
+) balance accuracy and efficiency.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Step Size Adaptability - Some methods (e.g., RK45) adjust the step size automatica
+lly to handle rapidly changing or smooth regions efficiently.
+ 
+\end_layout
+
+\begin_layout Enumerate
+System Constraints - Real-time applications (e.g., autopilot, robotics) need
+ algorithms that work under computational and time constraints.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Benefits of Algorithm Variation
+\end_layout
+
+\begin_layout Subsubsection*
+Optimized Performance for Different Applications
+\end_layout
+
+\begin_layout Itemize
+Euler's Method is useful for quick approximations.
+ 
+\end_layout
+
+\begin_layout Itemize
+RK4 provides high accuracy for aerospace simulations.
+ 
+\end_layout
+
+\begin_layout Itemize
+Implicit methods (e.g., Crank-Nicolson) are better for stiff problems like
+ structural vibrations.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Balancing Accuracy & Speed 
+\end_layout
+
+\begin_layout Itemize
+High-order methods (RK4, RK45) are more precise but computationally expensive.
+ 
+\end_layout
+
+\begin_layout Itemize
+Lower-order methods (Euler, Adams-Bashforth) are faster but may require
+ smaller steps.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Handling Stiff vs.
+ Non-Stiff Systems 
+\end_layout
+
+\begin_layout Itemize
+Stiff ODEs (e.g., high-speed aerodynamic models) require implicit methods
+ for stability.
+ 
+\end_layout
+
+\begin_layout Itemize
+Non-stiff ODEs (e.g., basic motion equations) can use explicit methods.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Adaptability to Problem Complexity 
+\end_layout
+
+\begin_layout Itemize
+Verlet integration conserves energy in orbital mechanics.
+ 
+\end_layout
+
+\begin_layout Itemize
+Predictor-Corrector methods improve accuracy in long-duration flight simulations.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Real-Time Applications 
+\end_layout
+
+\begin_layout Itemize
+Some algorithms (e.g., fixed-step RK4) are used in autopilot systems to meet
+ real-time constraints.
+ 
+\end_layout
+
+\begin_layout Itemize
+Adaptive methods (RK45) are useful in simulations but may be too slow for
+ real-time control 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Summary of Numerical Algorithms for Solving ODEs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cons
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euler's Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1st
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simple, fast
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low accuracy,
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unstable for
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+large steps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RK4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4th
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High accuracy,
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+widely used
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Computationally
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+expensive
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RK45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adaptive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Efficient,
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+variable step
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+size
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+More complex
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adams-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bashforth
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Efficient, reuses
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+previous values
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Requires
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+initialization
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adams-Moulton
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stable, good for
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+stiff problems
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Computational
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+overhead
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Backward Euler
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1st
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stable for stiff
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ODEs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Requires solving
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nonlinear
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+equations
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crank-Nicolson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2nd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stable, accurate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+More complex
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+than Backward
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euler
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verlet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2nd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Explicit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energy-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+conserving
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Requires two
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+previous states
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Explicit Methods: Easier to implement but may require small step sizes for
+ stability.
+ 
+\end_layout
+
+\begin_layout Itemize
+Implicit Methods: More stable, especially for stiff problems, but require
+ solving equations at each step.
+ 
+\end_layout
+
+\begin_layout Itemize
+Adaptive Methods: Adjust step size automatically for better efficiency.
+ 
+\end_layout
+
+\begin_layout Itemize
+Specialized Methods: Used for specific applications like orbital mechanics
+ (Verlet) or flight control (Predictor-Corrector).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Choosing one algorithm for solving the Airplanes EOM, clearly state the
+ (Initial conditions needed, Inputs needed in each iteration, and Outputs
+ calculated in each iteration)
+\end_layout
+
+\begin_layout Standard
+The equation of motion of an airplane is derived from the rigid body motion
+ equations.
+ Those
+\begin_inset Newline newline
+\end_inset
+
+ equations could be divided into five (or four) sets of equations:
+\end_layout
+
+\begin_layout Subsubsection*
+Force equations 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}X-mgS_{\theta}=m(\dot{u}+qw-rv)\\
+Y+mgC_{\theta}S_{\Phi}=m(\dot{v}+ru-pw)\\
+Z+mgC_{\theta}C_{\Phi}=m(\dot{w}+pv-qu)
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Moment equations 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}L & =I_{x}\dot{p}-I_{xz}\dot{r}+qr\left(I_{z}-I_{y}\right)-I_{xz}pq\\
+M & =I_{y}\dot{q}+rq\left(I_{x}-I_{z}\right)+I_{xz}\left(p^{2}-r^{2}\right)\\
+N & =-I_{xz}\dot{p}+I_{z}\dot{r}+pq\left(I_{y}-I_{x}\right)+I_{xz}qr
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Angular velocity 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}p & =\dot{\Phi}-\dot{\psi}S_{\theta}\\
+q & =\dot{\theta}C_{\Phi}+\dot{\psi}C_{\theta}S_{\Phi}\\
+r & =\dot{\psi}C_{\theta}C_{\Phi}-\dot{\theta}S_{\Phi}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Velocity equations 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{l}
+\frac{dx}{dt}\\
+\frac{dx}{dt}\\
+\frac{dz}{dt}
+\end{array}\right]=\left[\begin{array}{ccc}
+C_{\theta}C_{\psi} & S_{\Phi}S_{\theta}C_{\psi}-C_{\Phi}S_{\psi} & C_{\psi}S_{\theta}C_{\psi}+S_{\Phi}S_{\psi}\\
+C_{\theta}S_{\psi} & S_{\Phi}S_{\theta}S_{\psi}+C_{\Phi}C_{\psi} & C_{\Phi}S_{\theta}S_{\psi}-S_{\Phi}C_{\psi}\\
+-S_{\theta} & S_{\Phi}C_{\theta} & C_{\phi}C_{\theta}
+\end{array}\right]\left[\begin{array}{c}
+u\\
+v\\
+w
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We need to get every derivative W.R.T.
+ time so we will apply the small disturbance approximation where we could
+ swap every variable with an initial known value and the change in this
+ value.
+ This approximation is only valid when the changes in those variables (states)
+ are very small which could be seen almost at the cruise conditions throughout
+ the journey of an aircraft.
+\begin_inset Newline newline
+\end_inset
+
+ The variables could be replaced as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}u=u_{0}+\Delta u\\
+v=v_{0}+\Delta v\\
+w=w_{0}+\Delta w\\
+p=p_{0}+\Delta p\\
+q=q_{0}+\Delta q\\
+r=r_{0}+\Delta r\\
+X=X_{0}+\Delta X\\
+Y=Y_{0}+\Delta Y\\
+Z=Z_{0}+\Delta Z\\
+M=M_{0}+\Delta M\\
+N=N_{0}+\Delta N\\
+L=L_{0}+\Delta L\\
+\delta=\delta_{0}+\Delta\delta
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flight conditions are taken to be symmetric to simplify the equation to
+ be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\begin{array}{cc}
+\Delta X= & \frac{\partial X}{\partial u}\Delta u+\frac{\partial X}{\partial w}\Delta w\\
+\Delta Y= & \frac{\partial Y}{\partial v}\Delta v+\frac{\partial Y}{\partial p}\Delta p+\frac{\partial Y}{\partial r}\Delta r\\
+\Delta Z= & \frac{\partial Z}{\partial u}\Delta u+\frac{\partial Z}{\partial w}\Delta w+\frac{\partial Z}{\partial\dot{w}}\Delta\dot{w}+\frac{\partial Z}{\partial q}\Delta q
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta L=\frac{\partial L}{\partial v}\Delta v+\frac{\partial L}{\partial p}\Delta p+\frac{\partial L}{\partial r}\Delta r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta M=\frac{\partial M}{\partial u}\Delta u+\frac{\partial M}{\partial w}\Delta w+\frac{\partial M}{\partial\dot{w}}\Delta\dot{w}+\frac{\partial M}{\partial q}\Delta q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta N=\frac{\partial N}{\partial v}\Delta v+\frac{\partial N}{\partial p}\Delta p+\frac{\partial N}{\partial r}\Delta r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will choose RK4 as our algorithm for solving the EOM, and here are the
+ ICs, BCs, and the outputs of each iteration:
+\end_layout
+
+\begin_layout Subsubsection*
+Initial conditions - Before starting the numerical integration, we need
+ the initial state of the aircraft, which typically includes: 
+\end_layout
+
+\begin_layout Itemize
+Position: (initial location in a given coordinate system) 
+\end_layout
+
+\begin_layout Itemize
+Velocity: (initial velocity components in body frame) 
+\end_layout
+
+\begin_layout Itemize
+Attitude (Orientation): (initial roll, pitch, and yaw angles) 
+\end_layout
+
+\begin_layout Itemize
+Angular Velocity: (initial roll, pitch, and yaw rates) 
+\end_layout
+
+\begin_layout Itemize
+Mass & Inertia Properties: (aircraft mass and moments of inertia) 
+\end_layout
+
+\begin_layout Subsubsection*
+Input needed in each iteration - At each time step, the numerical algorithm
+ needs updated information to compute the next state:
+\end_layout
+
+\begin_layout Itemize
+Aerodynamic Forces & Moments:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lift, Drag, and Side Forces 
+\end_layout
+
+\begin_layout Enumerate
+Moments about body axes 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Control Inputs (from Pilot or Autopilot): 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Throttle Setting
+\end_layout
+
+\begin_layout Enumerate
+Elevator Deflection
+\end_layout
+
+\begin_layout Enumerate
+Aileron Deflection
+\end_layout
+
+\begin_layout Enumerate
+Rudder Deflection
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Environmental Conditions: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Wind Velocity Components
+\end_layout
+
+\begin_layout Enumerate
+Air Density 
+\end_layout
+
+\begin_layout Enumerate
+Gravity 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Outputs Calculated in Each Iteration -The numerical algorithm updates and
+ computes the next state of the aircraft: 
+\end_layout
+
+\begin_layout Itemize
+Updated position 
+\end_layout
+
+\begin_layout Itemize
+Updated velocity components 
+\end_layout
+
+\begin_layout Itemize
+Updated attitude (orientation) 
+\end_layout
+
+\begin_layout Itemize
+Updated angular velocity 
+\end_layout
+
+\begin_layout Itemize
+New forces & moments
+\end_layout
+
+\begin_layout Subsection
+Code
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "MatlabFunctions.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Pics/Graph.svg
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Our Code VS MATLAB 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "Citations/ReferenceDataBase"
+options "bibtotoc,IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1551 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/WORK/Part 3 a&b (Abdelrhman Muhammad)/2025_02_14_7afa20334554506dcb17g/
+\textclass article
+\begin_preamble
+\usepackage{amsfonts}
+
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 2
+\use_package stackrel 0
+\use_package stmaryrd 2
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Numerical solution of ODEs 
+\begin_inset Newline newline
+\end_inset
+
+ Some of the numerical solving algorithms for ODEs
+\end_layout
+
+\begin_layout Standard
+Numerical solutions are approximate solutions to the differential equation where the analytical solution is hard to get or even not available as the case in airplane equations. The variation of the algorithms is due to the need for different approaches for solving the equations like: Accuracy requirements, stability considerations, computational efficiency, step size adaptability, and system constraints.
+\end_layout
+
+\begin_layout Standard
+Reason for the Variation of Numerical Algorithms. The wide variety of numerical algorithms for solving Ordinary Differential Equations (ODEs) exists because different problems have unique characteristics that require specialized approaches. The main factors influencing algorithm selection include:
+\end_layout
+
+\begin_layout Enumerate
+Accuracy Requirements - Some applications demand high precision (e.g., spacecraft navigation), while others prioritize speed (e.g., real-time control systems). 
+\end_layout
+
+\begin_layout Enumerate
+Stability Considerations - Certain ODEs, especially stiff systems (e.g., chemical reactions, flight dynamics at high speeds), require implicit methods for stable solutions. 
+\end_layout
+
+\begin_layout Enumerate
+Computational Efficiency - Simpler methods (e.g., Euler's) require fewer calculations but may need smaller time steps, while higher-order methods (e.g., Runge-Kutta) balance accuracy and efficiency. 
+\end_layout
+
+\begin_layout Enumerate
+Step Size Adaptability - Some methods (e.g., RK45) adjust the step size automatically to handle rapidly changing or smooth regions efficiently. 
+\end_layout
+
+\begin_layout Enumerate
+System Constraints - Real-time applications (e.g., autopilot, robotics) need algorithms that work under computational and time constraints. 
+\end_layout
+
+\begin_layout Section*
+Benefits of Algorithm Variation
+\end_layout
+
+\begin_layout Enumerate
+Optimized Performance for Different Applications 
+\end_layout
+
+\begin_layout Itemize
+Euler's Method is useful for quick approximations. 
+\end_layout
+
+\begin_layout Itemize
+RK4 provides high accuracy for aerospace simulations. 
+\end_layout
+
+\begin_layout Itemize
+Implicit methods (e.g., Crank-Nicolson) are better for stiff problems like structural vibrations. 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{1}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Balancing Accuracy & Speed 
+\end_layout
+
+\begin_layout Itemize
+High-order methods (RK4, RK45) are more precise but computationally expensive. 
+\end_layout
+
+\begin_layout Itemize
+Lower-order methods (Euler, Adams-Bashforth) are faster but may require smaller steps. 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{2}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Handling Stiff vs. Non-Stiff Systems 
+\end_layout
+
+\begin_layout Itemize
+Stiff ODEs (e.g., high-speed aerodynamic models) require implicit methods for stability. 
+\end_layout
+
+\begin_layout Itemize
+Non-stiff ODEs (e.g., basic motion equations) can use explicit methods. 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{3}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Adaptability to Problem Complexity 
+\end_layout
+
+\begin_layout Itemize
+Verlet integration conserves energy in orbital mechanics. 
+\end_layout
+
+\begin_layout Itemize
+Predictor-Corrector methods improve accuracy in long-duration flight simulations. 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{4}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Real-Time Applications 
+\end_layout
+
+\begin_layout Itemize
+Some algorithms (e.g., fixed-step RK4) are used in autopilot systems to meet real-time constraints. 
+\end_layout
+
+\begin_layout Itemize
+Adaptive methods (RK45) are useful in simulations but may be too slow for real-time control 
+\end_layout
+
+\begin_layout Standard
+Summary of Numerical Algorithms for Solving ODEs
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="9" columns="5">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Method 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Order 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Type 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Pros 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Cons 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Euler's Method 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1st 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Explicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Simple, fast 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Low accuracy, 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+unstable for 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+large steps 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+RK4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4th 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Explicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+High accuracy, 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+widely used 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Computationally 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+expensive 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+RK45 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Adaptive 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Explicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Efficient, 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+variable step 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+size 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+More complex 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Adams- 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Bashforth 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Variable 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Explicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Efficient, reuses 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+previous values 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Requires 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+initialization 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Adams-Moulton 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Variable 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Implicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Stable, good for 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+stiff problems 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Computational 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+overhead 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Backward Euler 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1st 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Implicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Stable for stiff 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ODEs 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Requires solving 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+nonlinear 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+equations 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Crank-Nicolson 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2nd 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Implicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Stable, accurate 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+More complex 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+than Backward 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Euler 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Verlet 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Integration 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2nd 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Explicit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Energy- 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+conserving 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Requires two 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+previous states 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Explicit Methods: Easier to implement but may require small step sizes for stability. 
+\end_layout
+
+\begin_layout Itemize
+Implicit Methods: More stable, especially for stiff problems, but require solving equations at each step. 
+\end_layout
+
+\begin_layout Itemize
+Adaptive Methods: Adjust step size automatically for better efficiency. 
+\end_layout
+
+\begin_layout Itemize
+Specialized Methods: Used for specific applications like orbital mechanics (Verlet) or flight control (Predictor-Corrector). 
+\end_layout
+
+\begin_layout Standard
+Choosing one algorithm for solving the Airplanes EOM, clearly state the (Initial conditions needed, Inputs needed in each iteration, and Outputs calculated in each iteration)
+\end_layout
+
+\begin_layout Standard
+The equation of motion of an airplane is derived from the rigid body motion equations. Those
+\begin_inset Newline newline
+\end_inset
+
+ equations could be divided into five (or four) sets of equations:
+\end_layout
+
+\begin_layout Enumerate
+Force equations 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\begin{gathered}
+X-m g S_{\theta}=m(\dot{u}+q w-r v) \\
+Y+m g C_{\theta} S_{\Phi}=m(\dot{v}+r u-p w) \\
+Z+m g C_{\theta} C_{\Phi}=m(\dot{w}+p v-q u)
+\end{gathered}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{1}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Moment equations 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\begin{aligned}
+L & =I_{x} \dot{p}-I_{x z} \dot{r}+q r\left(I_{z}-I_{y}\right)-I_{x z} p q \\
+M & =I_{y} \dot{q}+r q\left(I_{x}-I_{z}\right)+I_{x z}\left(p^{2}-r^{2}\right) \\
+N & =-I_{x z} \dot{p}+I_{z} \dot{r}+p q\left(I_{y}-I_{x}\right)+I_{x z} q r
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{2}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Angular velocity 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\begin{aligned}
+p & =\dot{\Phi}-\dot{\psi} S_{\theta} \\
+q & =\dot{\theta} C_{\Phi}+\dot{\psi} C_{\theta} S_{\Phi} \\
+r & =\dot{\psi} C_{\theta} C_{\Phi}-\dot{\theta} S_{\Phi}
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{3}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Velocity equations 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\left[\begin{array}{l}
+\frac{d x}{d t} \\
+\frac{d x}{d t} \\
+\frac{d z}{d t}
+\end{array}\right]=\left[\begin{array}{ccc}
+C_{\theta} C_{\psi} & S_{\Phi} S_{\theta} C_{\psi}-C_{\Phi} S_{\psi} & C_{\psi} S_{\theta} C_{\psi}+S_{\Phi} S_{\psi} \\
+C_{\theta} S_{\psi} & S_{\Phi} S_{\theta} S_{\psi}+C_{\Phi} C_{\psi} & C_{\Phi} S_{\theta} S_{\psi}-S_{\Phi} C_{\psi} \\
+-S_{\theta} & S_{\Phi} C_{\theta} & C_{\phi} C_{\theta}
+\end{array}\right]\left[\begin{array}{c}
+u \\
+v \\
+w
+\end{array}\right]
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We need to get every derivative W.R.T. time so we will apply the small disturbance approximation where we could swap every variable with an initial known value and the change in this value. This approximation is only valid when the changes in those variables (states) are very small which could be seen almost at the cruise conditions throughout the journey of an aircraft.
+\begin_inset Newline newline
+\end_inset
+
+ The variables could be replaced as follows:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\begin{gathered}
+u=u_{0}+\Delta u \\
+v=v_{0}+\Delta v \\
+w=w_{0}+\Delta w \\
+p=p_{0}+\Delta p \\
+q=q_{0}+\Delta q \\
+r=r_{0}+\Delta r \\
+X=X_{0}+\Delta X \\
+Y=Y_{0}+\Delta Y \\
+Z=Z_{0}+\Delta Z \\
+M=M_{0}+\Delta M \\
+N=N_{0}+\Delta N \\
+L=L_{0}+\Delta L \\
+\delta=\delta_{0}+\Delta \delta
+\end{gathered}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flight conditions are taken to be symmetric to simplify the equation to be:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\left.\begin{array}{cc}
+\Delta X= & \frac{\partial X}{\partial u} \Delta u+\frac{\partial X}{\partial w} \Delta w \\
+\Delta Y= & \frac{\partial Y}{\partial v} \Delta v+\frac{\partial Y}{\partial p} \Delta p+\frac{\partial Y}{\partial r} \Delta r \\
+\Delta Z= & \frac{\partial Z}{\partial u} \Delta u+\frac{\partial Z}{\partial w} \Delta w+\frac{\partial Z}{\partial \dot{w}} \Delta \dot{w}+\frac{\partial Z}{\partial q} \Delta q
+\end{array}\right\}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will choose RK4 as our algorithm for solving the EOM, and here are the ICs, BCs, and the outputs of each iteration:
+\end_layout
+
+\begin_layout Enumerate
+Initial conditions - Before starting the numerical integration, we need the initial state of the aircraft, which typically includes: 
+\end_layout
+
+\begin_layout Itemize
+Position: (initial location in a given coordinate system) 
+\end_layout
+
+\begin_layout Itemize
+Velocity: (initial velocity components in body frame) 
+\end_layout
+
+\begin_layout Itemize
+Attitude (Orientation): (initial roll, pitch, and yaw angles) 
+\end_layout
+
+\begin_layout Itemize
+Angular Velocity: (initial roll, pitch, and yaw rates) 
+\end_layout
+
+\begin_layout Itemize
+Mass & Inertia Properties: (aircraft mass and moments of inertia) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{enumi}{1}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Input needed in each iteration - At each time step, the numerical algorithm needs updated information to compute the next state:
+\begin_inset Newline newline
+\end_inset
+
+ Aerodynamic Forces & Moments:
+\begin_inset Newline newline
+\end_inset
+
+ Lift, Drag, and Side Forces
+\begin_inset Newline newline
+\end_inset
+
+ Moments about body axes
+\begin_inset Newline newline
+\end_inset
+
+ Control Inputs (from Pilot or Autopilot):
+\begin_inset Newline newline
+\end_inset
+
+ Throttle Setting
+\begin_inset Newline newline
+\end_inset
+
+ Elevator Deflection
+\begin_inset Newline newline
+\end_inset
+
+ Aileron Deflection
+\begin_inset Newline newline
+\end_inset
+
+ Rudder Deflection
+\begin_inset Newline newline
+\end_inset
+
+ Environmental Conditions:
+\begin_inset Newline newline
+\end_inset
+
+ Wind Velocity Components
+\begin_inset Newline newline
+\end_inset
+
+ Air Density
+\begin_inset Newline newline
+\end_inset
+
+ Gravity 
+\end_layout
+
+\begin_layout Enumerate
+Outputs Calculated in Each Iteration -The numerical algorithm updates and computes the next state of the aircraft: 
+\end_layout
+
+\begin_layout Itemize
+Updated position 
+\end_layout
+
+\begin_layout Itemize
+Updated velocity components 
+\end_layout
+
+\begin_layout Itemize
+Updated attitude (orientation) 
+\end_layout
+
+\begin_layout Itemize
+Updated angular velocity 
+\end_layout
+
+\begin_layout Itemize
+New forces & moments 
+\end_layout
+
+\end_body
+\end_document

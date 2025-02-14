@@ -1,0 +1,293 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+\section*{Numerical solution of ODEs \\
+ Some of the numerical solving algorithms for ODEs}
+Numerical solutions are approximate solutions to the differential equation where the analytical solution is hard to get or even not available as the case in airplane equations. The variation of the algorithms is due to the need for different approaches for solving the equations like: Accuracy requirements, stability considerations, computational efficiency, step size adaptability, and system constraints.
+
+Reason for the Variation of Numerical Algorithms. The wide variety of numerical algorithms for solving Ordinary Differential Equations (ODEs) exists because different problems have unique characteristics that require specialized approaches. The main factors influencing algorithm selection include:
+
+\begin{enumerate}
+  \item Accuracy Requirements - Some applications demand high precision (e.g., spacecraft navigation), while others prioritize speed (e.g., real-time control systems).
+  \item Stability Considerations - Certain ODEs, especially stiff systems (e.g., chemical reactions, flight dynamics at high speeds), require implicit methods for stable solutions.
+  \item Computational Efficiency - Simpler methods (e.g., Euler's) require fewer calculations but may need smaller time steps, while higher-order methods (e.g., Runge-Kutta) balance accuracy and efficiency.
+  \item Step Size Adaptability - Some methods (e.g., RK45) adjust the step size automatically to handle rapidly changing or smooth regions efficiently.
+  \item System Constraints - Real-time applications (e.g., autopilot, robotics) need algorithms that work under computational and time constraints.
+\end{enumerate}
+
+\section*{Benefits of Algorithm Variation}
+\begin{enumerate}
+  \item Optimized Performance for Different Applications
+\end{enumerate}
+
+\begin{itemize}
+  \item Euler's Method is useful for quick approximations.
+  \item RK4 provides high accuracy for aerospace simulations.
+  \item Implicit methods (e.g., Crank-Nicolson) are better for stiff problems like structural vibrations.
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item Balancing Accuracy \& Speed
+\end{enumerate}
+
+\begin{itemize}
+  \item High-order methods (RK4, RK45) are more precise but computationally expensive.
+  \item Lower-order methods (Euler, Adams-Bashforth) are faster but may require smaller steps.
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item Handling Stiff vs. Non-Stiff Systems
+\end{enumerate}
+
+\begin{itemize}
+  \item Stiff ODEs (e.g., high-speed aerodynamic models) require implicit methods for stability.
+  \item Non-stiff ODEs (e.g., basic motion equations) can use explicit methods.
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item Adaptability to Problem Complexity
+\end{enumerate}
+
+\begin{itemize}
+  \item Verlet integration conserves energy in orbital mechanics.
+  \item Predictor-Corrector methods improve accuracy in long-duration flight simulations.
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item Real-Time Applications
+\end{enumerate}
+
+\begin{itemize}
+  \item Some algorithms (e.g., fixed-step RK4) are used in autopilot systems to meet real-time constraints.
+  \item Adaptive methods (RK45) are useful in simulations but may be too slow for real-time control
+\end{itemize}
+
+Summary of Numerical Algorithms for Solving ODEs
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Method & Order & Type & Pros & Cons \\
+\hline
+Euler's Method & 1st & Explicit & Simple, fast & \begin{tabular}{l}
+Low accuracy, \\
+unstable for \\
+large steps \\
+\end{tabular} \\
+\hline
+RK4 & 4th & Explicit & \begin{tabular}{l}
+High accuracy, \\
+widely used \\
+\end{tabular} & \begin{tabular}{l}
+Computationally \\
+expensive \\
+\end{tabular} \\
+\hline
+RK45 & Adaptive & Explicit & \begin{tabular}{l}
+Efficient, \\
+variable step \\
+size \\
+\end{tabular} & More complex \\
+\hline
+\begin{tabular}{l}
+Adams- \\
+Bashforth \\
+\end{tabular} & Variable & Explicit & \begin{tabular}{l}
+Efficient, reuses \\
+previous values \\
+\end{tabular} & \begin{tabular}{l}
+Requires \\
+initialization \\
+\end{tabular} \\
+\hline
+Adams-Moulton & Variable & Implicit & \begin{tabular}{l}
+Stable, good for \\
+stiff problems \\
+\end{tabular} & \begin{tabular}{l}
+Computational \\
+overhead \\
+\end{tabular} \\
+\hline
+Backward Euler & 1st & Implicit & \begin{tabular}{l}
+Stable for stiff \\
+ODEs \\
+\end{tabular} & \begin{tabular}{l}
+Requires solving \\
+nonlinear \\
+equations \\
+\end{tabular} \\
+\hline
+Crank-Nicolson & 2nd & Implicit & Stable, accurate & \begin{tabular}{l}
+More complex \\
+than Backward \\
+Euler \\
+\end{tabular} \\
+\hline
+\begin{tabular}{l}
+Verlet \\
+Integration \\
+\end{tabular} & 2nd & Explicit & \begin{tabular}{l}
+Energy- \\
+conserving \\
+\end{tabular} & \begin{tabular}{l}
+Requires two \\
+previous states \\
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+  \item Explicit Methods: Easier to implement but may require small step sizes for stability.
+  \item Implicit Methods: More stable, especially for stiff problems, but require solving equations at each step.
+  \item Adaptive Methods: Adjust step size automatically for better efficiency.
+  \item Specialized Methods: Used for specific applications like orbital mechanics (Verlet) or flight control (Predictor-Corrector).
+\end{itemize}
+
+Choosing one algorithm for solving the Airplanes EOM, clearly state the (Initial conditions needed, Inputs needed in each iteration, and Outputs calculated in each iteration)
+
+The equation of motion of an airplane is derived from the rigid body motion equations. Those\\
+equations could be divided into five (or four) sets of equations:
+
+\begin{enumerate}
+  \item Force equations
+\end{enumerate}
+
+$$
+\begin{gathered}
+X-m g S_{\theta}=m(\dot{u}+q w-r v) \\
+Y+m g C_{\theta} S_{\Phi}=m(\dot{v}+r u-p w) \\
+Z+m g C_{\theta} C_{\Phi}=m(\dot{w}+p v-q u)
+\end{gathered}
+$$
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item Moment equations
+\end{enumerate}
+
+$$
+\begin{aligned}
+L & =I_{x} \dot{p}-I_{x z} \dot{r}+q r\left(I_{z}-I_{y}\right)-I_{x z} p q \\
+M & =I_{y} \dot{q}+r q\left(I_{x}-I_{z}\right)+I_{x z}\left(p^{2}-r^{2}\right) \\
+N & =-I_{x z} \dot{p}+I_{z} \dot{r}+p q\left(I_{y}-I_{x}\right)+I_{x z} q r
+\end{aligned}
+$$
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item Angular velocity
+\end{enumerate}
+
+$$
+\begin{aligned}
+p & =\dot{\Phi}-\dot{\psi} S_{\theta} \\
+q & =\dot{\theta} C_{\Phi}+\dot{\psi} C_{\theta} S_{\Phi} \\
+r & =\dot{\psi} C_{\theta} C_{\Phi}-\dot{\theta} S_{\Phi}
+\end{aligned}
+$$
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item Velocity equations
+\end{enumerate}
+
+$$
+\left[\begin{array}{l}
+\frac{d x}{d t} \\
+\frac{d x}{d t} \\
+\frac{d z}{d t}
+\end{array}\right]=\left[\begin{array}{ccc}
+C_{\theta} C_{\psi} & S_{\Phi} S_{\theta} C_{\psi}-C_{\Phi} S_{\psi} & C_{\psi} S_{\theta} C_{\psi}+S_{\Phi} S_{\psi} \\
+C_{\theta} S_{\psi} & S_{\Phi} S_{\theta} S_{\psi}+C_{\Phi} C_{\psi} & C_{\Phi} S_{\theta} S_{\psi}-S_{\Phi} C_{\psi} \\
+-S_{\theta} & S_{\Phi} C_{\theta} & C_{\phi} C_{\theta}
+\end{array}\right]\left[\begin{array}{c}
+u \\
+v \\
+w
+\end{array}\right]
+$$
+
+We need to get every derivative W.R.T. time so we will apply the small disturbance approximation where we could swap every variable with an initial known value and the change in this value. This approximation is only valid when the changes in those variables (states) are very small which could be seen almost at the cruise conditions throughout the journey of an aircraft.\\
+The variables could be replaced as follows:
+
+$$
+\begin{gathered}
+u=u_{0}+\Delta u \\
+v=v_{0}+\Delta v \\
+w=w_{0}+\Delta w \\
+p=p_{0}+\Delta p \\
+q=q_{0}+\Delta q \\
+r=r_{0}+\Delta r \\
+X=X_{0}+\Delta X \\
+Y=Y_{0}+\Delta Y \\
+Z=Z_{0}+\Delta Z \\
+M=M_{0}+\Delta M \\
+N=N_{0}+\Delta N \\
+L=L_{0}+\Delta L \\
+\delta=\delta_{0}+\Delta \delta
+\end{gathered}
+$$
+
+Flight conditions are taken to be symmetric to simplify the equation to be:
+
+$$
+\left.\begin{array}{cc}
+\Delta X= & \frac{\partial X}{\partial u} \Delta u+\frac{\partial X}{\partial w} \Delta w \\
+\Delta Y= & \frac{\partial Y}{\partial v} \Delta v+\frac{\partial Y}{\partial p} \Delta p+\frac{\partial Y}{\partial r} \Delta r \\
+\Delta Z= & \frac{\partial Z}{\partial u} \Delta u+\frac{\partial Z}{\partial w} \Delta w+\frac{\partial Z}{\partial \dot{w}} \Delta \dot{w}+\frac{\partial Z}{\partial q} \Delta q
+\end{array}\right\}
+$$
+
+We will choose RK4 as our algorithm for solving the EOM, and here are the ICs, BCs, and the outputs of each iteration:
+
+\begin{enumerate}
+  \item Initial conditions - Before starting the numerical integration, we need the initial state of the aircraft, which typically includes:
+\end{enumerate}
+
+\begin{itemize}
+  \item Position: (initial location in a given coordinate system)
+  \item Velocity: (initial velocity components in body frame)
+  \item Attitude (Orientation): (initial roll, pitch, and yaw angles)
+  \item Angular Velocity: (initial roll, pitch, and yaw rates)
+  \item Mass \& Inertia Properties: (aircraft mass and moments of inertia)
+\end{itemize}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item Input needed in each iteration - At each time step, the numerical algorithm needs updated information to compute the next state:\\
+Aerodynamic Forces \& Moments:\\
+Lift, Drag, and Side Forces\\
+Moments about body axes\\
+Control Inputs (from Pilot or Autopilot):\\
+Throttle Setting\\
+Elevator Deflection\\
+Aileron Deflection\\
+Rudder Deflection\\
+Environmental Conditions:\\
+Wind Velocity Components\\
+Air Density\\
+Gravity
+  \item Outputs Calculated in Each Iteration -The numerical algorithm updates and computes the next state of the aircraft:
+\end{enumerate}
+
+\begin{itemize}
+  \item Updated position
+  \item Updated velocity components
+  \item Updated attitude (orientation)
+  \item Updated angular velocity
+  \item New forces \& moments
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,536 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/WORK/
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Flight Mechanics Review
+\end_layout
+
+\begin_layout Author
+
+\end_layout
+
+\begin_layout Standard
+ 
+\end_layout
+
+\begin_layout Section
+General Rigid Body Dynamics Equations in 3D (12 Equations)
+\end_layout
+
+\begin_layout Standard
+A rigid body in 3D is fully described by 12 equations, split equally into 6 kinetic (dynamics) and 6 kinematic (geometric) equations.
+\end_layout
+
+\begin_layout Subsection
+Kinetic Equations (Dynamics)
+\end_layout
+
+\begin_layout Standard
+These equations govern the forces and moments acting on the body.
+\end_layout
+
+\begin_layout Subsubsection
+Translational Dynamics (Newtonâs Second Law)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{align}
+    m \dot{u} &= F_x \\
+    m \dot{v} &= F_y \\
+    m \dot{w} &= F_z
+\end{align}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula \( u, v, w \)
+\end_inset
+
+ are velocity components along the body x-, y-, and z-axes. - 
+\begin_inset Formula \( F_x, F_y, F_z \)
+\end_inset
+
+ are external force components along the body axes. - 
+\begin_inset Formula \( m \)
+\end_inset
+
+ is the mass of the body.
+\end_layout
+
+\begin_layout Subsubsection
+Rotational Dynamics (Eulerâs Equations)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{align}
+    I_x \dot{p} - I_{xz} \dot{r} &= M_x \\
+    I_y \dot{q} &= M_y \\
+    I_z \dot{r} - I_{xz} \dot{p} &= M_z
+\end{align}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula \( I_x, I_y, I_z \)
+\end_inset
+
+ are moments of inertia about the body axes. - 
+\begin_inset Formula \( M_x, M_y, M_z \)
+\end_inset
+
+ are external moment components about the body axes.
+\end_layout
+
+\begin_layout Subsection
+Kinematic Equations (Geometry)
+\end_layout
+
+\begin_layout Standard
+These equations relate the velocities and angular rates to the changes in position and orientation.
+\end_layout
+
+\begin_layout Subsubsection
+Translational Kinematics (Position Updates)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{align}
+    \dot{x} &= u \cos\theta \cos\psi + v (\sin\phi \sin\theta \cos\psi - \cos\phi \sin\psi) + w (\cos\phi \sin\theta \cos\psi + \sin\phi \sin\psi) \\
+    \dot{y} &= u \cos\theta \sin\psi + v (\sin\phi \sin\theta \sin\psi + \cos\phi \cos\psi) + w (\cos\phi \sin\theta \sin\psi - \sin\phi \cos\psi) \\
+    \dot{z} &= - u \sin\theta + v \sin\phi \cos\theta + w \cos\phi \cos\theta
+\end{align}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula \( x, y, z \)
+\end_inset
+
+ are inertial (earth-fixed) coordinates. - 
+\begin_inset Formula \( \phi, \theta, \psi \)
+\end_inset
+
+ are Euler angles (roll, pitch, yaw).
+\end_layout
+
+\begin_layout Subsubsection
+Rotational Kinematics (Euler Angle Rates)
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{align}
+    \dot{\phi} &= p + q \sin\phi \tan\theta + r \cos\phi \tan\theta \\
+    \dot{\theta} &= q \cos\phi - r \sin\phi \\
+    \dot{\psi} &= q \sin\phi / \cos\theta + r \cos\phi / \cos\theta
+\end{align}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These 12 equations comprehensively describe the motion of a rigid body in 3D space.
+\end_layout
+
+\begin_layout Section
+Classification into Kinetics and Kinematics
+\end_layout
+
+\begin_layout Subsection
+Kinetic Equations (6 total)
+\end_layout
+
+\begin_layout Standard
+- (1) â (3): Translational dynamics - (4) â (6): Rotational dynamics
+\end_layout
+
+\begin_layout Subsection
+Kinematic Equations (6 total)
+\end_layout
+
+\begin_layout Standard
+- (7) â (9): Relate body velocities (expressed in body frame) to inertial position changes - (10) â (12): Relate body angular rates to Euler angle rates
+\end_layout
+
+\begin_layout Section
+Additional Equations for Fixed-Wing Airplane Equations of Motion (EOM)
+\end_layout
+
+\begin_layout Standard
+To specialize the general rigid body equations for a fixed-wing airplane, the following are added:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Aerodynamic Force and Moment Models
+\series default
+: Expressed as functions of dynamic pressure, wing area, and non-dimensional coefficients. 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Gravitational Force Projection
+\series default
+: The weight is resolved along the body axes. 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Velocity-to-Angle Relationships
+\series default
+: Relating airspeed, angle of attack (
+\begin_inset Formula \(\alpha\)
+\end_inset
+
+), and sideslip angle (
+\begin_inset Formula \(\beta\)
+\end_inset
+
+). 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Control Input Effects
+\series default
+: How control surface deflections affect aerodynamic forces and moments. 
+\end_layout
+
+\begin_layout Section
+Assumptions in Deriving Airplane Equations of Motion
+\end_layout
+
+\begin_layout Itemize
+Rigid Body Approximation (No deformation) 
+\end_layout
+
+\begin_layout Itemize
+Constant Mass and Inertia (Neglect fuel burn effects) 
+\end_layout
+
+\begin_layout Itemize
+Quasi-Steady Aerodynamics (Instantaneous force response) 
+\end_layout
+
+\begin_layout Itemize
+Small Perturbations (Linearization around trim) 
+\end_layout
+
+\begin_layout Itemize
+Neglection of High-Order Effects (Compressibility, viscous effects) 
+\end_layout
+
+\begin_layout Itemize
+Uniform Atmospheric Conditions (Steady and uniform air properties) 
+\end_layout
+
+\begin_layout Section
+Mathematical Classification of the Airplane EOM
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Order
+\series default
+: First-order differential equations in state-space form. 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Type
+\series default
+: Ordinary Differential Equations (ODEs) with time as the independent variable. 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Linearity
+\series default
+: Nonlinear, but often linearized near steady flight. 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Coupling
+\series default
+: Generally coupled; under certain assumptions, dynamics can be decoupled. 
+\end_layout
+
+\begin_layout Section
+Body Axes vs. Earth (Inertial) Axes
+\end_layout
+
+\begin_layout Subsection
+Body Axes
+\end_layout
+
+\begin_layout Standard
+- Fixed to the airplane. - Defined as: - 
+\begin_inset Formula \( x_b \)
+\end_inset
+
+: Along the fuselage (forward). - 
+\begin_inset Formula \( y_b \)
+\end_inset
+
+: Towards the right wing. - 
+\begin_inset Formula \( z_b \)
+\end_inset
+
+: Downward.
+\end_layout
+
+\begin_layout Subsection
+Earth (Inertial) Axes
+\end_layout
+
+\begin_layout Standard
+- Fixed or quasi-fixed relative to the Earth. - Often defined as North-East-Down (NED).
+\end_layout
+
+\begin_layout Section
+Pitch Angle (
+\begin_inset Formula \(\theta\)
+\end_inset
+
+) vs. Angle of Attack (
+\begin_inset Formula \(\alpha\)
+\end_inset
+
+) and Sideslip Angle (
+\begin_inset Formula \(\beta\)
+\end_inset
+
+) vs. Heading Angle (
+\begin_inset Formula \(\psi\)
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Pitch Angle vs. Angle of Attack
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula \(\theta\)
+\end_inset
+
+: Orientation relative to the horizon. - 
+\begin_inset Formula \(\alpha\)
+\end_inset
+
+: Angle between the chord line and the airflow.
+\end_layout
+
+\begin_layout Subsection
+Sideslip Angle vs. Heading Angle
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula \(\beta\)
+\end_inset
+
+: Angle between the aircraftâs longitudinal axis and the wind. - 
+\begin_inset Formula \(\psi\)
+\end_inset
+
+: Navigational direction relative to a fixed reference.
+\end_layout
+
+\begin_layout Section
+Attitude Representations: Advantages and Disadvantages
+\end_layout
+
+\begin_layout Subsection
+Euler Angles
+\end_layout
+
+\begin_layout Standard
+- 
+\series bold
+Advantages
+\series default
+: Intuitive (roll, pitch, yaw). - 
+\series bold
+Disadvantages
+\series default
+: Suffer from gimbal lock.
+\end_layout
+
+\begin_layout Subsection
+Direction Cosine Matrix (DCM)
+\end_layout
+
+\begin_layout Standard
+- 
+\series bold
+Advantages
+\series default
+: No singularities. - 
+\series bold
+Disadvantages
+\series default
+: 9 elements with orthogonality constraints.
+\end_layout
+
+\begin_layout Subsection
+Quaternions
+\end_layout
+
+\begin_layout Standard
+- 
+\series bold
+Advantages
+\series default
+: Compact, computationally efficient, no singularities. - 
+\series bold
+Disadvantages
+\series default
+: Less intuitive, double-cover issue (
+\begin_inset Formula \(q\)
+\end_inset
+
+ and 
+\begin_inset Formula \(-q\)
+\end_inset
+
+ represent the same orientation).
+\end_layout
+
+\begin_layout Subsection
+Axis-Angle Representation
+\end_layout
+
+\begin_layout Standard
+- 
+\series bold
+Advantages
+\series default
+: Clear geometric interpretation. - 
+\series bold
+Disadvantages
+\series default
+: Less practical for sequential rotations.
+\end_layout
+
+\end_body
+\end_document
