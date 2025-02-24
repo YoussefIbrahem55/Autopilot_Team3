@@ -1,0 +1,492 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Simulink Model
+\end_layout
+
+\begin_layout Standard
+To Verify and Validate the results obtained from the code that solved RBD
+ equations using "Runge-Kutta” 4th order method.
+ The code results was compared with the results from Simulink model that
+ use the 6 DOF Euler angles block to simulate the RGB equations.The mass
+ of the body was assumed to be constant and the properties defined for the
+ 6 DOF Euler angles block is:
+\end_layout
+
+\begin_layout Itemize
+Initial position in inertial axes (
+\begin_inset Formula $X_{0},Y_{0},Z_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Initial Velocity in body axes (
+\begin_inset Formula $u_{0},v_{0},w_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Inertial Euler Orientation (
+\begin_inset Formula $\phi_{0},\theta_{0},\psi_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Initial body rotation rates (
+\begin_inset Formula $p_{0},q_{0},r_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+mass 
+\end_layout
+
+\begin_layout Itemize
+Inertia (3X3 Matrix)
+\end_layout
+
+\begin_layout Standard
+These values were defined in the code then imported from the workspace.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename BlockInput.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input to the 6 DOF Euler angles block 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename properties1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename properties2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Values Used for Euler block properties
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The input to the 6 DOF Euler angles block is Forces and Moments which has
+ values of:
+\end_layout
+
+\begin_layout Standard
+Forces 
+\begin_inset Formula $=[\begin{array}{ccc}
+2 & 8 & 3\end{array}]N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Moments 
+\begin_inset Formula $=[\begin{array}{ccc}
+14 & 20 & 7\end{array}]N.m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The simulation time was 25 s
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the output values of the model was exported back to the code to be
+ compared with the output values of the "Runge-Kutta” 4th order method code.
+\end_layout
+
+\begin_layout Standard
+The output values exported back were:
+\end_layout
+
+\begin_layout Itemize
+position in inertial axes (
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Initial Velocity in body axes (
+\begin_inset Formula $u,v,w$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Inertial Euler Orientation (
+\begin_inset Formula $\phi,\theta,\psi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Initial body rotation rates (
+\begin_inset Formula $p,q,r$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Simulink.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulink Model Used
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Comparing Results
+\end_layout
+
+\begin_layout Standard
+The figures comparing the values coming out of Simulink model and code output
+ are as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename uemf.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename v.emf
+	lyxscale 90
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename w.emf
+	lyxscale 80
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename p.emf
+	lyxscale 80
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename q.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename r.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename phi.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename theta.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename epsi.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename x.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename y.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename z.emf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the above figures it is clear that the two lines for both the code
+ output and simulink simulation output coincide with each other demonstrating
+ that the code results for solving RBD equations using "Runge-Kutta” 4th
+ order method are valid.
+\end_layout
+
+\end_body
+\end_document
