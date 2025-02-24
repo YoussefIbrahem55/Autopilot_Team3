@@ -119,7 +119,7 @@ today
 \begin_inset Graphics
 	filename D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/Main/logos/ae.png
 	lyxscale 30
-	width 10page%
+	width 20page%
 
 \end_inset
 
@@ -460,7 +460,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/Main/Pics/2/simulinkModel.emf
-	width 70page%
+	width 80page%
 
 \end_inset
 
@@ -1146,7 +1146,7 @@ States Comparsion
 \end_layout
 
 \end_deeper
-\begin_layout Section
+\begin_layout Subsection
 Error Computation
 \end_layout
 
@@ -1183,33 +1183,19 @@ Maximum error to identify the worst-case difference.
 \end_layout
 
 \end_deeper
-\begin_layout Section
-\start_of_appendix
-Appendix
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-We use a FrameTitle layout (and not the Frame Title inset) below in order
- to exclude the redundant title from the article.
- Also note the 
-\begin_inset Flex Alert
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- in the bibliography.
- It is needed for proper entry rendering (note the different coloring of
- the author in the PDF output).
+Error Computation
 \end_layout
 
 \end_inset
@@ -1217,6 +1203,18 @@ newblock
 
 \end_layout
 
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset Graphics
+	filename ../Pics/2/pasted1.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -1237,10 +1235,12 @@ References
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "Citations/ReferenceDataBase,D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/Main/Citations/ReferenceDataBase"
+bibfiles "D:/AE/4th Year/Second Term/Design of control systems for Aeronautical and Space vehicles_AER4420/Autopilot_Team3/Autopilot_Team3/Main/Citations/ReferenceDataBase"
 options "bibtotoc,IEEEtran"
 
 \end_inset

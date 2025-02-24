@@ -7,10 +7,11 @@
 \textclass beamer
 \begin_preamble
 % Choose a theme
-\usetheme{Frankfurt} % Example theme: "Madrid"
+\usetheme{Goettingen} % Example theme: "Madrid"
 
 % Choose a color theme (optional)
 \usecolortheme{default} % Example color theme: "default"
+\usefonttheme{serif}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -87,7 +88,7 @@
 
 \begin_layout Title
 
-\size larger
+\size large
 AER4420
 \end_layout
 
@@ -165,7 +166,7 @@ Research
 
 \begin_layout Frame
 \begin_inset Argument 2
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -246,7 +247,7 @@ Flight Mechanics Review
 
 \begin_layout Frame
 \begin_inset Argument 2
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -738,7 +739,7 @@ literal "false"
 
 \end_deeper
 \begin_layout Subsection
-Figures
+States Comparsion
 \end_layout
 
 \begin_layout Frame
@@ -1207,7 +1208,7 @@ Error Computation
 \begin_layout LyX-Code
 \begin_inset Graphics
 	filename ../Pics/2/pasted1.png
-	width 80page%
+	width 65page%
 
 \end_inset
 
@@ -1215,23 +1216,20 @@ Error Computation
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 
 \end_layout
 
 \begin_deeper
 \begin_layout FrameTitle
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-presentation
-\end_layout
-
-\end_inset
-
-References
+REF
 \end_layout
 
 \begin_layout Standard
