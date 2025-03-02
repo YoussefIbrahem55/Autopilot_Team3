@@ -23,10 +23,10 @@ sdot0 = zeros(12,1); % Zero initial state derivatives
 Vto = sqrt(s0(1)^2 + s0(2)^2 + s0(3)^2); % Initial velocity magnitude
 initial_conditions = [aircraft_data(13:15)' aircraft_data(10:12)' aircraft_data(4:6)' aircraft_data(7:9)' aircraft_data(18) aircraft_data(20) Vto 0] ;
 %% Step 5: Define Control Inputs
-dc = [aircraft_data(57:59) ; aircraft_data(60)]; % Control surface deflections
-da=dc(1)* pi/180;
-dr=dc(2)* pi/180;
-de=dc(3)* pi/180;
+dc = [aircraft_data(57:59)* pi/180; aircraft_data(60)]; % Control surface deflections
+da= dc(1);
+dr= dc(2);
+de= dc(3);
 dth=dc(4);
 %% Step 6: Define Gravity, Mass, and Inertia Parameters
 m = aircraft_data(51); % Mass
@@ -42,7 +42,9 @@ I = [Ixx, -Ixy, -Ixz;
     -Ixz, -Iyz, Izz]; % Inertia matrix
 invI = inv(I); % Inverse of inertia matrix
 % initial gravity force
-F_gravity_0 = m*g * [ sin(s0(8)) ; -cos(s0(8))*sin(s0(7)) ; -cos(s0(8))*cos(s0(7)) ];
+F_gravity_0 = m*g * [ sin(s0(8)) ;
+                    -cos(s0(8))*sin(s0(7)) ;
+                    -cos(s0(8))*cos(s0(7)) ];
 M0 = [0; 0; 0];
 %% Step 7: Load Stability Derivatives
 % Longitudinal Motion Derivatives
@@ -77,8 +79,6 @@ end
 
 states = states(:,1:lengths);
 
-%% Step 9: Plot State Comparisons
-
 %% Step 10: States Rearrangement
 
 u = states(1,:);
@@ -110,7 +110,7 @@ states_vec_kutta = [
     z;
    
     ];
-%%
+%% simulation
 sim('Aircraft_Simulator.slx');
 
 sim_vec = [
