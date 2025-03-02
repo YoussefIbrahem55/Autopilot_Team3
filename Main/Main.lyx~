@@ -5139,6 +5139,32 @@ The Values Used for Euler block properties
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Formula $\begin{gathered}\text{ m }=11\mathrm{~kg}\\
+\boldsymbol{I}=\left[\begin{array}{ccc}
+1 & -2 & -1\\
+-2 & 5 & -4\\
+-1 & -4 & 0.2
+\end{array}\right]\mathrm{kg}\cdot\mathrm{~m}^{2}
+\end{gathered}
+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{gathered}{[u,v,w,p,q,r,\phi,\theta,\psi,x,y,z]_{t=0}=}\\
+{\left[10,2,0,2*\frac{\pi}{180},1*\frac{\pi}{180},0*\frac{\pi}{180},20*\frac{\pi}{180},15*\frac{\pi}{180},30*\frac{\pi}{180},2,4,7\right]}
+\end{gathered}
+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The input to the 6 DOF Euler angles block is Forces and Moments which has
  values of:
 \end_layout
@@ -5218,7 +5244,7 @@ Initial body rotation rates (
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center

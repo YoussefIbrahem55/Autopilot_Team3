@@ -171,5 +171,16 @@ lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xri
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/3/afModel.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={afModel},label={afModel}"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

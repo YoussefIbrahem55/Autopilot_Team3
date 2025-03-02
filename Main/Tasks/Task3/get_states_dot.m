@@ -28,10 +28,6 @@ states_dot (7:9,1) = [1, sin(phi)*tan(ceta), cos(phi)*tan(ceta) ; 0, cos(phi), -
 
 states_dot (10:12,1) =  eul2rotm(eul,"ZYX")*[u;v;w];
 
-
-
-
-
 states_dot = states_dot (1:12,1);
 
 end
