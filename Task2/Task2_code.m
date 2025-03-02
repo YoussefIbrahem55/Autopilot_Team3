@@ -10,22 +10,16 @@ t0 =0 ; %Initial time
 tf = 25; % End time
 n = 20000;
 
-F = [2;8;3] ;
 
-M = [14;20;7] ;
-
-I = [1,-2,-1;-2,5,-4;-1,-4,0.2];
-
-m = 11;
 % Number of intervals, high because of Hard-Nonlinearity
 dt = (tf - t0) / (n-1); % Step size
 timespan = t0:dt:tf  ;
-States_initial = [10;2;0;2*pi/180;pi/180;0;20*pi/180;15*pi/180;30*pi/180;2;4;7];
+States_initial = [514.3561332;0;61.333;0;0;0;0;1.19E-01;0;0;0;-2e+04];
 %initial condition
-u_0= States_initial(1)    ;v_0= States_initial(2)          ;w_0=States_initial(3);
-p_0=States_initial(4)  ;q_0=States_initial(5)     ;r_0=States_initial(6);
-phi_0=States_initial(7) ;theta_0=States_initial(8)   ;epsi_0=States_initial(9);
-x_0=States_initial(10)      ;y_0=States_initial(11)           ;z_0=States_initial(12);
+u_ini= States_initial(1)    ;v_ini= States_initial(2)          ;w_ini=States_initial(3);
+p_ini=States_initial(4)  ;q_ini=States_initial(5)     ;r_ini=States_initial(6);
+phi_ini=States_initial(7) ;theta_ini=States_initial(8)   ;epsi_ini=States_initial(9);
+x_ini=States_initial(10)      ;y_ini=States_initial(11)           ;z_ini=States_initial(12);
 
 %states_vec = zeros(12,n+1);
 

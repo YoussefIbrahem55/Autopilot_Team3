@@ -101,86 +101,11 @@
 
 \begin_body
 
-\begin_layout Chapter
-MATLAB Codes
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-<<<<<<< HEAD:Task1/MatlabFunctions.lyx
 filename "Task1_code.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={ODE Code},label={ODE Code}"
-=======
-filename "Codes/1/Task1_code.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={Problem1},label={Problem1}"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/2/RK4.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={RK4},label={RK4}"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/2/Task2_code.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={AIRPLANE SIMULATOR PART I},label={AIRPLANE SIMULATOR PART I}"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/2/get_states_dot.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={getStatesDot},label={getStatesDot}"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/2/plotStateComparisons.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={plotStateComparisons},label={plotStateComparisons}"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/2/compare_errors.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={compareErrors},label={compareErrors}"
->>>>>>> origin/main:Main/MatlabFunctions.lyx
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "Codes/3/afModel.m"
-lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={afModel},label={afModel}"
 
 \end_inset
 
