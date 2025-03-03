@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -143,11 +143,11 @@ figs-within-sections
 tcolorbox
 customHeadersFooters
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -155,7 +155,9 @@ customHeadersFooters
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -179,7 +181,7 @@ customHeadersFooters
 \pdf_backref false
 \pdf_pdfusetitle true
 \pdf_quoted_options "linkcolor=magenta, urlcolor=marineblue, citecolor=blue, pdfstartview={FitH}, hyperfootnotes=false, unicode=true"
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -200,7 +202,9 @@ customHeadersFooters
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -218,12 +222,17 @@ customHeadersFooters
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
+\tablestyle default
 \listings_params "breaklines=true,commentstyle={\color[rgb]{0,0.5,0}},keywordstyle={\color{blue}},stringstyle={\color{magenta}},tabsize=4,basicstyle={\ttfamily},columns=fullflexible"
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -581,12 +590,15 @@ An
 \series bold
 autopilot
 \series default
- is a control system designed to operate a vehicle, such as an 
+ is a control system designed to operate a vehicle,
+ such as an 
 \shape italic
-aircraft, missile, or spacecraft
+aircraft,
+ missile,
+ or spacecraft
 \shape default
-, with minimal human intervention by automatically regulating its trajectory
- and stability 
+,
+ with minimal human intervention by automatically regulating its trajectory and stability 
 \end_layout
 
 \begin_layout Subsection
@@ -594,43 +606,46 @@ Main Objective
 \end_layout
 
 \begin_layout Standard
-The primary objectives of an autopilot system are as follows: 
+The primary objectives of an autopilot system are as follows:
+ 
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
 Trajectory Maintenance:
+
 \series default
- Ensuring that the vehicle follows a predefined flight path by continuously
- adjusting control surfaces 
+ Ensuring that the vehicle follows a predefined flight path by continuously adjusting control surfaces 
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
 Stability Augmentation:
+
 \series default
- Enhancing vehicle stability by compensating for disturbances such as turbulence
- or atmospheric variations 
+ Enhancing vehicle stability by compensating for disturbances such as turbulence or atmospheric variations 
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
 Workload Reduction:
+
 \series default
- Minimizing pilot intervention by automating routine control tasks, allowing
- operators to focus on higher-level decision-making 
+ Minimizing pilot intervention by automating routine control tasks,
+ allowing operators to focus on higher-level decision-making 
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
 Operational Efficiency:
+
 \series default
- Improving fuel consumption and accuracy in navigation, which contributes
- to safety and effectiveness
+ Improving fuel consumption and accuracy in navigation,
+ which contributes to safety and effectiveness
 \end_layout
 
 \begin_layout Subsection
@@ -650,48 +665,54 @@ Wright Brothers' Innovation (1903):
 \end_layout
 
 \begin_layout Itemize
-Designed an unstable but controllable aircraft, improving maneuverability
- and reducing susceptibility to atmospheric gusts.
+Designed an unstable but controllable aircraft,
+ improving maneuverability and reducing susceptibility to atmospheric gusts.
 \end_layout
 
 \begin_layout Itemize
-Early pioneers (Lilienthal, Pilcher, Chanute, Langley) favored inherent
- stability, making piloting easier but reducing maneuverability.
+Early pioneers (Lilienthal,
+ Pilcher,
+ Chanute,
+ Langley) favored inherent stability,
+ making piloting easier but reducing maneuverability.
 \end_layout
 
 \begin_layout Itemize
-The Wright brothers' approach made flying more demanding, pushing the need
- for automatic pilots (autopilots).
+The Wright brothers' approach made flying more demanding,
+ pushing the need for automatic pilots (autopilots).
  
 \end_layout
 
 \begin_layout Subsubsection
-Early Autopilot Development: 
+Early Autopilot Development:
+ 
 \end_layout
 
 \begin_layout Itemize
-"Spiral divergence": A common issue in aircraft where small disturbances
- cause increasing instability.
+"Spiral divergence":
+ A common issue in aircraft where small disturbances cause increasing instability.
 \end_layout
 
 \begin_layout Itemize
-Early autopilots aimed to correct deviations and restore the aircraft's
- flight attitude.
+Early autopilots aimed to correct deviations and restore the aircraft's flight attitude.
  
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-1912: First autopilot tested in 
+1912:
+ First autopilot tested in 
 \emph on
 a Curtiss flying boat,
+
 \emph default
  using gyroscopes and servo motors.
 \end_layout
 
 \begin_layout Itemize
-Sperry Aeroplane Stabilizer (1914): Developed by Sperry Gyroscope Company,
+Sperry Aeroplane Stabilizer (1914):
+ Developed by Sperry Gyroscope Company,
  led by Dr.
  E.
  A.
@@ -699,34 +720,42 @@ Sperry Aeroplane Stabilizer (1914): Developed by Sperry Gyroscope Company,
 \end_layout
 
 \begin_layout Itemize
-Won a 50,000-franc safety prize from the Aero Club of France, demonstrated
- by Lawrence Sperry.
+Won a 50,000-franc safety prize from the Aero Club of France,
+ demonstrated by Lawrence Sperry.
 \end_layout
 
 \begin_layout Itemize
-1933: Wiley Post & Gyropilot: First pneumatic-hydraulic Gyropilot installed
- in his plane, Winnie May, Allowed autonomous flight, enabling Post to briefly
- sleep during an around-the-world flight in 8 days.
+1933:
+ Wiley Post & Gyropilot:
+ First pneumatic-hydraulic Gyropilot installed in his plane,
+ Winnie May,
+ Allowed autonomous flight,
+ enabling Post to briefly sleep during an around-the-world flight in 8 days.
 \end_layout
 
 \begin_layout Itemize
-1947: Fully Automatic Flight: US Air Force C-54 equipped with Sperry A-12
- autopilot & Bendix throttle control completed a transatlantic flight without
- manual control, Program stored on punched cards controlled the flight.
+1947:
+ Fully Automatic Flight:
+ US Air Force C-54 equipped with Sperry A-12 autopilot & Bendix throttle control completed a transatlantic flight without manual control,
+ Program stored on punched cards controlled the flight.
 \end_layout
 
 \begin_layout Itemize
-Challenges in Modern Jets: Early autopilots focused on
+Challenges in Modern Jets:
+ Early autopilots focused on
 \emph on
- maintaining attitude & heading, 
+ maintaining attitude & heading,
+ 
 \emph default
-Jet aircraft introduced new dynamic stability issues, like 
+Jet aircraft introduced new dynamic stability issues,
+ like 
 \emph on
 short-period oscillations & Dutch roll
 \emph default
-, Human pilots cannot correct rapid oscillations, requiring automatic damping
- systems, First successful automatic Dutch roll suppression appeared in
- YB-49 jet bomber.
+,
+ Human pilots cannot correct rapid oscillations,
+ requiring automatic damping systems,
+ First successful automatic Dutch roll suppression appeared in YB-49 jet bomber.
  
 \end_layout
 
@@ -740,9 +769,9 @@ Inputs (Desired/Commanded States)
 
 \begin_layout Standard
 The autopilot system relies on inputs that define the desired flight parameters.
- These inputs are typically set by the pilot or a flight management system
- (FMS).
- Common inputs include: 
+ These inputs are typically set by the pilot or a flight management system (FMS).
+ Common inputs include:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -750,7 +779,9 @@ The autopilot system relies on inputs that define the desired flight parameters.
 \series bold
 Altitude
 \series default
-: The target altitude to maintain (e.g., 35,000 feet).
+:
+ The target altitude to maintain (e.g.,
+ 35,000 feet).
  
 \end_layout
 
@@ -759,7 +790,9 @@ Altitude
 \series bold
 Heading
 \series default
-: The desired compass direction (e.g., 270Â° for west).
+:
+ The desired compass direction (e.g.,
+ 270Â° for west).
  
 \end_layout
 
@@ -768,7 +801,9 @@ Heading
 \series bold
 Airspeed
 \series default
-: The target speed through the air (e.g., 250 knots).
+:
+ The target speed through the air (e.g.,
+ 250 knots).
  
 \end_layout
 
@@ -777,7 +812,9 @@ Airspeed
 \series bold
 Vertical Speed
 \series default
-: The desired rate of climb or descent (e.g., 1,000 feet per minute).
+:
+ The desired rate of climb or descent (e.g.,
+ 1,000 feet per minute).
  
 \end_layout
 
@@ -786,7 +823,8 @@ Vertical Speed
 \series bold
 Pitch and Roll Angles
 \series default
-: The desired aircraft attitude for stability and maneuvering.
+:
+ The desired aircraft attitude for stability and maneuvering.
  
 \end_layout
 
@@ -795,7 +833,9 @@ Pitch and Roll Angles
 \series bold
 Navigation Data
 \series default
-: Commands from the FMS or GPS, such as waypoints or flight paths.
+:
+ Commands from the FMS or GPS,
+ such as waypoints or flight paths.
  
 \end_layout
 
@@ -804,9 +844,10 @@ Outputs (Actuator Commands)
 \end_layout
 
 \begin_layout Standard
-The autopilot generates commands to control the aircraft's actuators, which
- adjust the control surfaces or engines to achieve the desired states.
- The primary outputs include: 
+The autopilot generates commands to control the aircraft's actuators,
+ which adjust the control surfaces or engines to achieve the desired states.
+ The primary outputs include:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -814,7 +855,8 @@ The autopilot generates commands to control the aircraft's actuators, which
 \series bold
 Ailerons
 \series default
-: Control roll by moving up or down to bank the aircraft left or right.
+:
+ Control roll by moving up or down to bank the aircraft left or right.
  
 \end_layout
 
@@ -823,7 +865,8 @@ Ailerons
 \series bold
 Elevators
 \series default
-: Control pitch by moving up or down to raise or lower the nose.
+:
+ Control pitch by moving up or down to raise or lower the nose.
  
 \end_layout
 
@@ -832,7 +875,8 @@ Elevators
 \series bold
 Rudder
 \series default
-: Control yaw by moving left or right to adjust the aircraft's heading.
+:
+ Control yaw by moving left or right to adjust the aircraft's heading.
  
 \end_layout
 
@@ -841,7 +885,8 @@ Rudder
 \series bold
 Throttle/Thrust
 \series default
-: Adjust engine power to maintain or change airspeed.
+:
+ Adjust engine power to maintain or change airspeed.
  
 \end_layout
 
@@ -850,7 +895,8 @@ Throttle/Thrust
 \series bold
 Spoilers
 \series default
-: Assist in roll control or speed reduction (in some systems).
+:
+ Assist in roll control or speed reduction (in some systems).
  
 \end_layout
 
@@ -859,7 +905,9 @@ Spoilers
 \series bold
 Flaps/Slats
 \series default
-: Adjust lift and drag during specific phases of flight (e.g., landing).
+:
+ Adjust lift and drag during specific phases of flight (e.g.,
+ landing).
  
 \end_layout
 
@@ -868,9 +916,10 @@ Control Loop Process
 \end_layout
 
 \begin_layout Standard
-The autopilot operates as a closed-loop control system, continuously monitoring
- and adjusting the aircraft's state.
- The process involves: 
+The autopilot operates as a closed-loop control system,
+ continuously monitoring and adjusting the aircraft's state.
+ The process involves:
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -878,8 +927,13 @@ The autopilot operates as a closed-loop control system, continuously monitoring
 \series bold
 Sensing
 \series default
-: The autopilot receives real-time data from sensors (e.g., gyroscopes, accelerome
-ters, GPS, altimeters, airspeed sensors).
+:
+ The autopilot receives real-time data from sensors (e.g.,
+ gyroscopes,
+ accelerometers,
+ GPS,
+ altimeters,
+ airspeed sensors).
  
 \end_layout
 
@@ -888,8 +942,10 @@ ters, GPS, altimeters, airspeed sensors).
 \series bold
 Comparison
 \series default
-: The autopilot compares the current state (e.g., actual altitude) with the
- desired state (e.g., target altitude).
+:
+ The autopilot compares the current state (e.g.,
+ actual altitude) with the desired state (e.g.,
+ target altitude).
  
 \end_layout
 
@@ -898,7 +954,8 @@ Comparison
 \series bold
 Error Calculation
 \series default
-: The difference (error) between the desired and actual state is calculated.
+:
+ The difference (error) between the desired and actual state is calculated.
  
 \end_layout
 
@@ -907,8 +964,9 @@ Error Calculation
 \series bold
 Control Algorithm
 \series default
-: The autopilot uses control algorithms (e.g., PID controllers) to determine
- the necessary actuator commands to minimize the error.
+:
+ The autopilot uses control algorithms (e.g.,
+ PID controllers) to determine the necessary actuator commands to minimize the error.
  
 \end_layout
 
@@ -917,8 +975,9 @@ Control Algorithm
 \series bold
 Actuation
 \series default
-: The autopilot sends commands to the actuators to adjust the control surfaces
- or engines, bringing the aircraft closer to the desired state.
+:
+ The autopilot sends commands to the actuators to adjust the control surfaces or engines,
+ bringing the aircraft closer to the desired state.
  
 \end_layout
 
@@ -931,7 +990,9 @@ Example
 \series bold
 Input
 \series default
-: Desired altitude = 35,000 feet, current altitude = 34,500 feet.
+:
+ Desired altitude = 35,000 feet,
+ current altitude = 34,500 feet.
  
 \end_layout
 
@@ -940,9 +1001,9 @@ Input
 \series bold
 Output
 \series default
-: Autopilot commands the elevators to pitch the nose up slightly and adjusts
- the throttle to increase thrust, causing the aircraft to climb to 35,000
- feet.
+:
+ Autopilot commands the elevators to pitch the nose up slightly and adjusts the throttle to increase thrust,
+ causing the aircraft to climb to 35,000 feet.
  
 \end_layout
 
@@ -951,8 +1012,8 @@ Human vs Autopilot
 \end_layout
 
 \begin_layout Standard
-While autopilot reduces pilot workload by automating routine tasks, pilots
- remain essential for:
+While autopilot reduces pilot workload by automating routine tasks,
+ pilots remain essential for:
 \end_layout
 
 \begin_layout Standard
@@ -1001,23 +1062,22 @@ literal "false"
 
 \begin_layout Standard
 Such control systems are known as stability augmentation systems (SASs).
- If the augmentation system is intended to control the mode and to provide
- the pilot with a particular type of response to the control inputs, it
- is known as a control augmentation system(CAS).
- An example of this is a normal acceleration CAS, in which the pilot’s inputs
- are intended to control the acceleration generated along the negative z-axis.
+ If the augmentation system is intended to control the mode and to provide the pilot with a particular type of response to the control inputs,
+ it is known as a control augmentation system(CAS).
+ An example of this is a normal acceleration CAS,
+ in which the pilot’s inputs are intended to control the acceleration generated along the negative z-axis.
  The slow modes (phugoid and spiral) are controllable by a pilot.
- But since it is undesirable for a pilot to have to pay continuous attention
- to controlling these modes, an automatic control system is needed to provide
- “pilot relief.” An autopilot is an automatic control system that provides
- both pilot relief functions and special functions such as automatic landing.
- The common types of SAS, CAS, and autopilot functions can be listed as
- follows:
+ But since it is undesirable for a pilot to have to pay continuous attention to controlling these modes,
+ an automatic control system is needed to provide “pilot relief.” An autopilot is an automatic control system that provides both pilot relief functions and special functions such as automatic landing.
+ The common types of SAS,
+ CAS,
+ and autopilot functions can be listed as follows:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 placement h
+alignment document
 wide false
 sideways false
 status open
@@ -1026,7 +1086,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparison of SAS, CAS, and Autopilot Functions
+Comparison of SAS,
+ CAS,
+ and Autopilot Functions
 \end_layout
 
 \end_inset
@@ -1318,6 +1380,7 @@ Onboard Sensors
 \begin_layout Standard
 \begin_inset Float table
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -1434,7 +1497,10 @@ GPS
 \begin_layout Plain Layout
 
 \size footnotesize
-Position (latitude, longitude, altitude), Velocity 
+Position (latitude,
+ longitude,
+ altitude),
+ Velocity 
 \end_layout
 
 \end_inset
@@ -1480,7 +1546,9 @@ Gyroscope
 \begin_layout Plain Layout
 
 \size footnotesize
-Angular velocity (roll, pitch, yaw rates) 
+Angular velocity (roll,
+ pitch,
+ yaw rates) 
 \end_layout
 
 \end_inset
@@ -1526,7 +1594,9 @@ Accelerometer
 \begin_layout Plain Layout
 
 \size footnotesize
-Linear acceleration (x, y, z axes) 
+Linear acceleration (x,
+ y,
+ z axes) 
 \end_layout
 
 \end_inset
@@ -1774,8 +1844,7 @@ A system is
 observable
 \series default
  if its state can be reconstructed from output measurements over time.
- This property ensures that unmeasured states can be inferred using a mathematic
-al model.
+ This property ensures that unmeasured states can be inferred using a mathematical model.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1783,7 +1852,8 @@ Observability Condition for Linear Systems
 \end_layout
 
 \begin_layout Standard
-Consider a linear time-invariant (LTI) system: 
+Consider a linear time-invariant (LTI) system:
+ 
 \begin_inset Formula 
 \begin{align}
 \dot{x} & =Ax+Bu,\\
@@ -1796,11 +1866,13 @@ where
 \begin_inset Formula $x$
 \end_inset
 
- is the state vector, 
+ is the state vector,
+ 
 \begin_inset Formula $u$
 \end_inset
 
- is the input, and 
+ is the input,
+ and 
 \begin_inset Formula $y$
 \end_inset
 
@@ -1816,7 +1888,8 @@ observable
 \shape italic
 observability matrix
 \shape default
- has full rank: 
+ has full rank:
+ 
 \begin_inset Formula 
 \begin{equation}
 \mathcal{O}=\begin{bmatrix}C\\
@@ -1837,7 +1910,8 @@ If
 \begin_inset Formula $n$
 \end_inset
 
- is the number of states), then all states can be estimated.
+ is the number of states),
+ then all states can be estimated.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1845,12 +1919,14 @@ Observability for Nonlinear Systems
 \end_layout
 
 \begin_layout Standard
-For nonlinear systems, observability is analyzed using the 
+For nonlinear systems,
+ observability is analyzed using the 
 \shape italic
 Observability Gramian
 \shape default
  or by applying Lie derivatives.
- The system dynamics are given by: 
+ The system dynamics are given by:
+ 
 \begin_inset Formula 
 \begin{align}
 \dot{x} & =f(x,u),\\
@@ -1859,8 +1935,7 @@ y & =h(x,u).
 
 \end_inset
 
-The nonlinear observability rank condition requires computing the Lie derivative
-s of 
+The nonlinear observability rank condition requires computing the Lie derivatives of 
 \begin_inset Formula $h(x,u)$
 \end_inset
 
@@ -1876,7 +1951,8 @@ Observer Design
 \end_layout
 
 \begin_layout Standard
-If a system is observable, an 
+If a system is observable,
+ an 
 \shape italic
 observer
 \shape default
@@ -1888,7 +1964,8 @@ Luenberger Observer (Linear Systems)
 \end_layout
 
 \begin_layout Standard
-For an observable LTI system, a Luenberger observer estimates the state:
+For an observable LTI system,
+ a Luenberger observer estimates the state:
  
 \begin_inset Formula 
 \begin{equation}
@@ -1901,7 +1978,8 @@ where
 \begin_inset Formula $\hat{x}$
 \end_inset
 
- is the estimated state, and 
+ is the estimated state,
+ and 
 \begin_inset Formula $L$
 \end_inset
 
@@ -1919,6 +1997,8 @@ where
 
 \begin_layout Standard
 \begin_inset Float figure
+placement document
+alignment document
 wide false
 sideways false
 status open
@@ -1982,11 +2062,11 @@ literal "false"
 \begin_layout Standard
 
 \series bold
-Fly-By-Wire (FBW) is a modern flight control system that replaces traditional
- mechanical linkages with electronic signal transmission
+Fly-By-Wire (FBW) is a modern flight control system that replaces traditional mechanical linkages with electronic signal transmission
 \series default
 .
- In FBW systems, pilot commands are interpreted by flight control computers,
+ In FBW systems,
+ pilot commands are interpreted by flight control computers,
  which then adjust the control surfaces accordingly.
 \end_layout
 
@@ -2003,8 +2083,9 @@ Flight Control Computers (FCCs)
 \end_layout
 
 \begin_layout Standard
-The FCCs process pilot commands, sensor inputs, and flight control laws
- to determine the required actuator movements.
+The FCCs process pilot commands,
+ sensor inputs,
+ and flight control laws to determine the required actuator movements.
  Modern FBW systems use redundant digital computers to enhance reliability.
 \end_layout
 
@@ -2013,8 +2094,9 @@ Sensors and Feedback Systems
 \end_layout
 
 \begin_layout Standard
-FBW systems incorporate gyroscopes, accelerometers, and other sensors to
- monitor aircraft motion and stability.
+FBW systems incorporate gyroscopes,
+ accelerometers,
+ and other sensors to monitor aircraft motion and stability.
  These inputs are used to adjust control surface deflections dynamically.
 \end_layout
 
@@ -2023,8 +2105,9 @@ Actuators
 \end_layout
 
 \begin_layout Standard
-Electronic signals from the FCCs drive electro-mechanical or electro-hydrostatic
- actuators, which move the control surfaces such as ailerons, elevators,
+Electronic signals from the FCCs drive electro-mechanical or electro-hydrostatic actuators,
+ which move the control surfaces such as ailerons,
+ elevators,
  and rudders.
 \end_layout
 
@@ -2033,16 +2116,18 @@ Advantages of Fly-By-Wire Systems
 \end_layout
 
 \begin_layout Standard
-FBW systems offer several advantages over traditional mechanical and hydraulic
- control systems: 
+FBW systems offer several advantages over traditional mechanical and hydraulic control systems:
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Weight Reduction:
+
 \series default
- Eliminates heavy mechanical linkages, reducing overall aircraft weight.
+ Eliminates heavy mechanical linkages,
+ reducing overall aircraft weight.
  
 \end_layout
 
@@ -2050,6 +2135,7 @@ Weight Reduction:
 
 \series bold
 Improved Reliability:
+
 \series default
  Redundant digital computers enhance fault tolerance and system robustness.
  
@@ -2059,9 +2145,10 @@ Improved Reliability:
 
 \series bold
 Enhanced Maneuverability:
+
 \series default
- FBW allows for real-time adjustments based on sensor feedback, improving
- stability and responsiveness.
+ FBW allows for real-time adjustments based on sensor feedback,
+ improving stability and responsiveness.
  
 \end_layout
 
@@ -2069,9 +2156,12 @@ Enhanced Maneuverability:
 
 \series bold
 Maintenance Reduction:
+
 \series default
- Unlike hydraulic systems, FBW does not require extensive fluid checks,
- leak management, or pressure adjustments.
+ Unlike hydraulic systems,
+ FBW does not require extensive fluid checks,
+ leak management,
+ or pressure adjustments.
  
 \end_layout
 
@@ -2079,9 +2169,10 @@ Maintenance Reduction:
 
 \series bold
 Safety Features:
+
 \series default
- Digital flight control laws can prevent dangerous maneuvers, such as stalls
- or excessive structural loads.
+ Digital flight control laws can prevent dangerous maneuvers,
+ such as stalls or excessive structural loads.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2099,6 +2190,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Float table
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -2229,7 +2321,10 @@ Function
 \begin_inset Text
 
 \begin_layout Plain Layout
-Manages UAV stabilization, navigation, control, and autonomous operations.
+Manages UAV stabilization,
+ navigation,
+ control,
+ and autonomous operations.
 \end_layout
 
 \end_inset
@@ -2238,7 +2333,9 @@ Manages UAV stabilization, navigation, control, and autonomous operations.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Provides processing power, sensor data acquisition, and control execution.
+Provides processing power,
+ sensor data acquisition,
+ and control execution.
 \end_layout
 
 \end_inset
@@ -2260,7 +2357,10 @@ Components
 \begin_inset Text
 
 \begin_layout Plain Layout
-Source code (C/C++, Python), control algorithms, mission planning tools.
+Source code (C/C++,
+ Python),
+ control algorithms,
+ mission planning tools.
 \end_layout
 
 \end_inset
@@ -2269,8 +2369,13 @@ Source code (C/C++, Python), control algorithms, mission planning tools.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Microcontroller/processor, IMU (gyroscope, accelerometer, magnetometer),
- barometer, GPS, communication modules.
+Microcontroller/processor,
+ IMU (gyroscope,
+ accelerometer,
+ magnetometer),
+ barometer,
+ GPS,
+ communication modules.
 \end_layout
 
 \end_inset
@@ -2292,7 +2397,9 @@ Customization
 \begin_inset Text
 
 \begin_layout Plain Layout
-Can be modified, updated, and adapted for different vehicles.
+Can be modified,
+ updated,
+ and adapted for different vehicles.
 \end_layout
 
 \end_inset
@@ -2370,7 +2477,8 @@ PX4
 \begin_inset Text
 
 \begin_layout Plain Layout
-(Open-source, used in different autopilot boards)
+(Open-source,
+ used in different autopilot boards)
 \end_layout
 
 \end_inset
@@ -2536,7 +2644,8 @@ Availability
 \begin_inset Text
 
 \begin_layout Plain Layout
-Open-source (ArduPilot, PX4) or proprietary (MicroPilot Horizon).
+Open-source (ArduPilot,
+ PX4) or proprietary (MicroPilot Horizon).
 \end_layout
 
 \end_inset
@@ -2545,7 +2654,8 @@ Open-source (ArduPilot, PX4) or proprietary (MicroPilot Horizon).
 \begin_inset Text
 
 \begin_layout Plain Layout
-Open-hardware (PX4 Pixhawk) or proprietary (DJI WooKong, MicroPilot MP2x28xp).
+Open-hardware (PX4 Pixhawk) or proprietary (DJI WooKong,
+ MicroPilot MP2x28xp).
 \end_layout
 
 \end_inset
@@ -2603,8 +2713,8 @@ a) General Rigid Body Dynamics Equations in 3D (12 Equations)
 \end_layout
 
 \begin_layout Standard
-A rigid body in 3D is fully described by 12 equations, split equally into
- 6 kinetic (dynamics) and 6 kinematic (geometric) equations.
+A rigid body in 3D is fully described by 12 equations,
+ split equally into 6 kinetic (dynamics) and 6 kinematic (geometric) equations.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2664,7 +2774,8 @@ Where:
 \begin_inset Formula $x-,y-$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $z$
 \end_inset
 
@@ -2689,7 +2800,9 @@ Where:
 \begin_inset Formula $p,q,r=$
 \end_inset
 
- Angular velocity components about the body x -, y -, and z -axes 
+ Angular velocity components about the body x -,
+ y -,
+ and z -axes 
 \end_layout
 
 \begin_layout Subsubsection
@@ -2752,8 +2865,7 @@ Kinematic Equations (Geometry)
 \end_layout
 
 \begin_layout Standard
-These equations relate the velocities and angular rates to the changes in
- position and orientation.
+These equations relate the velocities and angular rates to the changes in position and orientation.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2808,13 +2920,16 @@ Where:
 \begin_inset Formula $\varphi,\theta,\psi=$
 \end_inset
 
- Euler angles (roll, pitch, yaw)
+ Euler angles (roll,
+ pitch,
+ yaw)
 \begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -2897,8 +3012,7 @@ Rotational Kinematics (Euler Angle Rates)
 \end_layout
 
 \begin_layout Standard
-These 12 equations together comprehensively describe the motion of a rigid
- body in 3D space.
+These 12 equations together comprehensively describe the motion of a rigid body in 3D space.
 \end_layout
 
 \begin_layout Subsection
@@ -2910,11 +3024,13 @@ b) Classification into Kinetics and Kinematics
 \end_layout
 
 \begin_layout Itemize
-Equations (1) - (3): Translational dynamics 
+Equations (1) - (3):
+ Translational dynamics 
 \end_layout
 
 \begin_layout Itemize
-Equations (4) - (6): Rotational dynamics 
+Equations (4) - (6):
+ Rotational dynamics 
 \end_layout
 
 \begin_layout Standard
@@ -2922,12 +3038,13 @@ Kinematic Equations (6 in total):
 \end_layout
 
 \begin_layout Itemize
-Equations (7) - (9): Relate body velocities (expressed in body frame) to
- inertial position changes 
+Equations (7) - (9):
+ Relate body velocities (expressed in body frame) to inertial position changes 
 \end_layout
 
 \begin_layout Itemize
-Equations (10) - (12): Relate body angular rates to Euler angle rates 
+Equations (10) - (12):
+ Relate body angular rates to Euler angle rates 
 \end_layout
 
 \begin_layout Subsection
@@ -2935,8 +3052,9 @@ c) Additional Equations for Fixed-Wing Airplane Equations of Motion (EOM)
 \end_layout
 
 \begin_layout Standard
-To specialize the general RBD equations for a fixed-wing airplane, the following
- are added: •
+To specialize the general RBD equations for a fixed-wing airplane,
+ the following are added:
+ •
 \end_layout
 
 \begin_layout Subsubsection
@@ -2944,25 +3062,31 @@ Aerodynamic Force and Moment Models:
 \end_layout
 
 \begin_layout Standard
-Aerodynamic forces are expressed as functions of dynamic pressure, wing
- area, and non-dimensional coefficients (e.g., 
+Aerodynamic forces are expressed as functions of dynamic pressure,
+ wing area,
+ and non-dimensional coefficients (e.g.,
+ 
 \begin_inset Formula $Cx,Cy,Cz$
 \end_inset
 
  ).
- Similarly, aerodynamic moments (roll 
+ Similarly,
+ aerodynamic moments (roll 
 \begin_inset Formula $L$
 \end_inset
 
-, pitch 
+,
+ pitch 
 \begin_inset Formula $M$
 \end_inset
 
-, yaw 
+,
+ yaw 
 \begin_inset Formula $N$
 \end_inset
 
- ) are modeled using coefficients that depend on angle of attack, sideslip,
+ ) are modeled using coefficients that depend on angle of attack,
+ sideslip,
  and control surface deflections.
 \end_layout
 
@@ -2971,8 +3095,7 @@ Aerodynamic forces are expressed as functions of dynamic pressure, wing
 \end_layout
 
 \begin_layout Standard
-The weight of the airplane is resolved along the body axes via the transformatio
-n from the inertial (or earthfixed) frame.
+The weight of the airplane is resolved along the body axes via the transformation from the inertial (or earthfixed) frame.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2980,12 +3103,13 @@ Velocity-to-Angle Relationships:
 \end_layout
 
 \begin_layout Standard
-Equations that relate the components of velocity in the body frame to the
- airspeed, angle of attack ( 
+Equations that relate the components of velocity in the body frame to the airspeed,
+ angle of attack ( 
 \begin_inset Formula $\alpha$
 \end_inset
 
- ), and sideslip angle ( 
+ ),
+ and sideslip angle ( 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -2993,12 +3117,12 @@ Equations that relate the components of velocity in the body frame to the
 \end_layout
 
 \begin_layout Itemize
-Control Input Effects: 
+Control Input Effects:
+ 
 \end_layout
 
 \begin_layout Standard
-Additional relations that quantify how control surface deflections affect
- the aerodynamic forces and moments.
+Additional relations that quantify how control surface deflections affect the aerodynamic forces and moments.
 \end_layout
 
 \begin_layout Subsection
@@ -3010,35 +3134,40 @@ Common assumptions include:
 \end_layout
 
 \begin_layout Itemize
-Rigid Body Approximation: The aircraft is assumed not to deform.
+Rigid Body Approximation:
+ The aircraft is assumed not to deform.
  
 \end_layout
 
 \begin_layout Itemize
-Constant Mass and Inertia: Effects of fuel burn or payload shifts are neglected.
+Constant Mass and Inertia:
+ Effects of fuel burn or payload shifts are neglected.
  
 \end_layout
 
 \begin_layout Itemize
-Quasi-Steady Aerodynamics: Aerodynamic forces and moments are assumed to
- respond instantaneously to changes in flight conditions.
+Quasi-Steady Aerodynamics:
+ Aerodynamic forces and moments are assumed to respond instantaneously to changes in flight conditions.
  
 \end_layout
 
 \begin_layout Itemize
-Small Perturbations: Linearization is often performed around a trim condition.
+Small Perturbations:
+ Linearization is often performed around a trim condition.
  
 \end_layout
 
 \begin_layout Itemize
-Neglection of High-Order Effects: Compressibility, viscous effects, and
- higher-order nonlinearities are typically ignored in preliminary analyses.
+Neglection of High-Order Effects:
+ Compressibility,
+ viscous effects,
+ and higher-order nonlinearities are typically ignored in preliminary analyses.
  
 \end_layout
 
 \begin_layout Itemize
-Uniform Atmospheric Conditions: The air is assumed to have steady and uniform
- properties.
+Uniform Atmospheric Conditions:
+ The air is assumed to have steady and uniform properties.
  
 \end_layout
 
@@ -3050,6 +3179,7 @@ e) Mathematical Classification of the Airplane EOM.
 \align center
 \begin_inset Float table
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -3087,8 +3217,7 @@ Order
 \begin_inset Text
 
 \begin_layout Plain Layout
-The equations are represented as first-order differential equations in state-spa
-ce form.
+The equations are represented as first-order differential equations in state-space form.
 \end_layout
 
 \end_inset
@@ -3117,7 +3246,8 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
-They are Ordinary Differential Equations (ODEs), with time being the independent
+They are Ordinary Differential Equations (ODEs),
+ with time being the independent
 \end_layout
 
 \end_inset
@@ -3167,8 +3297,8 @@ Linearity
 \begin_inset Text
 
 \begin_layout Plain Layout
-The full equations are nonlinear, although linearization is common near
- steady flight
+The full equations are nonlinear,
+ although linearization is common near steady flight
 \end_layout
 
 \end_inset
@@ -3218,8 +3348,8 @@ Coupling
 \begin_inset Text
 
 \begin_layout Plain Layout
-The equations are generally coupled, as translational and rotational dynamics
- interact.
+The equations are generally coupled,
+ as translational and rotational dynamics interact.
 \end_layout
 
 \end_inset
@@ -3230,8 +3360,7 @@ The equations are generally coupled, as translational and rotational dynamics
 \begin_inset Text
 
 \begin_layout Plain Layout
-Under certain assumptions (such as decoupling of longitudinal and lateral-direct
-ional
+Under certain assumptions (such as decoupling of longitudinal and lateral-directional
 \end_layout
 
 \end_inset
@@ -3242,7 +3371,8 @@ ional
 \begin_inset Text
 
 \begin_layout Plain Layout
-dynamics), the equations can be simplified to an uncoupled form.
+dynamics),
+ the equations can be simplified to an uncoupled form.
 \end_layout
 
 \end_inset
@@ -3283,28 +3413,34 @@ f) Difference Between Body Axes and Earth (Inertial) Axes.
 \end_layout
 
 \begin_layout Standard
-A coordinate system fixed to the airplane, typically defined as:
+A coordinate system fixed to the airplane,
+ typically defined as:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $x$
 \end_inset
 
- - axis: along the fuselage (forward), 
+ - axis:
+ along the fuselage (forward),
+ 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $y$
 \end_inset
 
- - axis: towards the right wing, 
+ - axis:
+ towards the right wing,
+ 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $z$
 \end_inset
 
--axis: downward.
+-axis:
+ downward.
  
 \end_layout
 
@@ -3313,13 +3449,14 @@ The body axes rotate with the aircraft.
 \end_layout
 
 \begin_layout Subsubsection
-Earth (Inertial) Axes: 
+Earth (Inertial) Axes:
+ 
 \end_layout
 
 \begin_layout Standard
-A fixed or quasi-fixed coordinate system relative to the Earth, often defined
- as North-East-Down (NED) or a similar scheme, serving as an absolute reference
- frame.
+A fixed or quasi-fixed coordinate system relative to the Earth,
+ often defined as North-East-Down (NED) or a similar scheme,
+ serving as an absolute reference frame.
 \end_layout
 
 \begin_layout Subsection
@@ -3362,14 +3499,16 @@ The pitch angle
 \begin_inset Formula $\theta$
 \end_inset
 
- is the orientation of the aircraft's longitudinal axis relative to the
- horizon, while the angle of attack 
+ is the orientation of the aircraft's longitudinal axis relative to the horizon,
+ while the angle of attack 
 \begin_inset Formula $\alpha$
 \end_inset
 
  is the angle between the chord line (or x-axis) and the oncoming airflow.
- In steady, coordinated flight these angles are related, but during maneuvers
- or in the presence of wind, they can differ significantly.
+ In steady,
+ coordinated flight these angles are related,
+ but during maneuvers or in the presence of wind,
+ they can differ significantly.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3390,17 +3529,17 @@ The sideslip angle
 \begin_inset Formula $\beta$
 \end_inset
 
- is the angle between the aircraft's longitudinal axis and the relative
- wind, whereas the heading angle 
+ is the angle between the aircraft's longitudinal axis and the relative wind,
+ whereas the heading angle 
 \begin_inset Formula $\psi$
 \end_inset
 
- is the navigational direction of the aircraft relative to a fixed reference
- (such as geographic North).
+ is the navigational direction of the aircraft relative to a fixed reference (such as geographic North).
 \end_layout
 
 \begin_layout Subsection
-h) Attitude Representations: Advantages and Disadvantages
+h) Attitude Representations:
+ Advantages and Disadvantages
 \end_layout
 
 \begin_layout Subsubsection
@@ -3408,12 +3547,17 @@ h) Attitude Representations: Advantages and Disadvantages
 \end_layout
 
 \begin_layout Itemize
-Advantages: Intuitive (roll, pitch, yaw) and straightforward.
+Advantages:
+ Intuitive (roll,
+ pitch,
+ yaw) and straightforward.
  
 \end_layout
 
 \begin_layout Itemize
-Disadvantages: Suffer from singularities (gimbal lock) when, for example,
+Disadvantages:
+ Suffer from singularities (gimbal lock) when,
+ for example,
  the pitch angle approaches 
 \begin_inset Formula $\pm90$
 \end_inset
@@ -3427,12 +3571,14 @@ Disadvantages: Suffer from singularities (gimbal lock) when, for example,
 \end_layout
 
 \begin_layout Itemize
-Advantages: No singularity issues and provides a full transformation matrix.
+Advantages:
+ No singularity issues and provides a full transformation matrix.
  
 \end_layout
 
 \begin_layout Itemize
-Disadvantages: Requires 9 elements along with orthogonality constraints,
+Disadvantages:
+ Requires 9 elements along with orthogonality constraints,
  which can complicate numerical implementation.
  
 \end_layout
@@ -3442,13 +3588,17 @@ Disadvantages: Requires 9 elements along with orthogonality constraints,
 \end_layout
 
 \begin_layout Itemize
-Advantages: Compact (4 parameters), computationally efficient, and free
- from singularities.
+Advantages:
+ Compact (4 parameters),
+ computationally efficient,
+ and free from singularities.
  
 \end_layout
 
 \begin_layout Itemize
-Disadvantages: Less intuitive and involve a double-cover issue (i.e., 
+Disadvantages:
+ Less intuitive and involve a double-cover issue (i.e.,
+ 
 \begin_inset Formula $q$
 \end_inset
 
@@ -3457,18 +3607,19 @@ Disadvantages: Less intuitive and involve a double-cover issue (i.e.,
 \end_layout
 
 \begin_layout Itemize
-Axis-Angle Representation: 
-\end_layout
-
-\begin_layout Itemize
-Advantages: Provides a clear geometric interpretation (rotation by a specific
- angle about a fixed axis).
+Axis-Angle Representation:
  
 \end_layout
 
 \begin_layout Itemize
-Disadvantages: Less practical for sequential rotations or for numerical
- integration when rotations are small.
+Advantages:
+ Provides a clear geometric interpretation (rotation by a specific angle about a fixed axis).
+ 
+\end_layout
+
+\begin_layout Itemize
+Disadvantages:
+ Less practical for sequential rotations or for numerical integration when rotations are small.
  
 \end_layout
 
@@ -3481,51 +3632,56 @@ Some of the numerical solving algorithms for ODEs
 \end_layout
 
 \begin_layout Standard
-Numerical solutions are approximate solutions to the differential equation
- where the analytical solution is hard to get or even not available as the
- case in airplane equations.
- The variation of the algorithms is due to the need for different approaches
- for solving the equations like: Accuracy requirements, stability considerations
-, computational efficiency, step size adaptability, and system constraints.
+Numerical solutions are approximate solutions to the differential equation where the analytical solution is hard to get or even not available as the case in airplane equations.
+ The variation of the algorithms is due to the need for different approaches for solving the equations like:
+ Accuracy requirements,
+ stability considerations,
+ computational efficiency,
+ step size adaptability,
+ and system constraints.
 \end_layout
 
 \begin_layout Standard
 Reason for the Variation of Numerical Algorithms.
- The wide variety of numerical algorithms for solving Ordinary Differential
- Equations (ODEs) exists because different problems have unique characteristics
- that require specialized approaches.
+ The wide variety of numerical algorithms for solving Ordinary Differential Equations (ODEs) exists because different problems have unique characteristics that require specialized approaches.
  The main factors influencing algorithm selection include:
 \end_layout
 
 \begin_layout Enumerate
-Accuracy Requirements - Some applications demand high precision (e.g., spacecraft
- navigation), while others prioritize speed (e.g., real-time control systems).
+Accuracy Requirements - Some applications demand high precision (e.g.,
+ spacecraft navigation),
+ while others prioritize speed (e.g.,
+ real-time control systems).
  
 \end_layout
 
 \begin_layout Enumerate
-Stability Considerations - Certain ODEs, especially stiff systems (e.g., chemical
- reactions, flight dynamics at high speeds), require implicit methods for
- stable solutions.
+Stability Considerations - Certain ODEs,
+ especially stiff systems (e.g.,
+ chemical reactions,
+ flight dynamics at high speeds),
+ require implicit methods for stable solutions.
  
 \end_layout
 
 \begin_layout Enumerate
-Computational Efficiency - Simpler methods (e.g., Euler's) require fewer calculati
-ons but may need smaller time steps, while higher-order methods (e.g., Runge-Kutta
-) balance accuracy and efficiency.
+Computational Efficiency - Simpler methods (e.g.,
+ Euler's) require fewer calculations but may need smaller time steps,
+ while higher-order methods (e.g.,
+ Runge-Kutta) balance accuracy and efficiency.
  
 \end_layout
 
 \begin_layout Enumerate
-Step Size Adaptability - Some methods (e.g., RK45) adjust the step size automatica
-lly to handle rapidly changing or smooth regions efficiently.
+Step Size Adaptability - Some methods (e.g.,
+ RK45) adjust the step size automatically to handle rapidly changing or smooth regions efficiently.
  
 \end_layout
 
 \begin_layout Enumerate
-System Constraints - Real-time applications (e.g., autopilot, robotics) need
- algorithms that work under computational and time constraints.
+System Constraints - Real-time applications (e.g.,
+ autopilot,
+ robotics) need algorithms that work under computational and time constraints.
  
 \end_layout
 
@@ -3548,8 +3704,8 @@ RK4 provides high accuracy for aerospace simulations.
 \end_layout
 
 \begin_layout Itemize
-Implicit methods (e.g., Crank-Nicolson) are better for stiff problems like
- structural vibrations.
+Implicit methods (e.g.,
+ Crank-Nicolson) are better for stiff problems like structural vibrations.
  
 \end_layout
 
@@ -3558,13 +3714,14 @@ Balancing Accuracy & Speed
 \end_layout
 
 \begin_layout Itemize
-High-order methods (RK4, RK45) are more precise but computationally expensive.
+High-order methods (RK4,
+ RK45) are more precise but computationally expensive.
  
 \end_layout
 
 \begin_layout Itemize
-Lower-order methods (Euler, Adams-Bashforth) are faster but may require
- smaller steps.
+Lower-order methods (Euler,
+ Adams-Bashforth) are faster but may require smaller steps.
  
 \end_layout
 
@@ -3574,13 +3731,14 @@ Handling Stiff vs.
 \end_layout
 
 \begin_layout Itemize
-Stiff ODEs (e.g., high-speed aerodynamic models) require implicit methods
- for stability.
+Stiff ODEs (e.g.,
+ high-speed aerodynamic models) require implicit methods for stability.
  
 \end_layout
 
 \begin_layout Itemize
-Non-stiff ODEs (e.g., basic motion equations) can use explicit methods.
+Non-stiff ODEs (e.g.,
+ basic motion equations) can use explicit methods.
  
 \end_layout
 
@@ -3603,19 +3761,20 @@ Real-Time Applications
 \end_layout
 
 \begin_layout Itemize
-Some algorithms (e.g., fixed-step RK4) are used in autopilot systems to meet
- real-time constraints.
+Some algorithms (e.g.,
+ fixed-step RK4) are used in autopilot systems to meet real-time constraints.
  
 \end_layout
 
 \begin_layout Itemize
-Adaptive methods (RK45) are useful in simulations but may be too slow for
- real-time control 
+Adaptive methods (RK45) are useful in simulations but may be too slow for real-time control 
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways false
 status open
@@ -3737,7 +3896,8 @@ Explicit
 \begin_inset Text
 
 \begin_layout Plain Layout
-Simple, fast
+Simple,
+ fast
 \end_layout
 
 \end_inset
@@ -4059,7 +4219,8 @@ Explicit
 \begin_inset Text
 
 \begin_layout Plain Layout
-Efficient, reuses
+Efficient,
+ reuses
 \end_layout
 
 \end_inset
@@ -4166,7 +4327,8 @@ Implicit
 \begin_inset Text
 
 \begin_layout Plain Layout
-Stable, good for
+Stable,
+ good for
 \end_layout
 
 \end_inset
@@ -4382,7 +4544,8 @@ Implicit
 \begin_inset Text
 
 \begin_layout Plain Layout
-Stable, accurate
+Stable,
+ accurate
 \end_layout
 
 \end_inset
@@ -4588,37 +4751,40 @@ previous states
 \end_layout
 
 \begin_layout Itemize
-Explicit Methods: Easier to implement but may require small step sizes for
- stability.
+Explicit Methods:
+ Easier to implement but may require small step sizes for stability.
  
 \end_layout
 
 \begin_layout Itemize
-Implicit Methods: More stable, especially for stiff problems, but require
- solving equations at each step.
+Implicit Methods:
+ More stable,
+ especially for stiff problems,
+ but require solving equations at each step.
  
 \end_layout
 
 \begin_layout Itemize
-Adaptive Methods: Adjust step size automatically for better efficiency.
+Adaptive Methods:
+ Adjust step size automatically for better efficiency.
  
 \end_layout
 
 \begin_layout Itemize
-Specialized Methods: Used for specific applications like orbital mechanics
- (Verlet) or flight control (Predictor-Corrector).
+Specialized Methods:
+ Used for specific applications like orbital mechanics (Verlet) or flight control (Predictor-Corrector).
  
 \end_layout
 
 \begin_layout Paragraph
-Choosing one algorithm for solving the Airplanes EOM, clearly state the
- (Initial conditions needed, Inputs needed in each iteration, and Outputs
- calculated in each iteration)
+Choosing one algorithm for solving the Airplanes EOM,
+ clearly state the (Initial conditions needed,
+ Inputs needed in each iteration,
+ and Outputs calculated in each iteration)
 \end_layout
 
 \begin_layout Standard
-The equation of motion of an airplane is derived from the rigid body motion
- equations.
+The equation of motion of an airplane is derived from the rigid body motion equations.
  Those
 \begin_inset Newline newline
 \end_inset
@@ -4709,12 +4875,8 @@ w
 
 \begin_layout Standard
 We need to get every derivative W.R.T.
- time so we will apply the small disturbance approximation where we could
- swap every variable with an initial known value and the change in this
- value.
- This approximation is only valid when the changes in those variables (states)
- are very small which could be seen almost at the cruise conditions throughout
- the journey of an aircraft.
+ time so we will apply the small disturbance approximation where we could swap every variable with an initial known value and the change in this value.
+ This approximation is only valid when the changes in those variables (states) are very small which could be seen almost at the cruise conditions throughout the journey of an aircraft.
 \begin_inset Newline newline
 \end_inset
 
@@ -4746,8 +4908,7 @@ L=L_{0}+\Delta L\\
 \end_layout
 
 \begin_layout Standard
-Flight conditions are taken to be symmetric to simplify the equation to
- be:
+Flight conditions are taken to be symmetric to simplify the equation to be:
 \end_layout
 
 \begin_layout Standard
@@ -4799,38 +4960,51 @@ Flight conditions are taken to be symmetric to simplify the equation to
 \end_layout
 
 \begin_layout Standard
-We will choose RK4 as our algorithm for solving the EOM, and here are the
- ICs, BCs, and the outputs of each iteration:
+We will choose RK4 as our algorithm for solving the EOM,
+ and here are the ICs,
+ BCs,
+ and the outputs of each iteration:
 \end_layout
 
 \begin_layout Subsubsection*
-Initial conditions - Before starting the numerical integration, we need
- the initial state of the aircraft, which typically includes: 
+Initial conditions - Before starting the numerical integration,
+ we need the initial state of the aircraft,
+ which typically includes:
+ 
 \end_layout
 
 \begin_layout Itemize
-Position: (initial location in a given coordinate system) 
+Position:
+ (initial location in a given coordinate system) 
 \end_layout
 
 \begin_layout Itemize
-Velocity: (initial velocity components in body frame) 
+Velocity:
+ (initial velocity components in body frame) 
 \end_layout
 
 \begin_layout Itemize
-Attitude (Orientation): (initial roll, pitch, and yaw angles) 
+Attitude (Orientation):
+ (initial roll,
+ pitch,
+ and yaw angles) 
 \end_layout
 
 \begin_layout Itemize
-Angular Velocity: (initial roll, pitch, and yaw rates) 
+Angular Velocity:
+ (initial roll,
+ pitch,
+ and yaw rates) 
 \end_layout
 
 \begin_layout Itemize
-Mass & Inertia Properties: (aircraft mass and moments of inertia) 
+Mass & Inertia Properties:
+ (aircraft mass and moments of inertia) 
 \end_layout
 
 \begin_layout Subsubsection*
-Input needed in each iteration - At each time step, the numerical algorithm
- needs updated information to compute the next state:
+Input needed in each iteration - At each time step,
+ the numerical algorithm needs updated information to compute the next state:
 \end_layout
 
 \begin_layout Itemize
@@ -4839,7 +5013,9 @@ Aerodynamic Forces & Moments:
 
 \begin_deeper
 \begin_layout Enumerate
-Lift, Drag, and Side Forces 
+Lift,
+ Drag,
+ and Side Forces 
 \end_layout
 
 \begin_layout Enumerate
@@ -4848,7 +5024,8 @@ Moments about body axes
 
 \end_deeper
 \begin_layout Itemize
-Control Inputs (from Pilot or Autopilot): 
+Control Inputs (from Pilot or Autopilot):
+ 
 \end_layout
 
 \begin_deeper
@@ -4870,7 +5047,8 @@ Rudder Deflection
 
 \end_deeper
 \begin_layout Itemize
-Environmental Conditions: 
+Environmental Conditions:
+ 
 \end_layout
 
 \begin_deeper
@@ -4888,8 +5066,8 @@ Gravity
 
 \end_deeper
 \begin_layout Subsubsection*
-Outputs Calculated in Each Iteration -The numerical algorithm updates and
- computes the next state of the aircraft: 
+Outputs Calculated in Each Iteration -The numerical algorithm updates and computes the next state of the aircraft:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -4912,6 +5090,10 @@ Updated angular velocity
 New forces & moments
 \end_layout
 
+\begin_layout Itemize
+kkkkkk5555
+\end_layout
+
 \begin_layout Subsection
 RK4
 \end_layout
@@ -4924,6 +5106,7 @@ reference "Problem1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -4934,6 +5117,7 @@ reference "RK4"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -4942,6 +5126,8 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement document
+alignment document
 wide false
 sideways false
 status collapsed
@@ -5002,12 +5188,8 @@ Simulink Model
 \end_layout
 
 \begin_layout Standard
-To Verify and Validate the results obtained from the code that solved RBD
- equations using "Runge-Kutta” 4th order method.
- The code results was compared with the results from Simulink model that
- use the 6 DOF Euler angles block to simulate the RGB equations.The mass
- of the body was assumed to be constant and the properties defined for the
- 6 DOF Euler angles block is:
+To Verify and Validate the results obtained from the code that solved RBD equations using "Runge-Kutta” 4th order method.
+ The code results was compared with the results from Simulink model that use the 6 DOF Euler angles block to simulate the RGB equations.The mass of the body was assumed to be constant and the properties defined for the 6 DOF Euler angles block is:
 \end_layout
 
 \begin_layout Itemize
@@ -5057,6 +5239,7 @@ These values were defined in the code then imported from the workspace.
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status collapsed
@@ -5093,6 +5276,7 @@ Input to the 6 DOF Euler angles block
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status collapsed
@@ -5165,8 +5349,7 @@ $
 \end_layout
 
 \begin_layout Standard
-The input to the 6 DOF Euler angles block is Forces and Moments which has
- values of:
+The input to the 6 DOF Euler angles block is Forces and Moments which has values of:
 \end_layout
 
 \begin_layout Standard
@@ -5199,8 +5382,7 @@ The simulation time was 25 s
 \end_layout
 
 \begin_layout Standard
-Then the output values of the model was exported back to the code to be
- compared with the output values of the "Runge-Kutta” 4th order method code.
+Then the output values of the model was exported back to the code to be compared with the output values of the "Runge-Kutta” 4th order method code.
 \end_layout
 
 \begin_layout Standard
@@ -5242,6 +5424,7 @@ Initial body rotation rates (
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -5287,14 +5470,13 @@ To determine the best number of samples for a
 \begin_inset Formula $25$
 \end_inset
 
--second simulation, we need to choose an appropriate sampling time 
+-second simulation,
+ we need to choose an appropriate sampling time 
 \begin_inset Formula $T_{s}$
 \end_inset
 
 .
- The sampling time is critical in digital control and numerical integration
- when solving aircraft equations of motion using a numerical solver like
- Runge-Kutta 4th order (RK4).
+ The sampling time is critical in digital control and numerical integration when solving aircraft equations of motion using a numerical solver like Runge-Kutta 4th order (RK4).
 \end_layout
 
 \begin_layout Subsubsection
@@ -5310,18 +5492,23 @@ The choice of
  Based on digital control principles 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Franklin2014, Ogata2010"
+key "Franklin2014,Ogata2010"
 literal "false"
 
 \end_inset
 
-, common sampling times for aircraft systems are: 
+,
+ common sampling times for aircraft systems are:
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Slow response systems (e.g., navigation, autopilot):
+Slow response systems (e.g.,
+ navigation,
+ autopilot):
+
 \series default
  
 \begin_inset Formula $T_{s}=50$
@@ -5337,7 +5524,9 @@ Slow response systems (e.g., navigation, autopilot):
 \begin_layout Itemize
 
 \series bold
-Flight control (inner loops, stability augmentation):
+Flight control (inner loops,
+ stability augmentation):
+
 \series default
  
 \begin_inset Formula $T_{s}=10$
@@ -5354,6 +5543,7 @@ Flight control (inner loops, stability augmentation):
 
 \series bold
 High-bandwidth actuator control:
+
 \series default
  
 \begin_inset Formula $T_{s}=1$
@@ -5375,7 +5565,8 @@ The total number of samples required for a
 \begin_inset Formula $25$
 \end_inset
 
--second simulation is: 
+-second simulation is:
+ 
 \begin_inset Formula 
 \begin{equation}
 N=\frac{T_{\text{simulation}}}{T_{s}}
@@ -5387,7 +5578,8 @@ N=\frac{T_{\text{simulation}}}{T_{s}}
 \end_layout
 
 \begin_layout Standard
-For different sampling times: 
+For different sampling times:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -5428,8 +5620,8 @@ Numerical ODE Solver Considerations
 \end_layout
 
 \begin_layout Standard
-When using RK4 for solving the equations of motion, the internal solver
- step 
+When using RK4 for solving the equations of motion,
+ the internal solver step 
 \begin_inset Formula $\Delta t$
 \end_inset
 
@@ -5441,12 +5633,14 @@ When using RK4 for solving the equations of motion, the internal solver
  As recommended in numerical integration literature 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Butcher2016, Chapra2015"
+key "Butcher2016,Chapra2015"
 literal "false"
 
 \end_inset
 
-, a good practice is: 
+,
+ a good practice is:
+ 
 \begin_inset Formula 
 \begin{equation}
 \Delta t=\frac{T_{s}}{5}\text{ or }\frac{T_{s}}{10}
@@ -5465,6 +5659,7 @@ reference "AIRPLANE SIMULATOR PART I"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -5604,10 +5799,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-From the above figures it is clear that the two lines for both the code
- output and simulink simulation output coincide with each other demonstrating
- that the code results for solving RBD equations using "Runge-Kutta” 4th
- order method are valid.
+From the above figures it is clear that the two lines for both the code output and simulink simulation output coincide with each other demonstrating that the code results for solving RBD equations using "Runge-Kutta” 4th order method are valid.
 \end_layout
 
 \begin_layout Section
@@ -5622,10 +5814,12 @@ reference "compareErrors"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- calculates the deviation between RK4 and Simulink solutions: 
+ calculates the deviation between RK4 and Simulink solutions:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -5655,8 +5849,7 @@ Mean Absolute Error (MAE) for each state:
 
 \begin_layout Plain Layout
 
-	1.0e-09 *[0.0037     0.0036     0.0027     0.0050     0.0016     0.0028     0.0031
-     0.0012     0.0027     0.1684     0.1931     0.0672]
+	1.0e-09 *[0.0037     0.0036     0.0027     0.0050     0.0016     0.0028     0.0031     0.0012     0.0027     0.1684     0.1931     0.0672]
 \end_layout
 
 \begin_layout Plain Layout
@@ -5666,8 +5859,7 @@ Root Mean Square Error (RMSE) for each state:
 
 \begin_layout Plain Layout
 
-	1.0e-09 *[0.0053     0.0052     0.0039     0.0071     0.0022     0.0040     0.0049
-     0.0019     0.0041     0.2815     0.3240     0.1358]
+	1.0e-09 *[0.0053     0.0052     0.0039     0.0071     0.0022     0.0040     0.0049     0.0019     0.0041     0.2815     0.3240     0.1358]
 \end_layout
 
 \begin_layout Plain Layout
@@ -5677,8 +5869,295 @@ Max Error for each state:
 
 \begin_layout Plain Layout
 
-	1.0e-09 *[0.0132     0.0133     0.0099     0.0156     0.0049     0.0089     0.0193
-     0.0053     0.0136     0.8145     0.9377     0.4579]
+	1.0e-09 *[0.0132     0.0133     0.0099     0.0156     0.0049     0.0089     0.0193     0.0053     0.0136     0.8145     0.9377     0.4579]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Simulink Model
+\end_layout
+
+\begin_layout Standard
+This Simulink Model aims to calculates the (Aerodynamic & Thrust) (Forces & Moments) acting on an Airplane due to pilots input signals ( 
+\begin_inset Formula $\delta$
+\end_inset
+
+aileron ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+rudder ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+elevator ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+thrust ) knowing its stability & control derivatives at nominal flight condition to validate the results of RK4 code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Main/Documentation task3/FULL MODEL.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Full Simulink Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The model consists of two main blocks namely the Aircraft Model and Nonlinear RBD.
+ The Nonlinear RBD block calculates the 16 States necessary for the Aircraft Model to function which calculates the delta forces and moments and feeds them back to the Nonlinear Rigid Body Dynamics block creating a loop that simulates the aircraft.
+ The whole Simulink model takes pilots input signals ( 
+\begin_inset Formula $\delta$
+\end_inset
+
+aileron ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+rudder ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+elevator ,
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+thrust ) as input and gives out many variables as output to determine the aircraft performance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Visualization.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Visualization Block
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Model gives out Position (
+\begin_inset Formula $x,y,z)$
+\end_inset
+
+,
+ Euler angles (
+\begin_inset Formula $\phi,\theta,\psi x$
+\end_inset
+
+),
+ Velocities (
+\begin_inset Formula $u,v,w$
+\end_inset
+
+),
+ Angular Velocities (
+\begin_inset Formula $p,q,r$
+\end_inset
+
+),
+ and both angle of attack (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) and Side-slip angle (
+\begin_inset Formula $\beta$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The Rigid Body Dynamics block uses Euler 6 DOF Block to calculate the 16 States.
+ It takes forces and moments as input,
+ The input forces are a result of Delta forces (
+\begin_inset Formula $\Delta F$
+\end_inset
+
+) coming from the Aircraft model plus the gravity contribution in the body axis plus the gravity contribution after Euler angles change.
+ Then the states are sent to the Aircraft Model.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/RBD.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RBD Block
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A unit delay is inserted between The two blocks as to not create an algebric loop where the input is dependant on the output and it takes the initial conditions of the states as input
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Unit Delay.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unit Delay
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Aircraft Model uses the states from RBD block multiplies them by the states matrix and multiplies the control inputs of the pilot by the controls matrix and multiplies by the mass and moments of inertia to get the delta forces and moments.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Aircraft Model.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Aircraft Model Block
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5706,6 +6185,7 @@ begin{appendices}
 \begin_inset CommandInset include
 LatexCommand input
 filename "MatlabFunctions.lyx"
+literal "true"
 
 \end_inset
 
@@ -5726,16 +6206,6 @@ end{appendices}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
