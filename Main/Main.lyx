@@ -5877,7 +5877,11 @@ Max Error for each state:
 
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
+Airframe Model
+\end_layout
+
+\begin_layout Section
 Simulink Model
 \end_layout
 
@@ -5915,7 +5919,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/FULL MODEL.png
+	filename Pics/3/FULL MODEL.png
 	lyxscale 45
 	scale 45
 
@@ -5977,7 +5981,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Visualization.png
+	filename Pics/3/Visualization.png
 	lyxscale 55
 	scale 55
 
@@ -6057,7 +6061,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/RBD.png
+	filename Pics/3/RBD.png
 	lyxscale 45
 	scale 45
 
@@ -6098,7 +6102,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Unit Delay.png
+	filename Pics/3/Unit Delay.png
 	lyxscale 45
 	scale 45
 
@@ -6139,7 +6143,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Lectures/Project/Autopilot_Team3/Main/Documentation task3/Aircraft Model.png
+	filename Pics/3/Aircraft Model.png
 	lyxscale 45
 	scale 45
 
@@ -6165,6 +6169,320 @@ Aircraft Model Block
 
 \end_layout
 
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+Comparing the Simulink and RK4 code results yields that the results are identical validating the code results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_da5_B7.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_da5_B7.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+B747 Benchmark results at 5 degree aileron deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_de5_B7.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_de5_B7.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+B747 Benchmark results at 5 degree elevator deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JetStar results at no input
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_dr5.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_dr5.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JetStar results at 5 degree rudder deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_de5.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_de5.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JetStar results at 5 degree elevator deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/state_comparisons_dth1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Trajectory_dth1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JetStar results at 1000lbf 
+\begin_inset Formula $\delta$
+\end_inset
+
+Thrust
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -6175,6 +6493,42 @@ status open
 \backslash
 begin{appendices}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "MatlabFunctions.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{appendices}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "Citations/ReferenceDataBase"
+options "bibtotoc,IEEEtran"
 
 \end_inset
 
