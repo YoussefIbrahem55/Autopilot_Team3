@@ -6,7 +6,7 @@ clear all;
 close all;
 
 %% Step 2: Load Excel Sheet Data
-filename_density_L = 'JetstarFC3'; %% Specify the location of your Excel sheet
+filename_density_L = 'B747_FC5'; %% Specify the location of your Excel sheet
 
 aircraft_data = xlsread(filename_density_L, 'B2:B61'); %% Read data from Excel (B2:B61)
 
@@ -114,6 +114,6 @@ states_vec_kutta = [
 sim('Aircraft_Simulator.slx');
 
 sim_vec = [
-    out_u.Data';out_beta.Data'; out_alpha.Data';  out_p.Data'; out_q.Data'; out_r.Data'; out_phi.Data'; out_theta.Data'; out_psi.Data'; out_x.Data'; out_y.Data'; out_z.Data'
+    out_u.Data';out_beta.Data'; out_alpha.Data';  out_p.Data'; round(out_q.Data'); out_r.Data'; out_phi.Data'; out_theta.Data'; out_psi.Data'; out_x.Data'; out_y.Data'; round(out_z.Data')
     ];
 plotStateComparisons(time_V, states_vec_kutta, tout', sim_vec',dc)

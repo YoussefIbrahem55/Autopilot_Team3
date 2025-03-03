@@ -6173,6 +6173,10 @@ Aircraft Model Block
 Results
 \end_layout
 
+\begin_layout Section
+Code
+\end_layout
+
 \begin_layout Standard
 Comparing the Simulink and RK4 code results yields that the results are identical validating the code results
 \end_layout
@@ -6480,6 +6484,10 @@ Thrust
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

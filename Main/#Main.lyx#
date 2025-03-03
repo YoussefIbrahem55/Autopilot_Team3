@@ -6169,6 +6169,26 @@ Aircraft Model Block
 
 \end_layout
 
+\begin_layout Section
+Code
+\end_layout
+
+\begin_layout Standard
+the last chapter we made
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "AIRPLANE SIMULATOR PART I"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ that take the constant Forces and Moments and gives us the states.
+ In that chapter we will use 
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
