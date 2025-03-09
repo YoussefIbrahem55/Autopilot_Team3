@@ -6170,11 +6170,155 @@ Aircraft Model Block
 \end_layout
 
 \begin_layout Section
-Results
+Code
+\end_layout
+
+\begin_layout Standard
+the last chapter we made
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "AIRPLANE SIMULATOR PART I"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ that take the constant Forces and Moments and gives us the states.
+ In that chapter we will calculate the Forces and moments in each time step using the Linearized model :
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{gathered}\Delta X=\frac{\partial X}{\partial u}\Delta u+\frac{\partial X}{\partial w}\Delta w+\frac{\partial X}{\partial\delta_{e}}\Delta\delta_{e}+\frac{\partial X}{\partial\delta_{T}}\Delta\delta_{T}\\
+\Delta Y=\frac{\partial Y}{\partial v}\Delta v+\frac{\partial Y}{\partial p}\Delta p+\frac{\partial Y}{\partial r}\Delta r+\frac{\partial Y}{\partial\delta_{r}}\Delta\delta_{r}\\
+\Delta Z=\frac{\partial Z}{\partial u}\Delta u+\frac{\partial Z}{\partial w}\Delta w+\frac{\partial Z}{\partial\dot{w}}\Delta\dot{w}+\frac{\partial Z}{\partial q}\Delta q+\frac{\partial Z}{\partial\delta_{e}}\Delta\delta_{e}+\frac{\partial Z}{\partial\delta_{T}}\Delta\delta_{T}\\
+\Delta L=\frac{\partial L}{\partial v}\Delta v+\frac{\partial L}{\partial p}\Delta p+\frac{\partial L}{\partial r}\Delta r+\frac{\partial L}{\partial\delta_{r}}\Delta\delta_{r}+\frac{\partial L}{\partial\delta_{a}}\Delta\delta_{a}\\
+\Delta M=\frac{\partial M}{\partial u}\Delta u+\frac{\partial M}{\partial w}\Delta w+\frac{\partial M}{\partial\dot{w}}\Delta\dot{w}+\frac{\partial M}{\partial q}\Delta q+\frac{\partial M}{\partial\delta_{e}}\Delta\delta_{e}+\frac{\partial M}{\partial\delta_{T}}\Delta\delta_{T}\\
+\Delta N=\frac{\partial N}{\partial v}\Delta v+\frac{\partial N}{\partial p}\Delta p+\frac{\partial N}{\partial r}\Delta r+\frac{\partial N}{\partial\delta_{r}}\Delta\delta_{r}+\frac{\partial N}{\partial\delta_{a}}\Delta\delta_{a}
+\end{gathered}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Extracting Lateral Stability Derivatives 
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Lateral Function"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ we extracted the nondashed derivatives from the dashed ones.
+\end_layout
+
+\begin_layout Subsection
+Airframe Model 
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Airframe Model"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ we construct the Controls derivatives and Stability derivatives matrices and get the change of the forces and moments then 
+\end_layout
+
+\begin_layout Standard
+calculating the total force acting on the airplane (this value is the input which given to the 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "getStatesDot"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ ) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned} & \left\{ \begin{array}{c}
+F_{x}\\
+F_{y}\\
+F_{z}\\
+L\\
+M\\
+N
+\end{array}\right\} =\left\{ \begin{array}{l}
+\Delta X\\
+\Delta Y\\
+\Delta Z\\
+\Delta L\\
+\Delta M\\
+\Delta N
+\end{array}\right\} +\left\{ \begin{array}{l}
+\mathrm{X}_{0}\\
+\mathrm{Y}_{0}\\
+\mathrm{Z}_{0}\\
+L_{0}\\
+M_{0}\\
+N_{0}
+\end{array}\right\} +\left\{ \begin{array}{c}
+-mg\sin\theta\\
+mg\cos\theta\sin\emptyset\\
+mg\cos\theta\cos\emptyset\\
+0\\
+0\\
+0
+\end{array}\right\} \\
+ & \left\{ \begin{array}{c}
+X_{0}\\
+Y_{0}\\
+Z_{0}
+\end{array}\right\} =\left\{ \begin{array}{c}
+mg\sin\theta_{0}\\
+-mg\cos\theta_{0}\sin\emptyset_{0}\\
+-mg\cos\theta_{0}\cos\emptyset_{0}
+\end{array}\right\} \&\left\{ \begin{array}{l}
+L_{0}\\
+M_{0}\\
+N_{0}
+\end{array}\right\} =\left\{ \begin{array}{l}
+0\\
+0\\
+0
+\end{array}\right\} 
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Code
+Results
 \end_layout
 
 \begin_layout Standard
@@ -6478,16 +6622,8 @@ Thrust
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

@@ -114,6 +114,6 @@ states_vec_kutta = [
 sim('Aircraft_Simulator.slx');
 
 sim_vec = [
-    out_u.Data';out_beta.Data'; out_alpha.Data';  out_p.Data'; round(out_q.Data'); out_r.Data'; out_phi.Data'; out_theta.Data'; out_psi.Data'; out_x.Data'; out_y.Data'; round(out_z.Data')
+    out_u.Data';out_beta.Data'; out_alpha.Data';  out_p.Data'; out_q.Data'; out_r.Data'; out_phi.Data'; out_theta.Data'; out_psi.Data'; out_x.Data'; out_y.Data'; out_z.Data'
     ];
 plotStateComparisons(time_V, states_vec_kutta, tout', sim_vec',dc)
