@@ -1,0 +1,89 @@
+clc; close all;
+%% Lateral State Space:
+
+
+% Linearized Model State Space
+% W.R.T beta
+A_Lat_Full = [Y_beta/Vto      (Yp+w0)/Vto     (Yr-u0)/Vto       g*cos(theta0)/Vto   0
+              L_beta_dash     L_p_dash        L_r_dash          0                   0
+              N_beta_dash     N_p_dash        N_r_dash          0                   0
+              0               1               tan(theta0)       0                   0
+              0               0               1/cos(theta0)     0                   0]; 
+
+B_Lat_Full = [Y_da_star     Y_dr_star
+              L_da_dash     L_dr_dash
+              N_da_dash     N_dr_dash
+                0           0
+                0           0];
+
+C_Lat_Full = eye(5);
+
+D_Lat_Full = zeros(size(B_Lat_Full));
+
+% W.R.T v:
+A_Lat_Full_v = [Y_v                (Yp+w0)         (Yr-u0)            g*cos(theta0)       0
+                L_v_dash           L_p_dash        L_r_dash          0                   0
+                N_v_dash           N_p_dash        N_r_dash          0                   0
+                0                   1               tan(theta0)       0                   0
+                0                   0               1/cos(theta0)     0                   0]; 
+
+B_Lat_Full_v = [Y_da_star     Y_dr_star
+                L_da_dash     L_dr_dash
+                N_da_dash     N_dr_dash
+                0             0
+                0             0];
+
+% Approximated  3 DOF Spiral Model State Space 
+
+A_Spiral3 = [L_p_dash   L_r_dash    0
+             N_p_dash   N_r_dash    0
+             1          tan(theta0) 0]; 
+     
+B_Spiral3 = [L_da_dash  L_dr_dash
+             N_da_dash  N_dr_dash
+             0          0];  
+
+C_Spiral3 = eye(3); 
+D_Spiral3 = zeros(size(B_Spiral3));
+
+% Approximated  3 DOF Dutch Model State Space 
+
+A_Dutch3 = [Y_v           (Yp+w0)/Vto      (Yr-u0)/ Vto
+            L_beta_dash   L_p_dash         0
+            N_beta_dash   0                N_r_dash]; 
+     
+% W.R.T v:
+A_Dutch3_v = [Y_v                (Yp+w0)         (Yr-u0)                   
+              L_v_dash           L_p_dash        L_r_dash                             
+              N_v_dash           N_p_dash        N_r_dash];          
+
+
+B_Dutch3 = [Y_da_star  Y_dr_star
+            L_da_dash  L_dr_dash
+            N_da_dash  N_dr_dash];
+     
+C_Dutch3 = eye(3); 
+D_Dutch3 = zeros(size(B_Dutch3));
+
+% Approximated  2 DOF Dutch Model State Space 
+
+A_Dutch2 = [Y_beta/Vto      (Yr-u0)/Vto-tan(theta0)*(Yp+w0)/Vto
+            N_beta_dash      N_r_dash-tan(theta0)*N_p_dash];  
+
+% W.R.T V
+A_Dutch2_v = [Y_beta/Vto      (Yr-u0)-tan(theta0)*(Yp+w0)
+             N_v_dash      N_r_dash-tan(theta0)*N_p_dash];  
+
+B_Dutch2 = [ Y_da_star     Y_dr_star
+             N_da_dash     N_dr_dash];
+         
+
+C_Dutch2 = eye(2); 
+D_Dutch2 = zeros(size(B_Dutch2));
+
+% Approximated  1 DOF Roll Model State Space 
+
+A_Roll = L_p_dash; 
+B_Roll = L_da_dash; 
+C_Roll = eye(1); 
+D_Roll = zeros(size(B_Roll));
