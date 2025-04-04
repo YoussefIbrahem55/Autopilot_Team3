@@ -6339,7 +6339,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6388,7 +6388,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6441,7 +6441,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6490,7 +6490,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6539,7 +6539,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6588,7 +6588,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6635,41 +6635,490 @@ Thrust
 
 \end_layout
 
+\begin_layout Section
+Compare with Benchmark Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+No Input
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Aileron Deflection 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_-5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_-5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Aileron Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Rudder Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_-5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_-5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Rudder Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Elevator Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_-5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_-5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Elevator Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Throttle Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_10000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_10000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Throttle Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
-AC Simulator 3
+AC Simulator III
 \end_layout
 
 \begin_layout Section
-Approximations
+Approximations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Etkin1996"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\ensuremath{\begin{aligned} & X-mgS_{\theta}=m(\dot{u}+qw-rv)\\
+\begin{split} & X-mgS_{\theta}=m(\dot{u}+qw-rv)\\
  & Y+mgC_{\theta}S_{\varphi}=m(\dot{v}+ru-pw)\\
- & Z+mgC_{\theta}C_{\varphi}=m(\dot{w}+pv-qu)\\
- & L=I_{x}\dot{p}-I_{xz}\dot{r}+qr\left(I_{z}-I_{y}\right)-I_{xz}pq\\
- & M=I_{y}\dot{q}+rp\left(I_{x}-I_{z}\right)-I_{xz}\left(p^{2}-r^{2}\right)\\
- & N=-I_{xz}\dot{p}+I_{z}\dot{r}+pq\left(I_{y}-I_{x}\right)+I_{xz}qr\\
- & \dot{\theta}=qC_{\varphi}-rS_{\varphi}\\
+ & Z+mgC\theta C\varphi=m(\dot{w}+pv-qu)\\
+\\ & L=I_{x}\dot{p}-I_{xz}\dot{r}+qr(I_{z}-I_{y})-I_{xz}pq\\
+ & M=I_{y}\dot{q}+rp(I_{x}-I_{z})-I_{xz}(p^{2}-r^{2})\\
+ & N=-I_{xz}\dot{p}+I_{z}\dot{r}+pq(I_{y}-I_{x})+I_{xz}qr\\
+\\ & \dot{\theta}=qC_{\varphi}-rS_{\varphi}\\
  & \dot{\varphi}=p+qS_{\varphi}T_{\theta}+rC_{\varphi}T_{\theta}\\
- & \dot{\psi}=\left(qS_{\varphi}+rC_{\varphi}\right)\sec(\theta)\\
- & {\left[\begin{array}{l}
-\dot{x}\\
+ & \dot{\psi}=(qS_{\varphi}+rC_{\varphi})sec(\theta)\\
+\\ & \begin{bmatrix}\dot{x}\\
 \dot{y}\\
 \dot{z}
-\end{array}\right]=\left[\begin{array}{ccc}
-C_{\theta}C_{\psi} & S_{\varphi}S_{\theta}C_{\psi}-C_{\varphi}S_{\psi} & C_{\psi}S_{\theta}C_{\psi}+S_{\varphi}S_{\psi}\\
-C_{\theta}S_{\psi} & S_{\varphi}S_{\theta}S_{\psi}+C_{\varphi}C_{\psi} & C_{\varphi}S_{\theta}S_{\psi}-S_{\varphi}C_{\psi}\\
--S_{\theta} & S_{\varphi}C_{\theta} & C_{\varphi}C_{\theta}
-\end{array}\right]\left[\begin{array}{c}
-u\\
+\end{bmatrix}=\begin{bmatrix}C_{\theta}C_{\psi} & S_{\varphi}S_{\theta}C_{\psi}-C_{\varphi}S_{\psi} & C_{\psi}S_{\theta}C_{\psi}+S_{\varphi}S_{\psi}\\
+C_{\theta}S_{\psi} & S_{\varphi}S_{\theta}S_{\psi}+C_{\varphi}C_{\psi} & C_{\psi}S_{\theta}S_{\psi}-S_{\varphi}C_{\psi}\\
+-S_{\theta} & S_{\phi}C_{\theta} & C_{\phi}C_{\theta}
+\end{bmatrix}\begin{bmatrix}u\\
 v\\
 w
-\end{array}\right]}
-\end{aligned}
-}
+\end{bmatrix}
+\end{split}
 \end{equation}
 
 \end_inset
@@ -6691,7 +7140,7 @@ Some approximations & trigonometric will be used in linearization:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)∗Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)≃0$
+\begin_inset Formula $\Delta(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)∗\Delta(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)≃0$
 \end_inset
 
  
@@ -6739,25 +7188,266 @@ Some approximations & trigonometric will be used in linearization:
 
 \end_layout
 
-\begin_layout Subsection
-Longitudinal
+\begin_layout Standard
+\begin_inset Formula $𝑣_{𝑜}=𝑝_{𝑜}=𝑞_{𝑜}=𝑟_{𝑜}=𝜑_{𝑜}=𝜓_{𝑜}=0$
+\end_inset
+
+ but 
+\begin_inset Formula $𝑢_{𝑜},𝑤_{𝑜},𝜃_{𝑜}≠0$
+\end_inset
+
+ for Cruise condition 
 \end_layout
 
-\begin_layout Subsubsection
-Longitudinal State-Space Model:
+\begin_layout Standard
+Forces:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\ensuremath{\left[\begin{array}{c}
+\begin{aligned}\begin{gathered}\frac{\Delta X}{m}=\left(X_{u}\Delta u+X_{w}\Delta w+X_{\delta_{e}}\Delta\delta_{e}+X_{\delta_{th}}\Delta\delta_{th}\right)\\
+\frac{\Delta Y}{m}=\left(Y_{\beta}\Delta\beta+Y_{r}\Delta r+Y_{p}\Delta p+Y_{a}\Delta\delta_{a}+Y_{\delta_{r}}\Delta\delta_{r}\right)\\
+\frac{\Delta Z}{m}=\left(Z_{u}\Delta u+Z_{w}\Delta w+Z_{\dot{w}}\Delta\dot{w}+Z_{q}\Delta q+Z_{\delta_{e}}\Delta\delta_{e}+Z_{\delta_{th}}\Delta\delta_{th}\right)\\
+\frac{\Delta L}{I_{xx}}=\left(L_{\beta}\Delta\beta+L_{p}\Delta p+L_{r}\Delta r+L_{\delta_{r}}\Delta\delta_{r}+L_{\delta_{a}}\Delta\delta_{a}\right)\\
+\frac{\Delta M}{I_{yy}}=\left(M_{u}\Delta u+M_{w}\Delta w+M_{\dot{w}}\Delta\dot{w}+M_{q}\Delta q+M_{\delta_{e}}\Delta\delta_{e}+M_{\delta_{th}}\Delta\delta_{th}\right)\\
+\frac{\Delta N}{I_{zz}}=\left(N_{\beta}\Delta\beta+N_{p}\Delta p+N_{r}\Delta r+N_{\delta_{r}}\Delta\delta_{r}+N_{\delta_{a}}\Delta\delta_{a}\right)
+\end{gathered}
+\end{aligned}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{u}=\frac{(\frac{\partial X}{\partial u})}{m},X_{\delta_{T}}=\frac{(\frac{\partial X}{\partial\delta_{T}})}{m},L_{v}=\frac{(\frac{\partial L}{\partial v})}{I_{xx}}\ldots$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Delta\delta_{a},\Delta\delta_{r},\Delta\delta_{e},\Delta\delta_{T}$
+\end_inset
+
+ are the change in aileron,
+ rudder,
+ elevator angles and throttle
+\end_layout
+
+\begin_layout Itemize
+IC's that came from applying the equilibrium equations at steady flight condition:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+X_{o}\\
+Y_{o}\\
+Z_{o}
+\end{array}\right\} =\left\{ \begin{array}{c}
+mgS_{\theta_{o}}\\
+-mgC_{\theta_{o}}S_{\varphi_{o}}\\
+-mgC_{\theta_{o}}C_{\varphi_{o}}
+\end{array}\right\} =\left\{ \begin{array}{c}
+mgS_{\theta_{o}}\\
+0\\
+-mgC_{\theta_{o}}
+\end{array}\right\} ,\left\{ \begin{array}{c}
+L_{o}\\
+M_{o}\\
+N_{o}
+\end{array}\right\} =\{0\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Longitudinal Mode
+\end_layout
+
+\begin_layout Subsubsection
+Full Linearized Model
+\end_layout
+
+\begin_layout Standard
+Applying Small disturbance theory 
+\begin_inset Formula $(u=u𝑜+∆u)$
+\end_inset
+
+ for the longitudinal states 
+\begin_inset Formula $u,w,q$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X-mgS_{\theta}=m(\dot{u}+qw-rv)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{gathered}X_{o}+\Delta X-mg\operatorname{Sin}\left(\theta_{o}+\Delta\theta\right)\\
+=m\left(\dot{u}_{o}+\Delta\dot{u}+\left(q_{o}+\Delta q\right)\left(w_{o}+\Delta w\right)-\left(r_{o}+\Delta r\right)\left(v_{o}+\Delta v\right)\right)\\
+\sin(a+b)=\sin(a)\cos(b)+\sin(b)\cos(a)\\
+X_{o}+\Delta X-mg\left(\sin\left(\theta_{o}\right)\cos(\Delta\theta)+\sin(\Delta\theta)\cos\left(\theta_{o}\right)\right)\\
+=m\left(\Delta\dot{u}+(\Delta q)\left(w_{o}+\Delta w\right)-(\Delta r)(\Delta v)\right)
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{gathered}\sin(a\rightarrow0)=a,\quad\cos(a\rightarrow0)=1\\
+X_{o}+\Delta X-mg\sin\left(\theta_{o}\right)-mg\cos\left(\theta_{o}\right)\Delta\theta=m\left(\Delta\dot{u}+\Delta q*w_{o}+\Delta q*\Delta w-\Delta r*\Delta v\right)
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+X_{o}+\Delta X-mg\sin\left(\theta_{o}\right)-mg\cos\left(\theta_{o}\right)\Delta\theta=m\left(\Delta\dot{u}+\Delta q*w_{o}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{gathered}\therefore\Delta X-mg\cos\left(\theta_{o}\right)\Delta\theta=m\left(\Delta\dot{u}+\Delta q*w_{o}\right)\\
+\therefore\Delta\dot{u}=\frac{\Delta X}{m}-g\cos\left(\theta_{o}\right)\Delta\theta-\Delta q*w_{o},\frac{\Delta X}{m}=X_{u}\Delta u+X_{w}\Delta w+X_{\delta_{e}}\Delta\delta_{e}+X_{\delta_{th}}\Delta\delta_{th}\\
+\therefore\Delta\dot{u}=X_{u}\Delta u+X_{w}\Delta w+X_{\delta_{e}}\Delta\delta_{e}+X_{\delta_{th}}\Delta\delta_{th}-g\cos\left(\theta_{o}\right)\Delta\theta-\Delta q*w_{o}
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z+mgC\theta C\varphi=m(\dot{w}+pv-qu)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Same as (1.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\Delta\dot{w}=\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)}\Delta u+\frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)}\Delta w+\frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\Delta q-\frac{g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\Delta\theta+\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)}\Delta\delta_{e}+\frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}\Delta\delta_{th}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M=I_{y}\dot{q}+rp\left(I_{x}-I_{z}\right)-I_{xz}\left(p^{2}-r^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{aligned} & \therefore\Delta\dot{q}=M_{u}\Delta u+M_{w}\Delta w+M_{\dot{w}}\\
+ & *\left(\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)}\Delta u+\frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)}\Delta w+\frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\Delta q+\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)}\Delta\delta_{e}\right.\\
+ & \left.+\frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}\Delta\delta_{th}-\frac{g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\Delta\theta\right)+M_{q}\Delta q+M_{\delta_{e}}\Delta\delta_{e}+M_{\delta_{th}}\Delta\delta_{th}\\
+ & \therefore\Delta\dot{q}=\left(M_{u}+M_{\dot{w}}\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)}\right)\Delta u+\left(M_{w}+M_{\dot{w}}\frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)}\right)\Delta w\\
+ & +\left(M_{q}+M_{\dot{w}}\frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\right)\Delta q+\left(M_{\delta_{e}}+M_{\dot{w}}\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)}\right)\Delta\delta_{e}\\
+ & +\left(M_{\delta_{th}}+M_{\dot{w}}\frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}\right)\Delta\delta_{th}-M_{\dot{w}}*\frac{g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\Delta\theta
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\dot{\theta}=qC_{\varphi}-rS_{\varphi}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\therefore\Delta\dot{\theta}=\Delta q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Collecting all in Matrix form:
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+\begin{split}\begin{aligned}\begin{split}\begin{aligned}\ensuremath{\left[\begin{array}{c}
 \Delta\dot{u}\\
 \Delta\dot{w}\\
 \Delta\dot{q}\\
 \Delta\dot{\theta}
 \end{array}\right]=\left[\begin{array}{cccc}
-X_{u} & X_{w} & -w_{o} & -g\cos\left(\theta_{o}\right)\\
-\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & \frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)} & \frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)} & \frac{-g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\\
+X_{u} & X_{w} & -w_{o} & -gcos(\theta_{0})\\
+\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & \frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)} & \frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)} & \frac{-gsin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\\
 M_{u}+M_{\dot{w}}\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & M_{w}+M_{\dot{w}}\frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)} & M_{q}+M_{\dot{w}}\frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)} & -M_{\dot{w}}*\frac{g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\\
 0 & 0 & 1 & 0
 \end{array}\right]\left[\begin{array}{c}
@@ -6765,14 +7455,712 @@ M_{u}+M_{\dot{w}}\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & M_{w}+M_{\dot{w}}\fr
 \Delta w\\
 \Delta q\\
 \Delta\theta
-\end{array}\right]+\left[\begin{array}{cc}
+\end{array}\right]}\end{aligned}
+\end{split}
+\end{aligned}
+\\
++\left[\begin{array}{cc}
 X_{\delta_{e}} & X_{\delta_{th}}\\
 \frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)} & \frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}\\
 M_{\delta_{e}}+M_{\dot{w}}\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)} & M_{\delta_{th}}+M_{\dot{w}}\frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}
 \end{array}\right]\left[\begin{array}{l}
 \Delta\delta_{e}\\
 \Delta\delta_{th}
-\end{array}\right]}
+\end{array}\right]
+\end{split}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For simple calculation of the aircraft response t we can use the next approximations.
+\end_layout
+
+\begin_layout Subsubsection
+Long period approximation
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\end_layout
+
+\begin_layout Standard
+When the aircraft is exposed to some disturbances in the longitudinal direction a change in the altitude is formed due to this disturbance assuming that the angle of attack is constant the approximation to the long period mode is obtained by neglecting the pitching moment equation and assuming that the changes in angle of attack is zero.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{gathered}\Delta\alpha=0\\
+{\left[\begin{array}{c}
+\dot{u}\\
+\dot{\theta}
+\end{array}\right]=\left[\begin{array}{cc}
+\Delta\alpha=\frac{\Delta w}{U_{o}} & \Delta\dot{q}=0\\
+X_{u}+\frac{w_{o}Z_{u}}{Z_{q}+u_{o}} & -g\cos\left(\theta_{o}\right)-\frac{w_{o}g\sin\left(\theta_{o}\right)}{Z_{q}+u_{o}}\\
+\frac{-Z_{u}}{Z_{q}+u_{o}} & \frac{g\sin\left(\theta_{o}\right)}{Z_{q}+u_{o}}
+\end{array}\right]\left[\begin{array}{c}
+u\\
+\theta
+\end{array}\right]}\\
++\left[\begin{array}{cc}
+X_{\delta_{e}}+\frac{w_{o}Z_{\delta_{e}}}{Z_{q}+u_{o}} & X_{\delta_{th}}+\frac{w_{o}Z_{\delta_{th}}}{Z_{q}+u_{o}}\\
+\frac{-Z_{\delta_{e}}}{Z_{q}+u_{o}} & \frac{-Z_{\delta_{th}}}{Z_{q}+u_{o}}
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{e}\\
+\Delta\delta_{th}
+\end{array}\right]
+\end{gathered}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Short period approximation (mode)
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\end_layout
+
+\begin_layout Standard
+The same definition which we applied in the previous mode we will use here but with taking in consideration that the disturbance will damp quickly and but there will be a change in angle of attack and neglecting the change in velocity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}\Delta u=0\&\Delta\dot{\theta}=0\\
+M_{\alpha}=\frac{1}{I_{y}}*\frac{\partial M}{\partial\alpha}=\frac{1}{I_{y}}*\frac{\partial M}{\partial\left(\frac{\Delta w}{u_{o}}\right)}=\frac{u_{o}}{I_{y}}*\frac{\partial M}{\partial w}=u_{o}M_{w}\\
+Z_{\alpha}=u_{o}Z_{w}\\
+M_{\dot{\alpha}}=u_{o}M_{\dot{w}}
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{c}
+\dot{\alpha}\\
+\dot{q}
+\end{array}\right]=\left[\begin{array}{cc}
+\frac{Z_{\alpha}}{u_{o}} & 1\\
+M_{\alpha}+\frac{M_{\dot{\alpha}}Z_{\alpha}}{u_{o}} & M_{q}+M_{\dot{\alpha}}
+\end{array}\right]\left[\begin{array}{l}
+\alpha\\
+q
+\end{array}\right]+\left[\begin{array}{cc}
+Z_{\delta_{e}} & Z_{\delta_{th}}\\
+M_{\delta_{e}}+\frac{M_{\alpha}Z_{\delta_{e}}}{u_{o}} & M_{\dot{\alpha}}+\frac{M_{\alpha}Z_{\delta_{th}}}{u_{o}}
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{e}\\
+\Delta\delta_{th}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lateral Mode
+\end_layout
+
+\begin_layout Subsubsection
+Full Linearized Model
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Y+mgC_{\theta}S_{\varphi}=m(\dot{v}+ru-pw)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{gathered}\Delta\dot{v}=Y_{\beta}\Delta\beta+Y_{r}\Delta r+Y_{p}\Delta p+Y_{\delta a}\Delta\delta_{a}+Y_{\delta_{r}}\Delta\delta_{r}+g\cos\left(\theta_{o}\right)\Delta\emptyset-\Delta r*u_{o}+w_{o}*\Delta p\\
+\Delta\dot{\beta}=\frac{\Delta\dot{v}}{V_{to}}
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\therefore\Delta\dot{\beta}=\frac{Y_{\beta}}{V_{to}}\Delta\beta+\frac{Y_{r}-u_{o}}{V_{to}}\Delta r+\frac{Y_{p}+w_{o}}{V_{to}}\Delta p+\frac{Y_{\delta a}}{V_{to}}\Delta\delta_{a}+\frac{Y_{\delta_{r}}}{V_{to}}\Delta\delta_{r}+\frac{g}{V_{to}}\cos\left(\theta_{o}\right)\Delta\varphi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L=I_{x}\dot{p}-I_{xz}\dot{r}+qr\left(I_{z}-I_{y}\right)-I_{xz}pq$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+eq(1):\quad\Delta\dot{p}-\frac{I_{xz}}{I_{x}}*\Delta\dot{r}=\frac{\Delta L}{I_{x}}=L_{\beta}\Delta\beta+L_{p}\Delta p+L_{r}\Delta r+L_{\delta_{r}}\Delta\delta_{r}+L_{\delta_{a}}\Delta\delta_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $N=-I_{xz}\dot{p}+I_{z}\dot{r}+pq\left(I_{y}-I_{x}\right)+I_{xz}qr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+eq(2):\quad\Delta\dot{r}-\frac{I_{xz}}{I_{z}}*\Delta\dot{p}=\frac{\Delta N}{I_{z}}=N_{\beta}\Delta\beta+N_{p}\Delta p+N_{r}\Delta r+N_{\delta_{r}}\Delta\delta_{r}+N_{\delta_{a}}\Delta\delta_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve eq(1) and eq(2) in ( 
+\begin_inset Formula $\Delta\dot{\boldsymbol{r}}\quad\Delta\dot{\boldsymbol{p}})$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned} & \therefore\Delta\dot{p}=\left(\frac{\Delta L}{I_{x}}+\frac{I_{xz}}{I_{x}}*\frac{\Delta N}{I_{z}}\right)*G,\text{ where }G=\frac{I_{x}I_{z}}{I_{x}I_{z}-\left(I_{xz}\right)^{2}}\\
+ & \therefore\Delta\dot{r}=\left(\frac{I_{xz}}{I_{z}}*\frac{\Delta L}{I_{x}}+\frac{\Delta N}{I_{z}}\right)*G,\text{ where }G=\frac{I_{x}I_{z}}{I_{x}I_{z}-\left(I_{xz}\right)^{2}}\\
+ & \frac{\Delta L}{I_{x}}=\sum L_{i}\Delta i,\quad\frac{\Delta N}{I_{z}}=\sum N_{i}\Delta i
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore\Delta\dot{p}=\sum G*\left(L_{i}+\frac{I_{xz}}{I_{x}}*N_{i}\right)\Delta i=\sum L_{i}^{*}\Delta i=L_{\beta}^{*}\Delta\beta+L_{p}^{*}\Delta p+L_{r}^{*}\Delta r+L_{\delta_{r}}^{*}\Delta\delta_{r}+L_{\delta_{a}}^{*}\Delta\delta_{a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $\therefore\Delta\dot{r}=\sum G*\left(N_{i}+\frac{I_{xz}}{I_{z}}*L_{i}\right)\Delta i=\sum N_{i}^{*}\Delta i=N_{\beta}^{*}\Delta\beta+N_{p}^{*}\Delta p+N_{r}^{*}\Delta r+N_{\delta_{r}}^{*}\Delta\delta_{r}+N_{\delta_{a}}^{*}\Delta\delta_{a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\dot{\varphi}=p+q\operatorname{Sin}(\varphi)\operatorname{Tan}(\theta)+r\operatorname{Cos}(\varphi)\operatorname{Tan}(\theta)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{gathered}\dot{\varphi}\cos(\theta)=p\cos(\theta)+q\operatorname{Sin}(\varphi)\sin(\theta)+r\operatorname{Cos}(\varphi)\sin(\theta)\\
+\therefore\Delta\dot{\varphi}=\Delta p+\Delta r*\tan\left(\theta_{0}\right)
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\dot{\psi}=\left(qS_{\varphi}+rC_{\varphi}\right)\sec(\theta)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\therefore\Delta\dot{\psi}=\Delta r*\sec\left(\theta_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{c}
+\Delta\dot{\beta}\\
+\Delta\dot{p}\\
+\Delta\dot{r}\\
+\Delta\dot{\varphi}\\
+\Delta\dot{\psi}
+\end{array}\right]=\left[\begin{array}{ccccc}
+\frac{Y_{\beta}}{V_{to}} & \frac{Y_{p}+w_{o}}{V_{to}} & \frac{Y_{r}-u_{o}}{V_{to}} & \frac{g\cos\left(\theta_{o}\right)}{V_{to}} & 0\\
+L_{\beta}^{\prime} & L_{p}^{\prime} & L_{r}^{\prime} & 0 & 0\\
+N_{\beta}^{\prime} & N_{p}^{\prime} & N_{r}^{\prime} & 0 & 0\\
+0 & 1 & \tan\left(\theta_{0}\right) & 0 & 0\\
+0 & 0 & \sec\left(\theta_{0}\right) & 0 & 0
+\end{array}\right]\left[\begin{array}{c}
+\Delta\beta\\
+\Delta p\\
+\Delta r\\
+\Delta\varphi\\
+\Delta\psi
+\end{array}\right]+\left[\begin{array}{cc}
+Y_{\delta_{a}}{}^{*} & Y_{\delta_{r}}{}^{*}\\
+L_{\delta_{a}}^{\prime} & L_{\delta_{r}}^{\prime}\\
+N_{\delta_{a}}^{\prime} & N_{\delta_{r}}^{\prime}\\
+0 & 0\\
+0 & 0
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{a}\\
+\Delta\delta_{r}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{\delta_{a}}{}^{*}=Y_{\delta_{a}}/V_{to}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{\delta_{r}}{}^{*}=Y_{\delta_{r}}/V_{to}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{L}_{\beta}=\left(L_{\beta}+\left(I_{xz}N_{\beta}\right)/I_{x}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{N}_{\beta}=\left(N_{\beta}+\left(I_{xz}L_{\beta}\right)/I_{z}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{L_{p}}=\left(L_{p}+\left(I_{xz}N_{p}\right)/I_{x}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{N}_{p}\left(N_{p}+\left(I_{xz}L_{p}\right)/I_{z}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{L_{r}}=\left(L_{r}+\left(I_{xz}N_{r}\right)/I_{x}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\grave{N}_{r}\left(N_{r}+\left(I_{xz}L_{r}\right)/I_{z}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{\delta_{a}}^{\prime}=\left(L_{\delta_{a}}+\left(I_{xz}N_{\delta_{a}}\right)/I_{x}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{\delta_{a}}\left(N_{\delta_{a}}+\left(I_{xz}L_{\delta_{a}}\right)/I_{z}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{\delta_{r}}^{\prime}=\left(L_{\delta_{r}}+\left(I_{xz}N_{\delta_{r}}\right)/I_{x}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{\delta_{r}}^{\prime}\left(N_{\delta_{a}}+\left(I_{xz}L_{\delta_{a}}\right)/I_{z}\right)G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $G=\frac{I_{x}I_{z}}{I_{x}I_{z}-\left(I_{xz}\right)^{2}}=1/\left(1-\left(\left(I_{xz}\right)^{2}/I_{x}I_{z}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For simple calculation of the aircraft response t we can use the next approximations.
+\end_layout
+
+\begin_layout Subsubsection
+3 DOF Spiral approximation
+\end_layout
+
+\begin_layout Standard
+As it is clear in the attached figure how does the airplane behave when it is in the spiral mode.
+\begin_inset Newline newline
+\end_inset
+
+ The side force equation of motion will be neglected and will put 
+\begin_inset Formula $\Delta\beta=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ Therefore,
+ the 3 DOF spiral approximation will be as shown in the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{c}
+\Delta\dot{p}\\
+\Delta\dot{r}\\
+\Delta\dot{\varphi}
+\end{array}\right]=\left[\begin{array}{ccc}
+\grave{L_{p}} & \grave{L_{r}} & 0\\
+\grave{N_{p}} & \grave{N_{r}} & 0\\
+1 & \tan\left(\theta_{o}\right) & 0
+\end{array}\right]\left[\begin{array}{c}
+\Delta p\\
+\Delta r\\
+\Delta\varphi
+\end{array}\right]+\left[\begin{array}{cc}
+\dot{L}_{\delta_{a}} & \dot{L}_{\delta_{r}}\\
+\hat{N}_{\delta_{a}} & \dot{N}_{\delta_{r}}\\
+0 & 0
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{a}\\
+\Delta\delta_{r}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+3 DOF Dutch Roll approximation
+\end_layout
+
+\begin_layout Standard
+The following terms will be neglected according to certain assumptions:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{1}{V_{to}}g\cos\theta_{o}$
+\end_inset
+
+,
+ for moderate and high speeds.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{r}^{\prime}r=0$
+\end_inset
+
+,
+ Effects of yaw rate on rolling acceleration.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N_{p}^{\prime}p=0$
+\end_inset
+
+,
+ Effects of roll rate on yawing acceleration.
+ 
+\end_layout
+
+\begin_layout Standard
+And by taking the previous mentioned assumptions into consideration we reach the following relations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{c}
+\Delta\dot{\beta}\\
+\Delta\dot{p}\\
+\Delta\dot{r}
+\end{array}\right]=\left[\begin{array}{ccc}
+Y_{v} & \frac{\left(Y_{p}+w_{0}\right)}{V_{t_{0}}} & \frac{\left(Y_{r}-u_{0}\right)}{V_{t_{0}}}\\
+\dot{L_{\beta}} & \dot{L_{p}} & \grave{L_{r}}\\
+\dot{N_{\beta}} & \grave{N_{p}} & \dot{N_{r}}
+\end{array}\right]\left[\begin{array}{c}
+\Delta\beta\\
+\Delta p\\
+\Delta r
+\end{array}\right]+\left[\begin{array}{cc}
+Y_{\delta_{a}}{}^{*} & Y_{\delta_{r}}{}^{*}\\
+\dot{L_{\delta_{a}}} & \grave{L_{\delta_{r}}}\\
+\dot{N}_{\delta_{a}} & \dot{N}_{\delta_{r}}
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{a}\\
+\Delta\delta_{r}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+2 DOF Dutch Roll approximation
+\end_layout
+
+\begin_layout Standard
+The combination of the roll and yaw approximations is called the Dutch roll Motion.
+\begin_inset Newline newline
+\end_inset
+
+ In this equation the rolling moment equation is neglected,
+ and we put 
+\begin_inset Formula $\Delta\varphi=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ Therefore,
+ the 2 DOF spiral approximation will be as shown in the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{c}
+\Delta\dot{\beta}\\
+\Delta\dot{r}
+\end{array}\right]=\left[\begin{array}{cc}
+Y_{v} & \frac{Y_{r}-u_{0}}{V_{to}}-\frac{Y_{r}+w_{0}}{V_{to}}\tan(\theta)\\
+\grave{N}_{\beta} & \grave{N}_{r}-N_{p}^{\prime}\tan(\theta)
+\end{array}\right]\left[\begin{array}{c}
+\Delta\beta\\
+\Delta r
+\end{array}\right]+\left[\begin{array}{cc}
+Y_{\delta_{a}}{}^{*} & Y_{\delta_{r}}^{*}\\
+\hat{N}_{\delta_{a}} & \dot{N}_{\delta_{r}}
+\end{array}\right]\left[\begin{array}{c}
+\Delta\delta_{a}\\
+\Delta\delta_{r}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+DOF Roll approximation.
+\end_layout
+
+\begin_layout Standard
+It has been seen that the rolling mode almost corresponds to the pure rolling.
+ Thus it is reasonable to neglect all equations except the rolling moment equation and all perturbations except p.
+ So we will reach the following relation;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{P}-L_{p}{}^{\prime}p=L_{\delta a}{}^{\prime}\delta_{a}
 \end{equation}
 
 \end_inset
@@ -6781,6 +8169,116 @@ M_{\delta_{e}}+M_{\dot{w}}\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)} & M_
 \end_layout
 
 \begin_layout Section
+Code
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "AIRPLANE SIMULATOR PART III"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ we:
+\end_layout
+
+\begin_layout Enumerate
+Simulate aircraft dynamics under control inputs.
+\end_layout
+
+\begin_layout Enumerate
+Validate linearized models against nonlinear truth.
+\end_layout
+
+\begin_layout Enumerate
+Study dominant modes (e.g.,
+ Short Period,
+ Dutch Roll) to understand stability.
+\end_layout
+
+\begin_layout Enumerate
+Visualize comparisons for engineering analysis.
+\end_layout
+
+\begin_layout Standard
+we made that Simulink Model to get the step input responses of the various State space models:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Pics/4/Simulink Model.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulink Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+Using 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "plotStateComparisonsPro"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "exportSystemComparison"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
 Longitudinal
 \end_layout
 
@@ -6790,7 +8288,7 @@ States
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6980,7 +8478,7 @@ Bode And Root locus Compare
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -7151,7 +8649,7 @@ end{figure}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection*
 Lateral
 \end_layout
 
@@ -7161,7 +8659,7 @@ States
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -7471,7 +8969,7 @@ Bode And Root locus Compare
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 

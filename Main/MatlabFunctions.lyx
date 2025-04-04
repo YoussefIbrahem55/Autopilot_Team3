@@ -234,5 +234,65 @@ literal "true"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/4/Task4MainCode.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={AIRPLANE SIMULATOR PART III},label={AIRPLANE SIMULATOR PART III}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/4/initializationScript.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={initializationScript},label={initializationScript}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/4/Approximations.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={Linearization Approximations},label={Linearization Approximations}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/4/plotStateComparisonsPro.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={plotStateComparisonsPro},label={plotStateComparisonsPro}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/4/export_system_comparison.m"
+lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},numbers=left,caption={exportSystemComparison},label={exportSystemComparison}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
