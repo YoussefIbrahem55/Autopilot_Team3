@@ -146,6 +146,9 @@ eqs-within-sections
 figs-within-sections
 tcolorbox
 customHeadersFooters
+algorithm2e
+bicaption
+enumitem
 \end_modules
 \maintain_unincluded_children no
 \language english
@@ -1388,7 +1391,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6336,12 +6339,12 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pics/3/state_comparisons_da5_B7.svg
+	filename Pics/3/state-comparisons-da5-B7.svg
 	lyxscale 40
 	scale 40
 
@@ -6385,7 +6388,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6438,12 +6441,12 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pics/3/state_comparisons_0.svg
+	filename Pics/3/state-comparisons-0.svg
 	lyxscale 40
 	scale 40
 
@@ -6487,7 +6490,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6536,7 +6539,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6585,7 +6588,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6632,8 +6635,453 @@ Thrust
 
 \end_layout
 
+\begin_layout Section
+Compare with Benchmark Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+No Input
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Aileron Deflection 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_-5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_-5_dr_0_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Aileron Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Rudder Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_-5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_-5_de_0_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Rudder Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
++ Elevator Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_-5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_-5_dth_0.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+- Elevator Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_1000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Throttle Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/states_da_0_dr_0_de_0_dth_10000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pics/3/Benchmarksss/Traj_da_0_dr_0_de_0_dth_10000.svg
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Throttle Deflection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
-AC Simulator 3
+AC Simulator III
 \end_layout
 
 \begin_layout Section
@@ -6641,7 +7089,142 @@ Approximations
 \end_layout
 
 \begin_layout Standard
-...
+\begin_inset Formula 
+\begin{equation}
+\ensuremath{\begin{aligned} & X-mgS_{\theta}=m(\dot{u}+qw-rv)\\
+ & Y+mgC_{\theta}S_{\varphi}=m(\dot{v}+ru-pw)\\
+ & Z+mgC_{\theta}C_{\varphi}=m(\dot{w}+pv-qu)\\
+ & L=I_{x}\dot{p}-I_{xz}\dot{r}+qr\left(I_{z}-I_{y}\right)-I_{xz}pq\\
+ & M=I_{y}\dot{q}+rp\left(I_{x}-I_{z}\right)-I_{xz}\left(p^{2}-r^{2}\right)\\
+ & N=-I_{xz}\dot{p}+I_{z}\dot{r}+pq\left(I_{y}-I_{x}\right)+I_{xz}qr\\
+ & \dot{\theta}=qC_{\varphi}-rS_{\varphi}\\
+ & \dot{\varphi}=p+qS_{\varphi}T_{\theta}+rC_{\varphi}T_{\theta}\\
+ & \dot{\psi}=\left(qS_{\varphi}+rC_{\varphi}\right)sec(\theta)\\
+ & {\left[\begin{array}{l}
+\dot{x}\\
+\dot{y}\\
+\dot{z}
+\end{array}\right]=\left[\begin{array}{ccc}
+C_{\theta}C_{\psi} & S_{\varphi}S_{\theta}C_{\psi}-C_{\varphi}S_{\psi} & C_{\psi}S_{\theta}C_{\psi}+S_{\varphi}S_{\psi}\\
+C_{\theta}S_{\psi} & S_{\varphi}S_{\theta}S_{\psi}+C_{\varphi}C_{\psi} & C_{\varphi}S_{\theta}S_{\psi}-S_{\varphi}C_{\psi}\\
+-S_{\theta} & S_{\varphi}C_{\theta} & C_{\varphi}C_{\theta}
+\end{array}\right]\left[\begin{array}{c}
+u\\
+v\\
+w
+\end{array}\right]}
+\end{aligned}
+}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Applying Small disturbance theory 
+\begin_inset Formula $(u=u𝑜+∆u)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Some approximations & trigonometric will be used in linearization:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)∗Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)≃0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sin(Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒))≃0,cos(Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒))≃Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sin(𝑎+𝑏)=sin(𝑎)cos(𝑏)+sin(𝑏)cos(𝑎)Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)∗Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)≃0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sin(Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒))≃0,cos(Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒))≃Δ(𝑣𝑎𝑟𝑖𝑎𝑏𝑙𝑒)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sin(𝑎+𝑏)=sin(𝑎)cos(𝑏)+sin(𝑏)cos(𝑎)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cos(𝑎+𝑏)=cos(𝑎)cos(𝑏)−sin(𝑎)sin(𝑏)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cos(𝑎+𝑏)=cos(𝑎)cos(𝑏)−sin(𝑎)sin(𝑏)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Longitudinal
+\end_layout
+
+\begin_layout Subsubsection
+Longitudinal State-Space Model:
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+\ensuremath{\left[\begin{array}{c}
+\Delta\dot{u}\\
+\Delta\dot{w}\\
+\Delta\dot{q}\\
+\Delta\dot{\theta}
+\end{array}\right]=\left[\begin{array}{cccc}
+X_{u} & X_{w} & -w_{o} & -gcos(\theta_{0})\\
+\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & \frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)} & \frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)} & \frac{-gsin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\\
+M_{u}+M_{\dot{w}}\frac{Z_{u}}{\left(1-Z_{\dot{w}}\right)} & M_{w}+M_{\dot{w}}\frac{Z_{w}}{\left(1-Z_{\dot{w}}\right)} & M_{q}+M_{\dot{w}}\frac{\left(Z_{q}+u_{o}\right)}{\left(1-Z_{\dot{w}}\right)} & -M_{\dot{w}}*\frac{g\sin\left(\theta_{o}\right)}{\left(1-Z_{\dot{w}}\right)}\\
+0 & 0 & 1 & 0
+\end{array}\right]\left[\begin{array}{c}
+\Delta u\\
+\Delta w\\
+\Delta q\\
+\Delta\theta
+\end{array}\right]+\left[\begin{array}{cc}
+X_{\delta_{e}} & X_{\delta_{th}}\\
+\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)} & \frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}\\
+M_{\delta_{e}}+M_{\dot{w}}\frac{Z_{\delta_{e}}}{\left(1-Z_{\dot{w}}\right)} & M_{\delta_{th}}+M_{\dot{w}}\frac{Z_{\delta_{th}}}{\left(1-Z_{\dot{w}}\right)}
+\end{array}\right]\left[\begin{array}{l}
+\Delta\delta_{e}\\
+\Delta\delta_{th}
+\end{array}\right]}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -6654,7 +7237,7 @@ States
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6666,7 +7249,7 @@ status open
 \backslash
 newcommand{
 \backslash
-figFolder}{Pics/4/}
+longPath}{Pics/4/}
 \end_layout
 
 \begin_layout Plain Layout
@@ -6679,47 +7262,17 @@ figFolder}{Pics/4/}
 \backslash
 foreach 
 \backslash
-filename in {LPAC-da1.0,
+longStates in {LvNM-de1.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-LPAC-da25.0,
+LvNM-de5.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-LPAC-da5.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LPAC-dth10000.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LPAC-dth2000.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LvNM-da1.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LvNM-da25.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LvNM-da5.0,
-\end_layout
-
-\begin_layout Plain Layout
-
-LvNM-dth10000.0,
+LvNM-de25.0,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6729,27 +7282,62 @@ LvNM-dth2000.0,
 
 \begin_layout Plain Layout
 
-SPAC-da1.0,
+LvNM-dth10000.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-SPAC-da25.0,
+LPAC-de1.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-SPAC-da5.0,
+LPAC-de5.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-SPAC-dth10000.0,
+LPAC-de25.0,
 \end_layout
 
 \begin_layout Plain Layout
 
-SPAC-dth2000.0} 
+LPAC-dth2000.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+LPAC-dth10000.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SPAC-de1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SPAC-de5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SPAC-de25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SPAC-dth2000.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SPAC-dth10000.0
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6775,13 +7363,13 @@ centering
 
         
 \backslash
-includegraphics[width=0.8
+includegraphics[width=.9
 \backslash
 textwidth]{
 \backslash
-figFolder
+longPath
 \backslash
-filename}
+longStates}
 \end_layout
 
 \begin_layout Plain Layout
@@ -6790,7 +7378,14 @@ filename}
 \backslash
 label{fig:
 \backslash
-filename}
+longStates}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[]{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -6832,31 +7427,10 @@ Bode And Root locus Compare
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-figFolderr}{Pics/4/}  
 \end_layout
 
 \begin_layout Plain Layout
@@ -6865,42 +7439,7 @@ figFolderr}{Pics/4/}
 \backslash
 foreach 
 \backslash
-filenamee in {compare-bode-LFM-vs-LPA--theta--delta-e,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-LPA--theta--delta-th,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-LPA-u--delta-e,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-LPA-u--delta-th,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-SPA-q--delta-e,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-SPA-q--delta-th,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-SPA-w--delta-e,
-\end_layout
-
-\begin_layout Plain Layout
-
-compare-bode-LFM-vs-SPA-w--delta-th,
+longBode in {compare-bode-LFM-vs-LPA--theta--delta-e,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6910,7 +7449,17 @@ compare-rlocus-LFM-vs-LPA--theta--delta-e,
 
 \begin_layout Plain Layout
 
+compare-bode-LFM-vs-LPA--theta--delta-th,
+\end_layout
+
+\begin_layout Plain Layout
+
 compare-rlocus-LFM-vs-LPA--theta--delta-th,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-LPA-u--delta-e,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6920,7 +7469,17 @@ compare-rlocus-LFM-vs-LPA-u--delta-e,
 
 \begin_layout Plain Layout
 
+compare-bode-LFM-vs-LPA-u--delta-th,
+\end_layout
+
+\begin_layout Plain Layout
+
 compare-rlocus-LFM-vs-LPA-u--delta-th,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SPA-q--delta-e,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6930,12 +7489,27 @@ compare-rlocus-LFM-vs-SPA-q--delta-e,
 
 \begin_layout Plain Layout
 
+compare-bode-LFM-vs-SPA-q--delta-th,
+\end_layout
+
+\begin_layout Plain Layout
+
 compare-rlocus-LFM-vs-SPA-q--delta-th,
 \end_layout
 
 \begin_layout Plain Layout
 
+compare-bode-LFM-vs-SPA-w--delta-e,
+\end_layout
+
+\begin_layout Plain Layout
+
 compare-rlocus-LFM-vs-SPA-w--delta-e,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SPA-w--delta-th,
 \end_layout
 
 \begin_layout Plain Layout
@@ -6966,18 +7540,13 @@ centering
 
         
 \backslash
-includegraphics[width=.8
+includegraphics[width=.9
 \backslash
 textwidth]{
 \backslash
-figFolderr
+longPath
 \backslash
-filenamee}
-\end_layout
-
-\begin_layout Plain Layout
-
-      
+longBode}
 \end_layout
 
 \begin_layout Plain Layout
@@ -6986,15 +7555,14 @@ filenamee}
 \backslash
 label{fig:
 \backslash
-filenamee}
+longBode}
 \end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
 
-\begin_layout Plain Layout
-
+\backslash
+caption[]{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -7038,8 +7606,594 @@ Lateral
 States
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+latPath}{Pics/4/Lat/}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+latStates in {NvLM-da1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-da5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-da10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-da25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-dr1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-dr5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-dr10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+NvLM-dr25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-da1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-da5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-da10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-da25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-dr1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-dr5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-dr10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+DRAC-dr25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-da1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-da5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-da10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-da25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-dr1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-dr5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-dr10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+SAC-dr25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-dr1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-dr5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-dr10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-dr25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-da1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-da5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-da10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+2AC-da25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-da1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-da5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-da10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-da25.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-dr1.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-dr5.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-dr10.0,
+\end_layout
+
+\begin_layout Plain Layout
+
+1AC-dr25.0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+includegraphics[width=.9
+\backslash
+textwidth]{
+\backslash
+latPath
+\backslash
+latStates}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+label{fig:
+\backslash
+latStates}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Bode And Root locus Compare
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+latBode in {compare-bode-LFM-vs-1A--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-1A--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-2A--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-2A--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-2A--beta--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-2A--beta--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-2A-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-2A-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-2A-r--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-2A-r--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA--beta--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA--beta--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA--beta--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA-p--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA-p--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA-p--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA-p--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-DA-r--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-DA-r--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA-p--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA-p--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA-p--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA-p--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA--phi--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA--phi--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA--phi--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA--phi--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA-r--delta-a,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-bode-LFM-vs-SA-r--delta-r,
+\end_layout
+
+\begin_layout Plain Layout
+
+compare-rlocus-LFM-vs-SA-r--delta-r}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+includegraphics[width=.9
+\backslash
+textwidth]{
+\backslash
+latPath
+\backslash
+latBode}
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+label{fig:
+\backslash
+latBode}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
